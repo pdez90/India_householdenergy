@@ -1,0 +1,12 @@
+# survey microdata and analysis outputs are never committed
+*.rds
+*.RData
+*.dta
+*.sav
+*.zip
+*.rar
+run_log.txt
+diagnostics/
+node_modules/
+.DS_Store
+*.pre_*
