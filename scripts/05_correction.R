@@ -42,6 +42,14 @@ pairB <- pairs$pairB   # NFHS-5 rural vs IRES
 
 clamp <- function(p, eps = 1e-3) pmin(pmax(p, eps), 1 - eps)
 
+# Logit-scale standard-error bounds (see prep_me() for the rationale).
+# SE_FLOOR only guarantees positivity for brms' se() term and is deliberately
+# far below anything observed; SE_CAP bounds the one saturated district whose
+# reference prevalence is clamped at 1 - eps and whose binomial logit SE is
+# therefore enormous. Both are reported in me_se_diagnostics.csv.
+SE_FLOOR <- 1e-4
+SE_CAP   <- 2
+
 # ------------------------------------------------------------------------------
 # (1) Regression calibration
 # ------------------------------------------------------------------------------
@@ -60,10 +68,34 @@ calA <- calib_fit(pairA, "access_w1_mainlpg", "lpg_2015_rural", "n_access_w1")
 calB <- calib_fit(pairB, "ires_mainlpg_rural", "lpg_2019_rural", "n_ires_rural")
 summary(calA); summary(calB)
 
+# WHY THESE ARE FITTED BUT NOT APPLIED. calA/calB include state fixed effects;
+# the national correction below (calA_nat/calB_nat) deliberately does not.
+# A state fixed effect is estimable only for states the reference survey
+# sampled, so a with-state calibration cannot be evaluated in the states that
+# most need correcting -- it would produce no prediction outside the 6 (ACCESS)
+# and 19-21 (IRES) calibration states. The with-state fits are therefore a
+# WITHIN-SAMPLE ROBUSTNESS CHECK on the slope: if adding state effects moved
+# the slope materially, the pooled national slope would be confounded by state
+# composition. They were previously fitted, printed, and then left unused,
+# which reads as dead code; their slopes are now written out so the check is
+# part of the record. (The Bayesian model handles the same issue properly, with
+# state as a random effect that shrinks to the national mean out of sample.)
+calib_state_check <- tibble::tibble(
+  leg          = c("2015 (NFHS-4 ~ ACCESS)", "2019 (NFHS-5 ~ IRES)"),
+  slope_state  = c(unname(coef(calA)["x"]), unname(coef(calB)["x"])),
+  se_state     = c(sqrt(diag(vcov(calA)))["x"], sqrt(diag(vcov(calB)))["x"]),
+  n_states     = c(dplyr::n_distinct(pairA$state_name),
+                   dplyr::n_distinct(pairB$state_name)),
+  adj_r2_state = c(summary(calA)$adj.r.squared, summary(calB)$adj.r.squared))
+readr::write_csv(calib_state_check,
+                 file.path(dir_out, "calibration_state_effect_check.csv"))
+
 # Apply nationally. State effects only exist for calibration states, so for
 # out-of-sample states we apply the average calibration (state effect = 0 on
 # the mean-centered contrast). Simplest robust route: refit without state for
-# the national application, keep the state version for within-sample checks.
+# the national application, keep the state version for within-sample checks
+# (calib_state_check above; the slopes are compared in the CHECKS block).
+# This no-state model IS the regression calibration reported in the paper.
 calA_nat <- lm(qlogis(clamp(access_w1_mainlpg)) ~ qlogis(clamp(lpg_2015_rural)),
                data = pairA, weights = pairA$n_access_w1)
 calB_nat <- lm(qlogis(clamp(ires_mainlpg_rural)) ~ qlogis(clamp(lpg_2019_rural)),
@@ -106,10 +138,21 @@ prep_me <- function(df, ref, nfhs_est, nfhs_se, ref_n, ref_se = NULL) {
   }
   df$p_ref <- p_ref
   df$y     <- qlogis(p_ref)
-  df$y_se  <- pmin(pmax(y_se, 0.02), 2)
+  # BOUNDS. brms' se() term requires a strictly positive standard error, so a
+  # floor is needed only to keep a degenerate district (zero estimated design
+  # SE) from producing se = 0. Earlier versions used 0.02 / 0.01, which a
+  # reviewer rightly flagged as large enough to be doing real work. They were
+  # not -- the smallest observed values are ~0.16 (reference) and ~0.09 (NFHS),
+  # eight to nine times those floors -- but a bound that is meant to be inert
+  # should be visibly inert, so the floors are now set to SE_FLOOR = 1e-4 and
+  # the number of districts touching either bound is written to
+  # me_se_diagnostics.csv on every run. The upper bound of 2 logits is retained
+  # and does bind, for exactly one district (see SE_CAP note below).
+  df$y_se  <- pmin(pmax(y_se, SE_FLOOR), SE_CAP)
   df$x_obs <- qlogis(clamp(df[[nfhs_est]]))
   df$x_se  <- pmin(pmax(df[[nfhs_se]] /
-                (clamp(df[[nfhs_est]]) * (1 - clamp(df[[nfhs_est]]))), 0.01), 2)
+                (clamp(df[[nfhs_est]]) * (1 - clamp(df[[nfhs_est]]))),
+                SE_FLOOR), SE_CAP)
   df
 }
 
@@ -212,7 +255,14 @@ se_diagnostics <- function(df, ref, nfhs_est, nfhs_se, ref_n, ref_se = NULL) {
   list(n = nrow(d), n_design = sum(ok), n_fallback = sum(!ok),
        y = y, x = xs, n_ref = d[[ref_n]],
        # the district(s) whose raw reference SE exceeds the upper bound
-       clamped_hi = y[y > 2], n_ref_at_bound = d[[ref_n]][d[[ref]] > 1 - 1e-3])
+       clamped_hi = y[y > SE_CAP], n_ref_at_bound = d[[ref_n]][d[[ref]] > 1 - 1e-3],
+       # how often each bound actually binds, so "the bounds are inert" is a
+       # measured statement rather than an assurance
+       n_y_at_floor = sum(y  <= SE_FLOOR), n_x_at_floor = sum(xs <= SE_FLOOR),
+       n_x_at_cap   = sum(xs >= SE_CAP),
+       y_min = min(y), x_min = min(xs),
+       # districts whose prevalence itself is pinned by the eps clamp
+       n_p_clamped = sum(d[[ref]] <= 1e-3 | d[[ref]] >= 1 - 1e-3))
 }
 dgA <- se_diagnostics(pairA, "access_w1_mainlpg", "lpg_2015_rural_wt",
                       "lpg_2015_rural_wt_se", "n_access_w1")
@@ -233,18 +283,40 @@ me_se_diag <- tibble::tibble(
   quantity = c("a_n", "b_n", "b_design", "b_fallback", "b_allyes_n",
                "clamp_raw", "y_lo", "y_hi", "x_lo", "x_hi",
                "ires_rural_med", "ires_rural_min", "ires_rural_max",
-               "n_clamped_hi"),
+               "n_clamped_hi",
+               "se_floor", "se_cap",
+               "n_y_at_floor", "n_x_at_floor", "n_x_at_cap",
+               "y_se_min", "x_se_min", "n_prevalence_clamped"),
   value = c(dgA$n, dgB$n, dgB$n_design, dgB$n_fallback,
             if (length(dgB$n_ref_at_bound)) min(dgB$n_ref_at_bound) else NA_real_,
             round(if (length(dgB$clamped_hi)) max(dgB$clamped_hi) else NA_real_, 2),
             round(min(y_unclamped), 2), round(max(y_unclamped), 2),
             round(min(x_all), 2), round(max(x_all), 2),
             stats::median(dgB$n_ref), min(dgB$n_ref), max(dgB$n_ref),
-            length(dgA$clamped_hi) + length(dgB$clamped_hi))
+            length(dgA$clamped_hi) + length(dgB$clamped_hi),
+            SE_FLOOR, SE_CAP,
+            dgA$n_y_at_floor + dgB$n_y_at_floor,
+            dgA$n_x_at_floor + dgB$n_x_at_floor,
+            dgA$n_x_at_cap   + dgB$n_x_at_cap,
+            round(min(dgA$y_min, dgB$y_min), 3),
+            round(min(dgA$x_min, dgB$x_min), 3),
+            dgA$n_p_clamped + dgB$n_p_clamped)
 )
 readr::write_csv(me_se_diag, file.path(dir_out, "me_se_diagnostics.csv"))
 message("me_se_diagnostics.csv written:")
 print(as.data.frame(me_se_diag))
+chk("05", "SE floors are inert (no district sits on them)",
+    (dgA$n_y_at_floor + dgB$n_y_at_floor + dgA$n_x_at_floor + dgB$n_x_at_floor) == 0,
+    sprintf("min reference logit SE %.3f, min NFHS logit SE %.3f, floor %.0e",
+            min(dgA$y_min, dgB$y_min), min(dgA$x_min, dgB$x_min), SE_FLOOR))
+chk_warn("05", "state-effect calibration slope agrees with the applied no-state slope",
+    { d <- abs(calib_state_check$slope_state -
+               c(unname(coef(calA_nat)[2]), unname(coef(calB_nat)[2])))
+      all(is.finite(d)) && max(d) < 0.25 },
+    { d <- calib_state_check$slope_state -
+           c(unname(coef(calA_nat)[2]), unname(coef(calB_nat)[2]))
+      sprintf("slope difference (with-state minus applied): %s",
+              paste(sprintf("%+.3f", d), collapse = ", ")) })
 chk("05", "reference-side design SE used for the large majority of NFHS-5/IRES districts",
     dgB$n_design >= 0.9 * dgB$n,
     sprintf("design SE %d of %d districts (binomial fallback %d)",
@@ -598,6 +670,16 @@ ggsave(file.path(dir_out, "corrected_vs_raw_2019.jpeg"), p1,
 # NFHS RMSE. This is the single most important external-validity diagnostic in
 # the paper: the correction is only useful in a non-calibration state if it beats
 # doing nothing THERE, not merely in-sample.
+#
+# SCOPE (stated because it is easy to over-read). This cross-validation refits
+# the REGRESSION CALIBRATION (lm) in each of the ~20 held-out folds, not the
+# Bayesian measurement-error model: an honest Bayesian LOSO would require ~20
+# additional brms fits of 4 chains x 12,000 iterations, which is prohibitive
+# for a diagnostic whose purpose is to test whether the CALIBRATION RELATION
+# transports across states. The two estimators share that relation (their
+# fitted slopes agree closely; Table S9.3), so the regression-calibration LOSO
+# is informative about both, but it is not a validation of the Bayesian
+# posterior and the manuscript says so explicitly.
 loso <- map_dfr(unique(pairB$state_name), function(s) {
   tr <- pairB %>% filter(state_name != s)
   te <- pairB %>% filter(state_name == s)
