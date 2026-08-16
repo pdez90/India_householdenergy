@@ -839,11 +839,11 @@ fig <- ggplot(pl, aes(kappa, absz, colour = outcome)) +
                                          name = "direct measurement in every study district (households per district, relative to existing surveys)")) +
   labs(x = expression(paste(kappa, " = calibration posterior SD, relative to what the existing surveys achieved")),
        y = "|z| for the change-on-change association",
-       colour = NULL,
-       title = "What precision would a fit-for-purpose validation survey need?",
-       subtitle = "Uncertainty-propagated (MI) estimate, districts weighted by the harmonic mean of eligible births") +
+       colour = NULL) +
+  # No title/subtitle: this is a manuscript figure, so that information lives
+  # in the caption (reviewer request). The weighting statement moved there too.
   theme_bw(base_size = 9) +
-  theme(legend.position = "bottom", plot.title = element_text(size = 10))
+  theme(legend.position = "bottom")
 ggsave(file.path(dir_out, "design_frontier.jpeg"), fig,
        width = 7.2, height = 5.0, dpi = 300)
 chk(SCRIPT, "design-frontier figure written",
