@@ -534,27 +534,53 @@ acc_d  <- readRDS(file.path(dir_out, "access_districts.rds")) %>%
 ires_d <- readRDS(file.path(dir_out, "ires_districts.rds")) %>%
   dplyr::mutate(district = as.character(district))
 
-cmp_n <- function(stored_df, stored_col, survey_lab, domain_lab) {
+# Counts are compared on the SHARED district frame (inner join), and the frame
+# difference is checked separately -- because equality-of-counts and
+# equality-of-frames are different claims, and conflating them (the old
+# full_join) turned a documented frame choice into a spurious count FAIL.
+# When `expect_extra_here` is supplied, the districts present in the
+# recomputed counts but absent from the stored table must be EXACTLY that set;
+# otherwise the two frames must coincide.
+cmp_n <- function(stored_df, stored_col, survey_lab, domain_lab,
+                  expect_extra_here = NULL, expect_reason = "") {
   if (!stored_col %in% names(stored_df)) {
     .warn(S, paste0("n cross-check: ", stored_col), FALSE, "column absent")
     return(invisible(NULL))
   }
   a <- long %>%
     dplyr::filter(survey == survey_lab, domain == domain_lab) %>%
-    dplyr::select(district, n_here = n_hh)
+    dplyr::select(district, n_here = n_hh) %>%
+    dplyr::mutate(district = as.character(district))
   b <- stored_df %>%
-    dplyr::transmute(district, n_stored = as.numeric(.data[[stored_col]])) %>%
+    dplyr::transmute(district = as.character(district),
+                     n_stored = as.numeric(.data[[stored_col]])) %>%
     dplyr::filter(!is.na(n_stored))
-  j <- dplyr::full_join(a, b, by = "district")
-  bad <- j %>% dplyr::filter(is.na(n_here) | is.na(n_stored) |
-                             n_here != n_stored)
-  .chk(S, paste0("n matches ", stored_col),
+  j   <- dplyr::inner_join(a, b, by = "district")
+  bad <- j %>% dplyr::filter(n_here != n_stored)
+  .chk(S, paste0("n matches ", stored_col, " (shared frame)"),
        nrow(bad) == 0 && nrow(j) > 0,
        sprintf("%d districts compared, %d mismatched%s", nrow(j), nrow(bad),
                if (nrow(bad) > 0)
                  paste0(" (e.g. district ", bad$district[1], ": here ",
                         bad$n_here[1], " vs stored ", bad$n_stored[1], ")")
                else ""))
+  extra_here   <- setdiff(a$district, b$district)
+  extra_stored <- setdiff(b$district, a$district)
+  if (is.null(expect_extra_here)) {
+    .chk(S, paste0(stored_col, ": stored and recomputed district frames coincide"),
+         length(extra_here) == 0 && length(extra_stored) == 0,
+         sprintf("computed-only: {%s} | stored-only: {%s}",
+                 paste(extra_here, collapse = ","),
+                 paste(extra_stored, collapse = ",")))
+  } else {
+    .chk(S, paste0(stored_col, ": frame difference is exactly the documented set"),
+         setequal(extra_here, expect_extra_here) && length(extra_stored) == 0,
+         sprintf("computed-only {%s} vs expected {%s}; stored-only {%s}%s",
+                 paste(sort(extra_here), collapse = ","),
+                 paste(sort(expect_extra_here), collapse = ","),
+                 paste(extra_stored, collapse = ","),
+                 if (nzchar(expect_reason)) paste0(" -- ", expect_reason) else ""))
+  }
   if (nrow(bad) > 0) {
     message("  mismatching districts for ", stored_col, ":")
     print(utils::head(as.data.frame(bad), 10))
@@ -567,7 +593,20 @@ cmp_n(nfhs_d, "n_2015_rural", "NFHS-4",    "rural")
 cmp_n(nfhs_d, "n_2019",       "NFHS-5",    "all")
 cmp_n(nfhs_d, "n_2019_rural", "NFHS-5",    "rural")
 cmp_n(acc_d,  "n_access_w1",  "ACCESS W1", "rural")
-cmp_n(acc_d,  "n_access_w2",  "ACCESS W2", "rural")
+# access_districts.rds is deliberately on the WAVE-1 frame: 02_prep_access.R
+# builds it as w1_lpg %>% left_join(w2_lpg, ...) because Wave 1 is the
+# calibration frame (the SI figure caption states that the districts sampled
+# only in Wave 2 do not appear on the mapped frame). The Wave-2-only
+# districts therefore have no stored row, while THIS script's recomputed
+# counts for them are the correct denominators for the sample-size tables.
+# So: counts must match on the shared frame, and the frame difference must be
+# exactly the W2-only set -- derived from the household file, not hardcoded.
+.w2_only <- setdiff(
+  as.character(unique(access_hh$district[access_hh$survey == "ACCESS_W2"])),
+  as.character(unique(access_hh$district[access_hh$survey == "ACCESS_W1"])))
+cmp_n(acc_d,  "n_access_w2",  "ACCESS W2", "rural",
+      expect_extra_here = .w2_only,
+      expect_reason = "Wave-2-only districts, absent from the Wave-1-framed access_districts.rds by design")
 cmp_n(ires_d, "n_ires",       "IRES",      "all")
 cmp_n(ires_d, "n_ires_rural", "IRES",      "rural")
 
