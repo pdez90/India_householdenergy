@@ -78,7 +78,7 @@ ba_panel <- function(d, x, y, n, ylab, xlim = NULL, ylim = NULL) {
   list(x = range(a$avg, na.rm = TRUE),
        y = max(abs(range(a$diff, na.rm = TRUE))) * c(-1, 1) * 1.05)
 })
-fig1 <- plot_grid(
+fig1_abcd <- plot_grid(
   sc_panel(pA, "access_w1_mainlpg", "lpg_2015_rural", "n_access_w1",
            "ACCESS Wave 1", "NFHS-4 rural"),
   sc_panel(pB, "ires_mainlpg_rural", "lpg_2019_rural", "n_ires_rural",
@@ -88,8 +88,7 @@ fig1 <- plot_grid(
   ba_panel(pB, "lpg_2019_rural", "ires_mainlpg_rural", "n_ires_rural",
            "NFHS-5 - IRES", xlim = .ba_lims$x, ylim = .ba_lims$y),
   labels = c("a", "b", "c", "d"), label_size = 12, ncol = 2, align = "hv")
-ggsave(file.path(dir_figs, "fig1_agreement.jpeg"), fig1,
-       width = 7.5, height = 7.2, dpi = 400)
+# fig1 is finalized AFTER the DiD panel is built below (panel e).
 
 # ---------------------------------------------------------------- Figure 2 ----
 map_theme <- theme_void(base_size = 9) +
@@ -192,6 +191,20 @@ fig1b <- ggplot(did, aes(era, p, colour = series, group = series)) +
   theme_pub + theme(legend.position = "bottom")
 ggsave(file.path(dir_figs, "fig1b_did.jpeg"), fig1b,
        width = 5.4, height = 4.4, dpi = 400)
+
+# ---- Figure 1, final five-panel composite (a-d agreement + e DiD) -----------
+# The DiD panel is merged into Figure 1 (reviewer request): panels a-b show
+# the level agreement, c-d the Bland-Altman divergence on a common scale, and
+# e the era structure -- the NFHS-reference gap opening from -4.5 pp to
+# -21.8 pp. Panel e is centred at reduced width on its own row.
+fig1 <- plot_grid(
+  fig1_abcd,
+  plot_grid(NULL, fig1b + theme(legend.position = "bottom"), NULL,
+            ncol = 3, rel_widths = c(1, 2.9, 1), labels = c("", "e", ""),
+            label_size = 12),
+  ncol = 1, rel_heights = c(2, 1.25))
+ggsave(file.path(dir_figs, "fig1_agreement.jpeg"), fig1,
+       width = 7.5, height = 11.6, dpi = 400)
 
 ## ---- CHECKS ------------------------------------------------------------------
 chk_header("10_make_figures")
