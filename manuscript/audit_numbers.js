@@ -56,7 +56,7 @@ const PINNED = [
   { re: /\b120 months\b|\b36-month\b|\bten years\b/, why: "analysis window definitions, chosen not estimated" },
   { re: /\b640 districts\b|\b707 districts\b/, why: "administrative frame sizes, fixed by the census/NSS frames" },
   { re: /\b25-30 households\b/, why: "NFHS sampling protocol, a design constant" },
-  { re: /\b106 million\b|\bUjjwala\b/, why: "PMUY connections released, an external government figure with a citation" },
+  { re: /\b103 million\b|\bUjjwala\b/, why: "PMUY connections released, an external government figure with a citation" },
   { re: /\b500 million individuals\b/, why: "population of the six ACCESS states, an external census figure" },
   { re: /8,568|8,566/, why: "household counts in the published ACCESS report and the standalone microdata release; the sentence exists to CONTRAST them with our derived count, so they must be external" },
   { re: /_prep_access\.R|_prep_ires\.R|_correction\.R|_health_models\.R|_design_analysis\.R/, why: "script filenames, not quantities" },
