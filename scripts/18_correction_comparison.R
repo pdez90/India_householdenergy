@@ -18,7 +18,8 @@
 #
 # Inputs : corrected_nfhs_districts.rds (05), compare_pairs.rds (04)
 # Outputs: estimator_mix_levels.csv, estimator_mix_correlations.csv,
-#          estimator_mix_revision_bands.csv,
+#          estimator_mix_revision_bands.csv, comparison_levels.csv,
+#          correction_revision_by_state_2019.csv,
 #          maps/SI_estimator_mix.jpeg
 # ==============================================================================
 
@@ -110,6 +111,46 @@ readr::write_csv(band_tab, file.path(dir_out, "estimator_mix_revision_bands.csv"
 cat("\n== District revision (corrected - raw, points) by raw-prevalence band ==\n")
 print(as.data.frame(band_tab), row.names = FALSE)
 
+# ---- levels behind the head-to-head gaps (Section 3.1) -----------------------
+# comparison_table.csv (04) reports the mean district DIFFERENCE; the manuscript
+# also states the two levels it is a difference of, so a reader sees "44% vs
+# 62%" and not only "18 points". Same district sets as comparison_table.csv
+# (complete cases on both sides), so the levels difference to its mean_diff.
+lvl_pair <- function(df, x, y, label) {
+  ok <- is.finite(df[[x]]) & is.finite(df[[y]])
+  dplyr::tibble(comparison = label, n_districts = sum(ok),
+                mean_nfhs_pct = round(100 * mean(df[[x]][ok]), 1),
+                mean_ref_pct  = round(100 * mean(df[[y]][ok]), 1))
+}
+cmp_lvl <- dplyr::bind_rows(
+  lvl_pair(pairA, "lpg_2015", "access_w1_mainlpg", "NFHS-4 (all) vs ACCESS W1"),
+  lvl_pair(pairA, "lpg_2015_rural", "access_w1_mainlpg", "NFHS-4 (rural) vs ACCESS W1"),
+  lvl_pair(pairA, "lpg_2015_rural_wt", "access_w1_mainlpg_wt",
+           "NFHS-4 (rural, design-wt) vs ACCESS W1 (design-wt)"),
+  lvl_pair(pairB, "lpg_2019", "ires_mainlpg", "NFHS-5 (all) vs IRES (all)"),
+  lvl_pair(pairB, "lpg_2019_rural", "ires_mainlpg_rural", "NFHS-5 (rural) vs IRES (rural)"),
+  lvl_pair(pairB, "lpg_2019_rural_wt", "ires_mainlpg_rural_wt",
+           "NFHS-5 (rural, design-wt) vs IRES (rural, design-wt)"))
+readr::write_csv(cmp_lvl, file.path(dir_out, "comparison_levels.csv"))
+cat("\n== District-mean primary-LPG levels behind each comparison (%) ==\n")
+print(as.data.frame(cmp_lvl), row.names = FALSE)
+
+# ---- where the 2019 correction is largest, by state --------------------------
+# District revision = Bayesian-corrected minus raw multilevel rural estimate, in
+# points, summarised by state so Section 3.2 can describe the geography of the
+# correction from the outputs. The model carries state effects, so these state
+# means partly reflect fitted state-level departures from the common line.
+st_rev <- corr |>
+  dplyr::transmute(state, rev = 100 * (lpg_2019_bayes - lpg_2019_rural)) |>
+  dplyr::filter(is.finite(rev)) |>
+  dplyr::group_by(state) |>
+  dplyr::summarise(n = dplyr::n(), mean_rev_pp = round(mean(rev), 1),
+                   n_up = sum(rev > 0), n_down = sum(rev < 0), .groups = "drop") |>
+  dplyr::arrange(dplyr::desc(mean_rev_pp))
+readr::write_csv(st_rev, file.path(dir_out, "correction_revision_by_state_2019.csv"))
+cat("\n== 2019 district revision (corrected - raw, points) by state ==\n")
+print(as.data.frame(st_rev), row.names = FALSE)
+
 # ---- pairwise correlations among estimators, per round -----------------------
 cor_tab <- purrr::map_dfr(c("2015", "2019"), function(yr) {
   M <- as.data.frame(lapply(names(ESTS), function(k) mix[[paste0(k, "_", yr)]]))
@@ -162,6 +203,8 @@ chk_warn("18", "RC insensitive to multilevel vs design-wt input (2019 r)",
     sprintf("2015 r=%.3f | 2019 r=%.3f", rc_agree["2015"], rc_agree["2019"]))
 chk_file("18", "estimator mix levels written", "estimator_mix_levels.csv")
 chk_file("18", "revision-by-band table written", "estimator_mix_revision_bands.csv")
+chk_file("18", "comparison levels table written", "comparison_levels.csv")
+chk_file("18", "state revision table written", "correction_revision_by_state_2019.csv")
 
 message("18_correction_comparison.R done -> estimator_mix_levels.csv, estimator_mix_revision_bands.csv, ",
         "estimator_mix_correlations.csv, maps/SI_estimator_mix.jpeg")

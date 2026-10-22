@@ -57,6 +57,7 @@ const PINNED = [
   { re: /\b640 districts\b|\b707 districts\b/, why: "administrative frame sizes, fixed by the census/NSS frames" },
   { re: /\b25-30 households\b/, why: "NFHS sampling protocol, a design constant" },
   { re: /\b103 million\b|\bUjjwala\b/, why: "PMUY connections released, an external government figure with a citation" },
+  { re: /\b111 million\b/, why: "household-air-pollution DALYs in 2021 from the GBD 2021 analysis (Bennitt et al. 2025), an external published figure with a citation" },
   { re: /\b500 million individuals\b/, why: "population of the six ACCESS states, an external census figure" },
   { re: /8,568|8,566/, why: "household counts in the published ACCESS report and the standalone microdata release; the sentence exists to CONTRAST them with our derived count, so they must be external" },
   { re: /_prep_access\.R|_prep_ires\.R|_correction\.R|_health_models\.R|_design_analysis\.R/, why: "script filenames, not quantities" },
