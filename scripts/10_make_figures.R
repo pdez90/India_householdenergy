@@ -225,6 +225,9 @@ ggsave(file.path(dir_figs, "fig1_agreement.jpeg"), fig1,
        width = 7.5, height = 11.6, dpi = 400)
 
 ## ---- CHECKS ------------------------------------------------------------------
+# FIGS_ONLY=1 redraws the figures from saved outputs without touching the
+# check trail (used for presentation-only fixes after the canonical run).
+if (!identical(Sys.getenv("FIGS_ONLY"), "1")) {
 chk_header("10_make_figures")
 for (fg in c("fig1_agreement.jpeg","fig2_correction.jpeg","fig3_proxies.jpeg",
              "fig1b_did.jpeg"))
@@ -235,5 +238,6 @@ chk("10", "fig1 panels c/d share identical axis limits (reviewer request)",
     sprintf("x [%.2f, %.2f], y [%.2f, %.2f]",
             .ba_lims$x[1], .ba_lims$x[2], .ba_lims$y[1], .ba_lims$y[2]))
 
+}
 message("10_make_figures.R done -> ", dir_figs,
         " (fig1_agreement, fig2_correction, fig3_proxies)")

@@ -85,3 +85,35 @@ if (file.exists(f)) {
   ggsave(out, p, width = 8, height = 8, dpi = 400)
   message("[replot] wrote ", basename(out), " (CR2 intervals)")
 } else message("[replot] skip (not found): health_nuanced_effects.csv")
+
+## ---- SI Figure S21: child mortality by exposure measurement (H2) ------------
+# Same rows and labels as H2_health_models.R's coefficient plot (adjusted,
+# birth-weighted, all districts), redrawn from the saved table so the x-axis
+# title is wrapped rather than clipped.
+f <- file.path(dir_out, "health_effects_table.csv")
+if (file.exists(f)) {
+  lab_h2 <- c(change_lpg_raw = "Raw NFHS", change_lpg_rc = "Regression-calibrated",
+    change_lpg_bayes = "Bayesian-corrected\n(fixed surface)",
+    change_lpg_bayes_MI = "Bayesian-corrected\n(exposure-only MI, sensitivity)",
+    change_lpg_bayes_iresonly = "Bayesian-corrected\n(IRES cal, both rounds)",
+    change_lpg_bayes_iresonly_MI = "Bayesian-corrected, IRES both\n(exposure-only MI)",
+    change_lpg_bayes_accesswt = "Bayesian-corrected\n(design-weighted ACCESS ref)",
+    change_lpg_bayes_accesswt_MI = "Bayesian-corrected, design-wtd ACCESS\n(exposure-only MI)")
+  plot_df <- read_csv(f, show_col_types = FALSE) %>%
+    filter(adjusted %in% c(TRUE, "TRUE"), weighting == "birth_hmean",
+           support_stratum == "all", term %in% names(lab_h2)) %>%
+    mutate(exposure = factor(unname(lab_h2[term]), levels = unname(lab_h2)),
+           outcome = factor(outcome, levels = c("neonatal", "infant")))
+  if (any(!is.finite(plot_df$ci_cr2_low) | !is.finite(plot_df$ci_cr2_high)))
+    stop("[replot] health_effects_table.csv lacks CR2 intervals for some plotted rows", call. = FALSE)
+  p <- ggplot(plot_df, aes(est_per10, exposure)) +
+    geom_vline(xintercept = 0, linetype = 2, color = "grey50") +
+    geom_pointrange(aes(xmin = 10 * ci_cr2_low, xmax = 10 * ci_cr2_high)) +
+    facet_wrap(~ outcome, ncol = 1, scales = "free_x") +
+    theme_bw() +
+    labs(x = "Change in mortality (deaths per 100 births) per 10-pp rise in LPG main-fuel prevalence\n(point estimate and 95% CR2 interval)",
+         y = NULL, title = NULL, subtitle = NULL)
+  out <- file.path(dir_out, "health_effects_coefplot.jpeg")
+  ggsave(out, p, width = 8, height = 8, dpi = 300)
+  message("[replot] wrote ", basename(out), " (CR2 intervals, ", nrow(plot_df), " rows)")
+} else message("[replot] skip (not found): health_effects_table.csv")

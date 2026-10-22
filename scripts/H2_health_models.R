@@ -1062,7 +1062,7 @@ p <- ggplot(plot_df, aes(est_per10, exposure)) +
   geom_pointrange(aes(xmin = 10 * ci_cr2_low, xmax = 10 * ci_cr2_high)) +
   facet_wrap(~ outcome, ncol = 1, scales = "free_x") +
   theme_bw() +
-  labs(x = "Change in mortality (per 100 births) per 10-pp rise in LPG main-fuel prevalence (95% CR2 interval)",
+  labs(x = "Change in mortality (deaths per 100 births) per 10-pp rise in LPG main-fuel prevalence\n(point estimate and 95% CR2 interval)",
        y = NULL, title = NULL, subtitle = NULL)
 ggsave(file.path(dir_out, paste0("health_effects_coefplot", sfx, ".jpeg")), p,
        width = 8, height = 8, dpi = 300)

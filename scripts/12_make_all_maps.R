@@ -105,7 +105,7 @@ atlas <- bind_rows(
   pmap_dfr(list(
     v  = c("lpg","poor","mother_low_edu","electricity","muslim",
            "improved_sanitation","improved_water"),
-    lb = c("Primary LPG","Poverty (wealth Q1)","Low maternal education",
+    lb = c("Primary LPG","Poverty (wealth Q1)","Women 15-49, no schooling",
            "Household electricity","Muslim share","Improved sanitation",
            "Improved water")),
     function(v, lb) bind_rows(
@@ -151,11 +151,11 @@ atlas <- bind_rows(
   ## is a fact about reporting, not verified exclusivity, and Section 2.2 of the
   ## manuscript says so explicitly. A panel title that contradicts the paper's
   ## own stated terminology is the kind of thing a reader notices first.
-  a("access", "access_w1_mainlpg",  "ACCESS Wave 1 (2015): primary LPG",        "REF_access"),
+  a("access", "access_w1_mainlpg",  "ACCESS Wave 1 (2014-15): primary LPG",        "REF_access"),
   a("access", "access_w2_mainlpg",  "ACCESS Wave 2 (2018): primary LPG",        "REF_access"),
-  a("access", "access_w1_stack",    "ACCESS Wave 1 (2015): fuel stacking",      "REF_access"),
-  a("access", "access_w1_excl_lpg", "ACCESS Wave 1 (2015): LPG, no solid fuel reported", "REF_access"),
-  a("access", "access_w1_lpg_kg_yr","ACCESS Wave 1 (2015): LPG consumption",    "REF_access", unit = "kg/yr", scale100 = FALSE),
+  a("access", "access_w1_stack",    "ACCESS Wave 1 (2014-15): fuel stacking",      "REF_access"),
+  a("access", "access_w1_excl_lpg", "ACCESS Wave 1 (2014-15): LPG, no solid fuel reported", "REF_access"),
+  a("access", "access_w1_lpg_kg_yr","ACCESS Wave 1 (2014-15): LPG consumption",    "REF_access", unit = "kg/yr", scale100 = FALSE),
 
   ## --- IRES reference-survey prevalences ------------------------------------
   a("ires", "ires_mainlpg",       "IRES (2019-20): primary LPG (all households)", "REF_ires"),
@@ -257,6 +257,8 @@ if (has_patchwork) {
 }
 
 ## ---- CHECKS ------------------------------------------------------------------
+# FIGS_ONLY=1: redraw maps without touching the check trail (see 10_make_figures.R).
+if (!identical(Sys.getenv("FIGS_ONLY"), "1")) {
 chk_header("12_make_all_maps")
 chk("12", "individual atlas maps written", dir.exists(dir_atlas) &&
     length(list.files(dir_atlas, pattern = "\\.(jpe?g|png)$")) > 0,
@@ -265,6 +267,7 @@ chk("12", "composite atlas panels written", dir.exists(dir_panels) &&
     length(list.files(dir_panels, pattern = "\\.(jpe?g|png)$")) > 0,
     paste0(length(list.files(dir_panels, pattern = "\\.(jpe?g|png)$")), " files"))
 
+}
 message("\n12_make_all_maps.R done.\n",
         "  Individual maps: ", dir_atlas, "\n",
         "  Composite panels: ", dir_panels)

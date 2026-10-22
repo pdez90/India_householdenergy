@@ -44,7 +44,7 @@ plot_did_benchmarks <- function(bm, text_scale = 1) {
     mutate(moved = dplyr::coalesce(abs(after - before) > 10, FALSE))   # an item missing from one era cannot have "moved"
   bm <- bm %>% dplyr::left_join(chg %>% select(variable, moved), by = "variable") %>%
     mutate(item = item_lab[variable],
-           grp = ifelse(moved, item, "Other benchmarks"),
+           grp = ifelse(moved, item, "Other items"),
            x = ifelse(era == "before", 1, 2))
   hi_cols <- c("#2a78d6", "#eb6834")   # validated pair; grey for everything else
   moved_items <- unique(bm$item[bm$moved])
@@ -66,11 +66,11 @@ plot_did_benchmarks <- function(bm, text_scale = 1) {
             paste(unique(bm$variable[is.na(bm$item)]), collapse = ", "),
             " -- using the variable name; add it to item_lab")
     bm$item <- ifelse(is.na(bm$item), bm$variable, bm$item)
-    bm$grp  <- ifelse(bm$moved, bm$item, "Other benchmarks")
+    bm$grp  <- ifelse(bm$moved, bm$item, "Other items")
     moved_items <- unique(bm$item[bm$moved])
   }
   cols <- setNames(c(hi_cols[seq_along(moved_items)], "grey60"),
-                   c(moved_items, "Other benchmarks"))
+                   c(moved_items, "Other items"))
   ## District counts per era; if items differ in coverage, show every count
   ## rather than let sprintf() return one axis label per value.
   n_lab <- function(e) paste(sort(unique(bm$n[bm$era == e])), collapse = "/")
@@ -84,14 +84,21 @@ plot_did_benchmarks <- function(bm, text_scale = 1) {
   oth <- bm %>% filter(era == "after", !moved)
   oth_lab <- if (!nrow(oth))
     data.frame(x = numeric(), gap = numeric(), item = character(), grp = character(),
-               lab = character()) else data.frame(x = 2, gap = mean(range(oth$gap)), item = "other", grp = "Other benchmarks",
-    lab = sprintf("%d other benchmarks, all within\n%+.1f to %+.1f pp after PMUY:\n%s",
+               lab = character()) else data.frame(x = 2, gap = mean(range(oth$gap)), item = "other", grp = "Other items",
+    lab = sprintf("%d other items, all within\n%+.1f to %+.1f pp after PMUY:\n%s",
                   nrow(oth), min(oth$gap), max(oth$gap),
                   paste(strwrap(paste(sort(oth$item), collapse = ", "), 30),
                         collapse = "\n")))
   ## Left-hand labels: the highlighted items, and any other item whose gap was
   ## already large before PMUY, so no line in the plot is left unexplained.
-  lab_l <- bm %>% filter(era == "before", moved | abs(gap) >= 5)
+  lab_l <- bm %>% filter(era == "before", moved | abs(gap) >= 5) %>% arrange(gap)
+  ## Keep left-hand labels at least 1.2 pp apart vertically so close values
+  ## (e.g. two items both near +7 pp) do not overprint; the point stays put.
+  if (nrow(lab_l) > 1) {
+    yl <- lab_l$gap
+    for (i in seq_along(yl)[-1]) yl[i] <- max(yl[i], yl[i - 1] + 1.2)
+    lab_l$ylab <- yl
+  } else lab_l$ylab <- lab_l$gap
   fig1e <- ggplot(bm, aes(x, gap, group = item, colour = grp)) +
     geom_hline(yintercept = 0, colour = "grey40", linewidth = 0.4) +
     geom_line(aes(linewidth = moved)) + geom_point(aes(size = moved)) +
@@ -104,10 +111,10 @@ plot_did_benchmarks <- function(bm, text_scale = 1) {
     geom_label(data = oth_lab, aes(label = lab), hjust = 0, nudge_x = 0.07, size = 2.4 * ts,
                lineheight = 0.95, colour = "grey35", fill = "white", label.size = 0,
                label.padding = grid::unit(0.1, "lines"), show.legend = FALSE) +
-    geom_text(data = lab_l, aes(label = ifelse(moved, sprintf("%+.1f", gap),
+    geom_text(data = lab_l, aes(y = ylab, label = ifelse(moved, sprintf("%+.1f", gap),
                                                sprintf("%s %+.1f", item, gap))),
               hjust = 1, nudge_x = -0.05, size = 2.5 * ts, show.legend = FALSE) +
-    scale_colour_manual(values = cols, breaks = c(moved_items, "Other benchmarks")) +
+    scale_colour_manual(values = cols, breaks = c(moved_items, "Other items")) +
     scale_x_continuous(breaks = c(1, 2), limits = c(0.05, 3.3),
                        labels = c(sprintf("Before PMUY\nNFHS-4 vs ACCESS\n(%s districts)", n_before),
                                   sprintf("After PMUY\nNFHS-5 vs IRES\n(%s districts)", n_after))) +
