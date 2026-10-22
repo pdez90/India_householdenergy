@@ -111,7 +111,7 @@ if (file.exists(f)) {
     geom_pointrange(aes(xmin = 10 * ci_cr2_low, xmax = 10 * ci_cr2_high)) +
     facet_wrap(~ outcome, ncol = 1, scales = "free_x") +
     theme_bw() +
-    labs(x = "Change in mortality (deaths per 100 births) per 10-pp rise in LPG main-fuel prevalence\n(point estimate and 95% CR2 interval)",
+    labs(x = "Change in mortality (deaths per 100 births)\nper 10-pp rise in primary-LPG prevalence\n(point estimate and 95% CR2 interval)",
          y = NULL, title = NULL, subtitle = NULL)
   out <- file.path(dir_out, "health_effects_coefplot.jpeg")
   ggsave(out, p, width = 8, height = 8, dpi = 300)
