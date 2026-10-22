@@ -2397,7 +2397,7 @@
   },
   "files": {
     "app.R": {
-      "checksum": "154ea8a8d0fbfce6ee84b31619615bda"
+      "checksum": "6f277ac9c7e4d98ef57962821743f5b3"
     },
     "data/benchmark_district_wide.csv": {
       "checksum": "b42c6e0126c25de73d171741d1af59e1"
@@ -2544,7 +2544,7 @@
       "checksum": "77b2dec46b49c82f6a1ca1b14402b37f"
     },
     "data/PROVENANCE.csv": {
-      "checksum": "660278d190e1f7bbd2e0bf74d6fc44f4"
+      "checksum": "1983b39356cb8829e4e12e883bcaa671"
     },
     "data/reference_stacking_district.csv": {
       "checksum": "f57778cd0318c092c27ac5830d3fbaff"
@@ -2571,7 +2571,7 @@
       "checksum": "a7a30dd21f4eb93226222634370cc2eb"
     },
     "R/explain.R": {
-      "checksum": "5ca194274900acee074f2b1aec79326e"
+      "checksum": "8b42ce781e5f6c27cc19c12bdb316361"
     },
     "R/plots.R": {
       "checksum": "8809f4d9e9b6a606ca36de3a0fd22af1"

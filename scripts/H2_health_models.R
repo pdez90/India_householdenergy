@@ -28,7 +28,7 @@
 #                     failed its convergence checks and was abandoned
 #                     (docs/mime_v2_spec.md, Section 9).
 #   rank 3  SUPPORT   Regression-calibrated.
-#   rank 4  CONTEXT   Raw NFHS. Shown to display attenuation, not to be believed.
+#   rank 4  CONTEXT   Raw NFHS. Shown to display attenuation by measurement error.
 #
 # No row is a validated estimate with calibration uncertainty propagated.
 #
@@ -892,7 +892,7 @@ role_of <- function(rank) dplyr::case_when(
   rank == 1L ~ "CONDITIONAL / EXPLORATORY (corrected surface held fixed; interval excludes calibration uncertainty)",
   rank == 2L ~ "SENSITIVITY (exposure-only MI: calibration uncertainty propagated without conditioning on the outcome; known attenuation concern)",
   rank == 3L ~ "SUPPORT (regression-calibrated)",
-  rank == 4L ~ "CONTEXT (raw NFHS; attenuated, not to be believed)",
+  rank == 4L ~ "CONTEXT (raw NFHS; attenuated by measurement error)",
   TRUE       ~ NA_character_)
 
 results_all <- bind_rows(results, results_unwt, mi_results, mi_results_ic,

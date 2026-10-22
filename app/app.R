@@ -247,7 +247,7 @@ server <- function(input, output, session) {
              change_lpg_bayes_iresonly_MI = "Corrected (IRES calibration both rounds), exposure-only imputation",
              change_lpg_bayes_accesswt = "Corrected (design-weighted ACCESS reference), held fixed",
              change_lpg_bayes_accesswt_MI = "Corrected (design-weighted ACCESS reference), exposure-only imputation")
-    data.frame(Outcome = h$outcome, Exposure = ifelse(is.na(lab[h$term]), h$term, lab[h$term]), Role = h$evidence_role,
+    data.frame(Outcome = h$outcome, Exposure = ifelse(is.na(lab[h$term]), h$term, lab[h$term]), Role = sub("attenuated, not to be believed", "attenuated by measurement error", h$evidence_role, fixed = TRUE),
                `Per 10 pp` = num(per10(h), 3),
                `95% CI (CR2)` = paste(num(10 * h$ci_cr2_low, 3), "to", num(10 * h$ci_cr2_high, 3)),
                `p (CR2)` = pfmt(h$p_cr2), `p (conv.)` = pfmt(h$p), check.names = FALSE)

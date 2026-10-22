@@ -53,7 +53,7 @@ story_lessons <- function(B, K) {
     layout_columns(col_widths = c(6, 6),
       lesson("1. One 'main fuel' question cannot carry the weight put on it",
         P("NFHS asks a single question: the household's <i>main</i> cooking fuel. Many rural LPG users also report burning wood, dung or crop residue",
-          if (!is.null(ires_vp)) paste0(" (", pp(ires_vp$stacking_share, 0), "% of IRES rural households whose main fuel is LPG also burn solid fuel)") else "",
+          if (!is.null(ires_vp)) paste0(" (", pp(ires_vp$stacking_share, 0), "% of IRES rural households whose main fuel is LPG also report burning solid fuel)") else "",
           ", and the 'main' fuel can change with the season, with what is being cooked, and with whether a cylinder is in the house. ",
           "During the LPG scale-up the same question stopped lining up with dedicated energy surveys: NFHS-4 and ACCESS agreed to within ",
           BB(num(abs(K$d15), 1), " points"), " in 2015, while NFHS-5 recorded ", BB(num(abs(K$d19), 0), " points"),
@@ -82,11 +82,11 @@ story_lessons <- function(B, K) {
           if (!is.null(loso)) paste0(", and predicting a held-out state ",
                                      if (isTRUE(loso$skill_vs_benchmark <= 0)) "does no better than" else "improves only modestly on",
                                      " the national average (r = ", num(loso$r_state, 2),
-                                     "; skill ", signed(loso$skill_vs_benchmark, 2), ")") else "", ". "),
+                                     "; skill ", num(round(loso$skill_vs_benchmark, 2) + 0, 2), ")") else "", ". "),
         if (!is.null(ires_vp))
-          P("The reason is that stacking is mostly about <i>place</i>: in IRES, ", BB(num(ires_vp$pct_place_total, 0), "%"),
+          P("Stacking varies more with <i>place</i> than with the household characteristics a national survey records: in IRES, ", BB(num(ires_vp$pct_place_total, 0), "%"),
             " of the variation (on the latent logit scale of a multilevel model, not a share of observed outcomes) lies between states, districts and villages, while those household characteristics explain ",
-            BB(num(ires_vp$marginal_r2_household_pct, 0), "%"), ". Supply, price and local habit drive stacking, and NFHS records none of them."),
+            BB(num(ires_vp$marginal_r2_household_pct, 0), "%"), " (in the two ACCESS waves the place share is smaller, but still larger than the household share). Place-level factors such as supply, price and local habit are plausible drivers, and NFHS records none of them."),
         P(class = "why", "Some household associations point the same way in more than one survey (for example, larger and poorer households stack more), but the stacking relationship as a whole did not transfer reliably between surveys, ",
           "and reported use of solid fuel says nothing about how often or how much it is burned. ",
           actionLink(nav_id("story", "stacking"), "See the stacking analysis \u2192"))))
