@@ -1,0 +1,7 @@
+quantity,value,definition
+n,6481,ACCESS household-wave observations (both waves) reporting LPG use (any-use item m4_q103_lpg) and a nonzero cylinder-refill count
+mean_kg_yr,96.83829655917296,ACCESS household-wave observations (both waves) reporting LPG use (any-use item m4_q103_lpg) and a nonzero cylinder-refill count
+median_kg_yr,85.19999999999999,ACCESS household-wave observations (both waves) reporting LPG use (any-use item m4_q103_lpg) and a nonzero cylinder-refill count
+q25_kg_yr,56.8,ACCESS household-wave observations (both waves) reporting LPG use (any-use item m4_q103_lpg) and a nonzero cylinder-refill count
+q75_kg_yr,142,ACCESS household-wave observations (both waves) reporting LPG use (any-use item m4_q103_lpg) and a nonzero cylinder-refill count
+sd_kg_yr,51.5366275940181,ACCESS household-wave observations (both waves) reporting LPG use (any-use item m4_q103_lpg) and a nonzero cylinder-refill count

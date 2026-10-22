@@ -1,0 +1,7 @@
+quantity,n_districts
+NFHS-4 districts with a raw multilevel estimate,627
+NFHS-5 districts with a raw multilevel estimate,631
+NFHS-4 districts with a corrected (Bayes) estimate,627
+NFHS-5 districts with a corrected (Bayes) estimate,631
+Rural districts with a neonatal-mortality estimate,631
+Rural districts with an infant-mortality estimate,631

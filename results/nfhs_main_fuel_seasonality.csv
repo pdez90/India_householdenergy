@@ -1,0 +1,13 @@
+"survey","specification","term","pp_vs_winter","se_pp","p","n_clusters","n_districts_multi_season","n_districts_total"
+"NFHS5","district fixed effects","Summer (Mar-May)",0.702528678101834,0.855329274969544,0.411444286606018,8117,211,631
+"NFHS5","district fixed effects","Monsoon (Jun-Sep)",0.873061988019667,2.26732596718949,0.700191181476183,8117,211,631
+"NFHS5","district fixed effects","Post-monsoon (Oct-Nov)",2.3352607764927,1.37210603034956,0.088764069653478,8117,211,631
+"NFHS5","district fixed effects + linear time trend","Summer (Mar-May)",0.588504540228125,0.848573422951804,0.487981874475796,8117,211,631
+"NFHS5","district fixed effects + linear time trend","Monsoon (Jun-Sep)",1.0576503225553,2.25131826622828,0.638503944251877,8117,211,631
+"NFHS5","district fixed effects + linear time trend","Post-monsoon (Oct-Nov)",2.4231093239148,1.36639186558324,0.0761685097216032,8117,211,631
+"NFHS4","district fixed effects","Summer (Mar-May)",-1.56099104832991,0.887614839152582,0.0786394235407012,8132,249,627
+"NFHS4","district fixed effects","Monsoon (Jun-Sep)",1.01072180092539,1.39341740109457,0.468234482650293,8132,249,627
+"NFHS4","district fixed effects","Post-monsoon (Oct-Nov)",1.91388571248323,1.329549962228,0.150009220473419,8132,249,627
+"NFHS4","district fixed effects + linear time trend","Summer (Mar-May)",-1.06521599760915,0.942336213128373,0.258308097486722,8132,249,627
+"NFHS4","district fixed effects + linear time trend","Monsoon (Jun-Sep)",2.15712969367416,1.57473160350584,0.170736980719888,8132,249,627
+"NFHS4","district fixed effects + linear time trend","Post-monsoon (Oct-Nov)",2.86324638656907,1.51682817281223,0.0590724493295369,8132,249,627

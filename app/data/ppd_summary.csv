@@ -1,0 +1,21 @@
+quantity,value
+jensen_gap_change_mean_pp,-0.422967966902405
+jensen_gap_change_maxabs_pp,2.09237404963483
+jensen_rel_shift_infant_pct,0.651662669776066
+jensen_rel_shift_neonatal_pct,0.137757927060765
+sigma_2015,0.120144266494756
+sigma_2019,0.69164536536573
+sigma_source,brms posterior draws (root-mean-square summary)
+sd_inflation_2015,1.09752677226305
+sd_inflation_2019,2.20944771179275
+ppd_beta_infant,-0.00297610133583077
+ppd_se_infant,0.00549187631106478
+ppd_p_infant,0.642934283762516
+ppd_fmi_infant,0.510684422256274
+ppd_beta_neonatal,-0.00196413696183902
+ppd_se_neonatal,0.00389239179072937
+ppd_p_neonatal,0.663906928731203
+ppd_fmi_neonatal,0.494664130844115
+ppd_vs_epred_beta_ratio_infant,0.345027245931277
+ppd_vs_epred_se_ratio_infant,0.429615484093302
+have_sigma,1

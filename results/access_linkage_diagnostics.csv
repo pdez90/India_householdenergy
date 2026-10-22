@@ -1,0 +1,12 @@
+metric,value
+ACCESS households (both waves),17635
+ACCESS Wave 1 households,8563
+ACCESS Wave 2 households,9072
+ACCESS Wave 1 districts,51
+ACCESS Wave 2 districts,54
+"Wave 1 households re-listed in Wave 2 (share, this file)",1
+households matched to an NFHS-4 district (by census code),17635
+households unmatched (excluded from district estimates),0
+"ACCESS districts, total",54
+ACCESS districts matched,54
+share of households matched,1

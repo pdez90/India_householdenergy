@@ -1,0 +1,29 @@
+survey,role,column,n_total,n_missing,pct_missing
+NFHS-4,Primary-LPG exposure,lpg,601509,0,0
+NFHS-4,Caste,caste,601509,27714,4.61
+NFHS-4,Religion,hh_relig,601509,0,0
+NFHS-4,Household size,hh_size,601509,0,0
+NFHS-4,BPL/ration card,bpl,601509,1173,0.2
+NFHS-4,Electricity,electricity,601509,0,0
+NFHS-4,Wealth (index/expenditure),wealth_score,601509,0,0
+NFHS-5,Primary-LPG exposure,lpg,636699,0,0
+NFHS-5,Caste,caste,636699,31950,5.02
+NFHS-5,Religion,hh_relig,636699,0,0
+NFHS-5,Household size,hh_size,636699,0,0
+NFHS-5,BPL/ration card,bpl,636699,1080,0.17
+NFHS-5,Electricity,electricity,636699,0,0
+NFHS-5,Wealth (index/expenditure),wealth_score,636699,0,0
+ACCESS (both waves),Primary-LPG exposure,main_fuel_lpg,17635,0,0
+ACCESS (both waves),Caste,caste,17635,1,0.01
+ACCESS (both waves),Religion,religion,17635,0,0
+ACCESS (both waves),Household size,hhsize,17635,0,0
+ACCESS (both waves),BPL/ration card,bplaay,17635,0,0
+ACCESS (both waves),Electricity,electricity,17635,0,0
+ACCESS (both waves),Wealth (index/expenditure),month_exp,17635,64,0.36
+IRES,Primary-LPG exposure,main_fuel_lpg,14851,0,0
+IRES,Caste,caste,14851,331,2.23
+IRES,Religion,religion,14851,0,0
+IRES,Household size,hhsize,14851,0,0
+IRES,BPL/ration card,bplaay,14851,544,3.66
+IRES,Electricity,electricity,14851,0,0
+IRES,Wealth (index/expenditure),month_exp,14851,2392,16.11

@@ -1,0 +1,45 @@
+===================== 2015 ( 644852 rows ) =====================
+raw IR: DHS_India/IAIR74DT/IAIR74FL.DTA
+raw MR: DHS_India/IAMR74DT/IAMR74FL.DTA
+id columns present in cvd_load: caseid, mcaseid, v001, v002, v003, mv001, mv002, mv003, kind
+linked to raw recode: 644852 of 644852 (women 542590/542590, men 102262/102262)
+
+  BP or told or medicated (coalesce rule): agreement 1.00000 on 622005 rows; NA mismatch 10504
+          stored
+recomputed      0      1   <NA>
+      0    511280      0   9492
+      1         0 110725   1012
+      <NA>      0      0  12343
+
+  BP or told or medicated (NA if any component missing): agreement 1.00000 on 622005 rows; NA mismatch 0
+          stored
+recomputed      0      1   <NA>
+      0    511280      0      0
+      1         0 110725      0
+      <NA>      0      0  22847
+
+  flagged despite normal measured BP: 41746; of these told or medicated: 41746 (100.00%)
+  normal BP and NOT flagged: 511280; of these told or medicated: 0 (should be 0)
+
+===================== 2019 ( 685435 rows ) =====================
+raw IR: ACCESS_energy/nfhs5_IR_7E/IAIR7EDT/IAIR7EFL.DTA
+raw MR: DHS_India/India2019/IAMR7DDT/IAMR7DFL.DTA
+id columns present in cvd_load: caseid, mcaseid, v001, v002, v003, mv001, mv002, mv003, kind
+linked to raw recode: 685435 of 685435 (women 589047/589047, men 96388/96388)
+
+  BP or told or medicated (coalesce rule): agreement 1.00000 on 617700 rows; NA mismatch 41910
+          stored
+recomputed      0      1   <NA>
+      0    511417      0  39565
+      1         0 106283   2345
+      <NA>      0      0  25825
+
+  BP or told or medicated (NA if any component missing): agreement 1.00000 on 617700 rows; NA mismatch 0
+          stored
+recomputed      0      1   <NA>
+      0    511417      0      0
+      1         0 106283      0
+      <NA>      0      0  67735
+
+  flagged despite normal measured BP: 30738; of these told or medicated: 30738 (100.00%)
+  normal BP and NOT flagged: 511417; of these told or medicated: 0 (should be 0)

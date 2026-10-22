@@ -1,0 +1,33 @@
+frame,variable,n_nonmissing,n_distinct,usable
+"NFHS-4 (ACCESS states, rural)",lpg,179641,2,TRUE
+"NFHS-4 (ACCESS states, rural)",sc,175654,2,TRUE
+"NFHS-4 (ACCESS states, rural)",st,175654,2,TRUE
+"NFHS-4 (ACCESS states, rural)",scst,175654,2,TRUE
+"NFHS-4 (ACCESS states, rural)",hindu,179641,2,TRUE
+"NFHS-4 (ACCESS states, rural)",muslim,179641,2,TRUE
+"NFHS-4 (ACCESS states, rural)",electricity,179641,2,TRUE
+"NFHS-4 (ACCESS states, rural)",bpl,179475,2,TRUE
+ACCESS W1,lpg,8563,2,TRUE
+ACCESS W1,sc,8563,2,TRUE
+ACCESS W1,st,8563,2,TRUE
+ACCESS W1,scst,8563,2,TRUE
+ACCESS W1,hindu,8563,2,TRUE
+ACCESS W1,muslim,8563,2,TRUE
+ACCESS W1,electricity,8563,2,TRUE
+ACCESS W1,bpl,8563,2,TRUE
+NFHS-5 (rural),lpg,476561,2,TRUE
+NFHS-5 (rural),sc,454113,2,TRUE
+NFHS-5 (rural),st,454113,2,TRUE
+NFHS-5 (rural),scst,454113,2,TRUE
+NFHS-5 (rural),hindu,476561,2,TRUE
+NFHS-5 (rural),muslim,476561,2,TRUE
+NFHS-5 (rural),electricity,476561,2,TRUE
+NFHS-5 (rural),bpl,475826,2,TRUE
+IRES (rural),lpg,9813,2,TRUE
+IRES (rural),sc,9616,2,TRUE
+IRES (rural),st,9616,2,TRUE
+IRES (rural),scst,9616,2,TRUE
+IRES (rural),hindu,9813,2,TRUE
+IRES (rural),muslim,9813,2,TRUE
+IRES (rural),electricity,9813,2,TRUE
+IRES (rural),bpl,9563,2,TRUE

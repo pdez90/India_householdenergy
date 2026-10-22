@@ -1,0 +1,8 @@
+quantity,value
+n_dated,14851
+pct_before_march_2020,97.97
+pct_in_nov2019_mar2020,99.98
+n_out_of_window,3
+min_date,2018-12-25
+max_date,2020-12-15
+date_column,interview_date

@@ -1,0 +1,17 @@
+column,meaning
+district,"2011 census district code, the key used throughout the analysis"
+dist_name,district name as in the analysis shapefile
+state_name,state name as in the analysis shapefile
+raw_ml_2015/2019,RAW NFHS: multilevel (glmer) rural district estimate. The paper's primary raw specification.
+raw_wt_2015/2019,RAW NFHS: design-weighted direct rural estimate (Taylor-linearized).
+raw_wt_se_2015/2019,"design-based standard error of the above, on the probability scale"
+rc_ml_2015/2019,"REGRESSION CALIBRATION fitted on the multilevel estimate. Transparent, carries no uncertainty."
+rc_wt_2015/2019,REGRESSION CALIBRATION refitted on the design-weighted estimate. The input-sensitivity variant; agrees with rc_ml at r = 0.98.
+bayes_2015/2019,"BAYESIAN measurement-error correction: posterior mean of the district's latent logit prevalence, back-transformed. THE PAPER'S PRIMARY CORRECTED SURFACE."
+bayes_lo_2015/2019,2.5th percentile of the posterior for the corrected prevalence
+bayes_hi_2015/2019,"97.5th percentile of the posterior (with the above, a 95% credible interval)"
+bayes_iresonly_2015,2015 corrected with the IRES calibration instead of ACCESS: the instrument-consistent sensitivity
+extrapolated_2015/2019,"TRUE means the district is OUTSIDE the states the calibration was estimated on, so its state effect was drawn from the fitted distribution rather than estimated. TREAT THESE ESTIMATES WITH CAUTION. For 2015 this is true of most of India, because ACCESS covers six states."
+outside_calib_range_2015/2019,"TRUE means the district's raw design-weighted prevalence (raw_wt) lies OUTSIDE the range the calibration was fitted over, so the correction is an extrapolation on the prevalence scale too. Treat with caution."
+change_bayes,"bayes_2019 - bayes_2015. This, not the levels, is the exposure in the health models."
+change_raw_ml,"raw_ml_2019 - raw_ml_2015, for comparison"

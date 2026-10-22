@@ -1,0 +1,57 @@
+"step","pop","message","call","class"
+"H1_prep_mortality.R","","There were 13 warnings in `dplyr::summarise()`.
+The first warning was:
+ℹ In argument: `m = survey_mean(.y, na.rm = TRUE)`.
+ℹ In group 229: `district = ""304""`.
+Caused by warning in `onestrat()`:
+! Stratum (82122) has only one PSU at stage 1
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 12 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
+"H1_prep_mortality.R","","There were 13 warnings in `dplyr::summarise()`.
+The first warning was:
+ℹ In argument: `m = survey_mean(.y, na.rm = TRUE)`.
+ℹ In group 229: `district = ""304""`.
+Caused by warning in `onestrat()`:
+! Stratum (82122) has only one PSU at stage 1
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 12 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
+"H1_prep_mortality.R","","There were 20 warnings in `dplyr::summarise()`.
+The first warning was:
+ℹ In argument: `m = survey_mean(.y, na.rm = TRUE)`.
+ℹ In group 229: `district = ""304""`.
+Caused by warning in `onestrat()`:
+! Stratum (82122) has only one PSU at stage 1
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 19 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
+"H1_prep_mortality.R","","There were 20 warnings in `dplyr::summarise()`.
+The first warning was:
+ℹ In argument: `m = survey_mean(.y, na.rm = TRUE)`.
+ℹ In group 229: `district = ""304""`.
+Caused by warning in `onestrat()`:
+! Stratum (82122) has only one PSU at stage 1
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 19 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
+"H1_prep_mortality.R","","There were 13 warnings in `dplyr::summarise()`.
+The first warning was:
+ℹ In argument: `m = survey_mean(.y, na.rm = TRUE)`.
+ℹ In group 229: `district = ""304""`.
+Caused by warning in `onestrat()`:
+! Stratum (82122) has only one PSU at stage 1
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 12 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
+"H1_prep_mortality.R","","There were 13 warnings in `dplyr::summarise()`.
+The first warning was:
+ℹ In argument: `m = survey_mean(.y, na.rm = TRUE)`.
+ℹ In group 171: `district = ""252""`.
+Caused by warning in `onestrat()`:
+! Stratum (80722) has only one PSU at stage 1
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 12 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
+"07_diagnostics_maps.R","","Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"07_diagnostics_maps.R","","Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"07_diagnostics_maps.R","","Removed 8 rows containing non-finite outside the scale range (`stat_bin()`).","NULL","ggplot dropped missing rows"
+"07_diagnostics_maps.R","","Removed 32 rows containing non-finite outside the scale range (`stat_bin()`).","NULL","ggplot dropped missing rows"
+"10_make_figures.R","","Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"10_make_figures.R","","Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"10_make_figures.R","","Removed 11 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"10_make_figures.R","","Removed 11 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"

@@ -1,0 +1,90 @@
+Objects in cvd_load.RData: all_2015, all_2019, men_2015, men_2019, months, women_2015, women_2019
+
+===================== all_2015 ( 644852 rows ) =====================
+Sample restrictions present in the file:
+  women  n=542590   age 15-49
+  men    n=102262   age 15-54
+  timelived: min 5, any 96: FALSE, any < 5: FALSE
+  currently_pregnant values: 0
+  components present: systolic23, diastolic23, diabetes_report, glucoselevel, timesincelast, diabetestest, hypertension1_23, diabetes
+
+  hypertension1_23 vs recomputed (NA if any component missing; India2019.Rmd rule)
+recomputed      0      1   <NA>
+      <NA> 511280 110725  22847
+  agreement where both non-missing: NaN (n = 0); NA mismatch: 622005
+
+  hypertension1_23 vs recomputed (coalesce rule; india_*_precisionwt.Rmd)
+recomputed      0      1   <NA>
+      1         0  68979     69
+      <NA> 511280  41746  22778
+  agreement where both non-missing: 1.00000 (n = 68979); NA mismatch: 553095
+
+  hypertension1_23 vs measured BP only (readings 2-3, 140/90)
+recomputed      0      1   <NA>
+      0    511280  41746     18
+      1         0  68979     69
+      <NA>      0      0  22760
+  agreement where both non-missing: 0.93288 (n = 622005); NA mismatch: 87
+
+  diabetes vs recomputed (no NA override)
+recomputed      0      1   <NA>
+      0    600412      0      0
+      1         0  15352      0
+      <NA>      0      0  29088
+  agreement where both non-missing: 1.00000 (n = 615764); NA mismatch: 0
+
+  diabetes vs recomputed (NA override to 0 when the other component is 0)
+recomputed      0      1   <NA>
+      0    600412      0  28848
+      1         0  15352      0
+      <NA>      0      0    240
+  agreement where both non-missing: 1.00000 (n = 615764); NA mismatch: 28848
+
+  diabetes_report vs self-report item
+recomputed      0      1   <NA>
+      0    624994      0      0
+      1         0  10072      0
+      <NA>      0      0   9786
+
+===================== all_2019 ( 685435 rows ) =====================
+Sample restrictions present in the file:
+  women  n=589047   age 15-49
+  men    n=96388    age 15-54
+  timelived: min 5, any 96: FALSE, any < 5: FALSE
+  currently_pregnant values: 0
+  components present: systolic23, diastolic23, diabetes_report, glucoselevel, timesincelast, diabetestest, hypertension1_23, diabetes
+
+  hypertension1_23 vs recomputed (NA if any component missing; India2019.Rmd rule)
+recomputed      0      1   <NA>
+      <NA> 511417 106283  67735
+
+  hypertension1_23 vs recomputed (coalesce rule; india_*_precisionwt.Rmd)
+recomputed      0      1   <NA>
+      1         0  75545     32
+      <NA> 511417  30738  67703
+
+  hypertension1_23 vs measured BP only (readings 2-3, 140/90)
+recomputed      0      1   <NA>
+      0    511417  30738     84
+      1         0  75545     32
+      <NA>      0      0  67619
+  agreement where both non-missing: 0.95024 (n = 617700); NA mismatch: 116
+
+  diabetes vs recomputed (no NA override)
+recomputed      0      1   <NA>
+      0    619587      0      0
+      1         0  18448      0
+      <NA>      0      0  47400
+  agreement where both non-missing: 1.00000 (n = 638035); NA mismatch: 0
+
+  diabetes vs recomputed (NA override to 0 when the other component is 0)
+recomputed      0      1   <NA>
+      0    619587      0  47106
+      1         0  18448      0
+      <NA>      0      0    294
+
+  diabetes_report vs self-report item
+recomputed      0      1   <NA>
+      0    664706      0      0
+      1         0  12667      0
+      <NA>      0      0   8062

@@ -1,0 +1,3 @@
+"criterion","value","pass"
+"primary variant, long run: share of datasets mixed (>= 0.95)",0.657142857142857,FALSE
+"pooled estimate stable between run lengths (< 0.25 SE) in >= 95% of datasets",0.942857142857143,FALSE

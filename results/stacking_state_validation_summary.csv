@@ -1,0 +1,3 @@
+"check","n_states","r_state","rmse_model_pp","rmse_benchmark_pp","mae_model_pp","skill_vs_benchmark","observed_range_pp"
+"IRES leave-one-state-out",19,-0.278648868194916,19.8098538899859,19.727450476581,15.938894828253,-0.00417709391807719,"14-90"
+"IRES model -> ACCESS Wave 1 states",6,0.781991147143034,11.504514165893,12.8690267586901,10.6925362737175,0.106030752626707,"41-73"

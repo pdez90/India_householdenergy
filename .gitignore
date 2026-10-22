@@ -1,0 +1,14 @@
+# survey microdata and analysis outputs are never committed
+*.rds
+*.RData
+*.dta
+*.sav
+*.zip
+*.rar
+run_log.txt
+diagnostics/
+# ...but the published copy of the run's diagnostics is part of results/
+!/results/diagnostics/
+node_modules/
+.DS_Store
+*.pre_*

@@ -1,0 +1,3 @@
+survey,auc,brier,district_r,validated_model,production_model
+ACCESS W1,0.609515889799395,0.22480620414299993,0.2393312355048625,"context-free transport: household predictors + state fixed effects (no dist_lpg, no random effects)",household predictors + dist_lpg + (1|state) + (1|district)
+IRES rural,0.651598907199646,0.23372767128503225,0.4276376033788303,"context-free transport: household predictors + state fixed effects (no dist_lpg, no random effects)",household predictors + dist_lpg + (1|state) + (1|district)

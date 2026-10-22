@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived district estimates, please cite the paper."
+title: "India Household Energy: comparing, calibrating and using district LPG estimates"
+abstract: >-
+  Analysis pipeline for evaluating, calibrating and augmenting the single
+  cooking-fuel question in India's National Family Health Survey against two
+  dedicated household energy surveys (ACCESS, IRES) and the NSS 78th-round
+  Multiple Indicator Survey, and for propagating the resulting exposure
+  uncertainty into district-level child-mortality analyses.
+type: software
+license: ISC
+repository-code: "https://github.com/pdez90/India_householdenergy"
+authors:
+  - family-names: deSouza
+    given-names: Priyanka
+keywords:
+  - exposure assessment
+  - measurement error
+  - clean cooking
+  - household air pollution
+  - small-area estimation
+  - India

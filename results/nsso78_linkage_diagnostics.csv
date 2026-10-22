@@ -1,0 +1,10 @@
+metric,value
+"NSSO-78 households, total (Level 03)",276409
+sum of design weights (million households),265.1
+NSS (state x district) code pairs in data,684
+pairs resolved by the district key,684
+households with a census-2011 district,276409
+households whose census-2011 code is missing from the shapefile,0
+distinct census-2011 districts,639
+key rows resolved exact / alias / parent2011,633 / 5 / 47
+share of households rural (unweighted),0.5952

@@ -1,0 +1,9 @@
+quantity,value
+between_round_correlation_true_values,0.8350912356236394
+between_round_correlation_ci_lo,0.7858659471724337
+between_round_correlation_ci_hi,0.88365383238495
+between_round_covariance,0.27799711074810585
+median_posterior_correlation,0.19911914906018144
+n_districts_both_rounds,626
+bootstrap_replicates,500
+bootstrap_failed,0

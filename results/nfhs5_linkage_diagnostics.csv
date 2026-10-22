@@ -1,0 +1,22 @@
+metric,value
+"NFHS-5 households, total",636699
+households with unrecorded GPS (lat = lon = 0 in DHS release),2437
+NFHS-4 clusters,28526
+NFHS-4 clusters with coordinates,28395
+NFHS-5 clusters,30197
+NFHS-5 clusters with coordinates,30079
+NFHS-5 districts (2019 frame),707
+NFHS-5 clusters assigned by district name,27084
+"NFHS-5 clusters assigned by name, resolved by location (duplicate names)",0
+NFHS-5 clusters assigned to the 2011 parent by location,2690
+NFHS-5 clusters assigned cluster by cluster by location,381
+NFHS-5 clusters whose name match was overridden by location,42
+NFHS-5 clusters unassigned,0
+NFHS-5 clusters whose location vote had no same-state reference cluster,0
+"agreement of location vote with name match (name-matched clusters, before override)",0.9954
+NFHS-5 households assigned by district name,570415
+NFHS-5 households assigned by location,66284
+households unassigned,0
+share of households assigned,1
+NFHS-4 clusters inside a shapefile polygon,27422
+share of those in the polygon of their own DHS district,0.7249

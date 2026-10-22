@@ -1,0 +1,45 @@
+metric,value,source
+"NFHS-5 households, total",636699,NFHS5
+households with unrecorded GPS (lat = lon = 0 in DHS release),2437,NFHS5
+NFHS-4 clusters,28526,NFHS5
+NFHS-4 clusters with coordinates,28395,NFHS5
+NFHS-5 clusters,30197,NFHS5
+NFHS-5 clusters with coordinates,30079,NFHS5
+NFHS-5 districts (2019 frame),707,NFHS5
+NFHS-5 clusters assigned by district name,27084,NFHS5
+"NFHS-5 clusters assigned by name, resolved by location (duplicate names)",0,NFHS5
+NFHS-5 clusters assigned to the 2011 parent by location,2690,NFHS5
+NFHS-5 clusters assigned cluster by cluster by location,381,NFHS5
+NFHS-5 clusters whose name match was overridden by location,42,NFHS5
+NFHS-5 clusters unassigned,0,NFHS5
+NFHS-5 clusters whose location vote had no same-state reference cluster,0,NFHS5
+"agreement of location vote with name match (name-matched clusters, before override)",0.9954,NFHS5
+NFHS-5 households assigned by district name,570415,NFHS5
+NFHS-5 households assigned by location,66284,NFHS5
+households unassigned,0,NFHS5
+share of households assigned,1,NFHS5
+NFHS-4 clusters inside a shapefile polygon,27422,NFHS5
+share of those in the polygon of their own DHS district,0.7249,NFHS5
+ACCESS households (both waves),17635,ACCESS
+ACCESS Wave 1 households,8563,ACCESS
+ACCESS Wave 2 households,9072,ACCESS
+ACCESS Wave 1 districts,51,ACCESS
+ACCESS Wave 2 districts,54,ACCESS
+"Wave 1 households re-listed in Wave 2 (share, this file)",1,ACCESS
+households matched to an NFHS-4 district (by census code),17635,ACCESS
+households unmatched (excluded from district estimates),0,ACCESS
+"ACCESS districts, total",54,ACCESS
+ACCESS districts matched,54,ACCESS
+share of households matched,1,ACCESS
+"IRES households, total",14851,IRES
+households matched by census district code,14851,IRES
+households matched by state-aware district name,0,IRES
+households unmatched (excluded from district estimates),0,IRES
+"IRES districts, total",151,IRES
+IRES districts matched (code),151,IRES
+IRES districts matched (name fallback),0,IRES
+share of households matched,1,IRES
+IRES district sampling units (state x district name),152,IRES
+IRES distinct NFHS-4 districts,151,IRES
+IRES states,21,IRES
+share of households rural,0.6608,IRES

@@ -1,0 +1,3 @@
+survey,household_only_auc,plus_dist_lpg_auc_insample,context_auc_gain_leaky,note
+ACCESS W1,0.609515889799395,0.6222501248274445,0.0127,"dist_lpg leaks held-out district info; in-sample only, NOT honest out-of-district LDO gain"
+IRES rural,0.6577907746936645,0.6563072163592638,-0.0015,"dist_lpg leaks held-out district info; in-sample only, NOT honest out-of-district LDO gain"

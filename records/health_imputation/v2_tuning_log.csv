@@ -1,0 +1,4 @@
+attempt,change,cell,datasets,max_rhat,min_ess,within_approved_sampler,verdict
+1,calibration-index proposals per sweep 5 -> 25 (long run),S2 beta1,1;2,1.10;1.07,40;77,yes,not fixed
+2,"as attempt 1, with thinning 40 -> 100",S2 beta1,1,1.11,38,yes,not fixed
+3,extra calibration-index move holding non-calibrated state effects fixed (with Jacobian term); diagnostic only,S2 beta1,1;2,1.26;1.13,14;28,no,worse

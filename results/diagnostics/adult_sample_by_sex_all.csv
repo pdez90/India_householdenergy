@@ -1,0 +1,13 @@
+"year","stage","sex","n","n_hypertension","n_diabetes","n_diabetes_sr"
+2015,"1 all respondents in cvd_load","men",102262,97656,97261,101118
+2015,"1 all respondents in cvd_load","women",542590,524349,518503,533948
+2019,"1 all respondents in cvd_load","men",96388,87851,88179,95330
+2019,"1 all respondents in cvd_load","women",589047,529849,549856,582043
+2015,"2 contributing to an outcome, district assigned","men",102197,97656,97261,101118
+2015,"2 contributing to an outcome, district assigned","women",542152,524349,518503,533948
+2019,"2 contributing to an outcome, district assigned","men",96308,87851,88179,95330
+2019,"2 contributing to an outcome, district assigned","women",588308,529849,549856,582043
+2015,"3 analysis frame (all households)","men",102197,97656,97261,101118
+2015,"3 analysis frame (all households)","women",542152,524349,518503,533948
+2019,"3 analysis frame (all households)","men",96308,87851,88179,95330
+2019,"3 analysis frame (all households)","women",588308,529849,549856,582043

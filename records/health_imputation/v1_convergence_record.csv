@@ -1,0 +1,6 @@
+analysis,source_file,runs,runs_passing,runs_failing,acc_idx_min,acc_idx_median,acc_idx_max,distinct_draws_min,rhat_max_worst,ess_min_worst
+"health models, main population",mime_diagnostics.csv,12,0,12,0.00117,0.0786,0.26137,2,Inf,5.0
+"health models, all-districts population",mime_diagnostics_all.csv,12,0,12,0.00177,0.10973,0.25095,2,Inf,5.0
+"health models, non-overlap population",mime_diagnostics_nonoverlap.csv,12,4,8,0.00155,0.09253,0.69842,2,Inf,5.0
+precision-frontier evaluations,design_mime_diagnostics.csv,233,74,159,0.00197,0.01765,1.0,1,Inf,5.0
+reference-design sensitivity,ppd_mime_diagnostics.csv,4,0,4,0.00127,0.0022,0.00235,2,Inf,5.0

@@ -1,0 +1,4 @@
+commit,date,event,stage_a_datasets,pass_threshold
+4ba8817,2026-10-21 06:10 MDT,"original specification: 3 scenarios (S1, S2, S3) x 2 effect sizes (0, beta1) x 10 datasets",60,57 of 60
+2caea13,2026-10-21 06:34 MDT,"amendment after collaborator review of 4ba8817, before any Stage A run: S3 split so that null scenarios are genuinely null (S3a nonlinear at 0 and beta1; heterogeneous slopes moved to S3b, non-zero mean, beta1 only, and S3c, zero mean, Stage B only); S3b added to Stage A as a seventh cell",70,67 of 70
+2caea13 (run),2026-10-21 12:40-13:34 MDT,Stage A run on the amended specification; 560 runs (70 datasets x 2 x 2 algorithm variants x 2 run lengths),70,67 of 70

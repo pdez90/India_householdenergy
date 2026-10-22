@@ -1,0 +1,15 @@
+survey,covariate,abs_z
+ACCESS W1,Wealth quintile (within-state),3.95
+ACCESS W1,Household size,3.4
+ACCESS W1,Household electricity,2.73
+ACCESS W1,Religion,0.99
+ACCESS W1,District LPG share (context),0.76
+ACCESS W1,Caste category,0.75
+ACCESS W1,BPL/ration card,0.74
+IRES rural,Wealth quintile (within-state),9.43
+IRES rural,Household size,6.87
+IRES rural,Caste category,3.15
+IRES rural,Religion,2.86
+IRES rural,BPL/ration card,2.39
+IRES rural,Household electricity,1.61
+IRES rural,District LPG share (context),1.53

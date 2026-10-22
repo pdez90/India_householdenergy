@@ -1,0 +1,13 @@
+metric,value
+"IRES households, total",14851
+households matched by census district code,14851
+households matched by state-aware district name,0
+households unmatched (excluded from district estimates),0
+"IRES districts, total",151
+IRES districts matched (code),151
+IRES districts matched (name fallback),0
+share of households matched,1
+IRES district sampling units (state x district name),152
+IRES distinct NFHS-4 districts,151
+IRES states,21
+share of households rural,0.6608

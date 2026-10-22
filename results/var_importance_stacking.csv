@@ -1,0 +1,13 @@
+survey,covariate,auc_drop,district_r_drop,auc_without
+ACCESS W1,Wealth quintile (within-state),0.0173,-0.0041,0.5922
+ACCESS W1,Household size,0.0097,-0.0642,0.5998
+ACCESS W1,Household electricity,0.0072,0.0176,0.6023
+ACCESS W1,Caste category,0.0029,0.009,0.6066
+ACCESS W1,Religion,6e-4,0.0529,0.6089
+ACCESS W1,BPL/ration card,-0.0022,-0.002,0.6117
+IRES rural,Wealth quintile (within-state),0.0251,-0.0291,0.6327
+IRES rural,Caste category,0.0131,0.039,0.6447
+IRES rural,Household size,0.0119,0.0111,0.6459
+IRES rural,BPL/ration card,0.0108,0.0374,0.647
+IRES rural,Religion,8e-4,0.0045,0.657
+IRES rural,Household electricity,1e-4,5e-4,0.6577

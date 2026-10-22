@@ -1,0 +1,15 @@
+"step","pop","message","call","class"
+"07_diagnostics_maps.R","","Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"07_diagnostics_maps.R","","Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"07_diagnostics_maps.R","","Removed 8 rows containing non-finite outside the scale range (`stat_bin()`).","NULL","ggplot dropped missing rows"
+"07_diagnostics_maps.R","","Removed 32 rows containing non-finite outside the scale range (`stat_bin()`).","NULL","ggplot dropped missing rows"
+"10_make_figures.R","","Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"10_make_figures.R","","Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"10_make_figures.R","","Removed 11 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"10_make_figures.R","","Removed 11 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"

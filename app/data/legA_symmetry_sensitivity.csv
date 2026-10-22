@@ -1,0 +1,8 @@
+quantity,value
+n_districts,627
+mean_abs_diff_pp,3.857
+median_diff_pp,-0.49
+max_abs_diff_pp,15.462
+corr_primary_sens,0.9978
+mean_primary_pc,22.331
+mean_sens_pc,24.243

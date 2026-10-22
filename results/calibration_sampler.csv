@@ -1,0 +1,8 @@
+quantity,value
+chains,4
+iter_total_per_chain,24000
+warmup_per_chain,12000
+post_warmup_draws_total,48000
+adapt_delta,0.999
+max_treedepth,15
+seed,1234

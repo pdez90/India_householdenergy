@@ -1,0 +1,3 @@
+"fit","n_districts","n_calibrated_districts","n_calibrated_states","max_abs_diff_calibrated","newstate_mean","newstate_sd_ratio"
+"A",627,231,6,0.000440430122175121,-9.55477667642307e-05,1.00123736612368
+"B",631,531,19,0.000405253704643949,0.00184156072411754,1.00503577480713

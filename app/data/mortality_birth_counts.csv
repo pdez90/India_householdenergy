@@ -1,0 +1,7 @@
+population,window_months,variant,year,n_births_window,n_eligible_neonatal,n_eligible_infant,n_births_district_assigned,n_districts
+rural,120,rural,2015,405492,400910,363216,405492,627
+rural,120,rural,2019,387937,383179,348732,387937,631
+all,120,all,2015,532376,526561,477647,532376,640
+all,120,all,2019,488308,482522,439801,488308,639
+rural,36,rural_nonoverlap,2015,117610,113028,75334,117610,627
+rural,36,rural_nonoverlap,2019,108582,103824,69377,108582,630
