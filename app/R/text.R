@@ -218,7 +218,7 @@ step4_short <- function(K) {
       BB(num(K$nfhs19, 0), "%"), " for 2019. The rest comes from the calibration, which is much noisier in 2019 because NFHS-5 and IRES disagree district by district by more than sampling error explains.",
       if (isFALSE(K$decomp_ok)) " (In this run the decomposition failed an internal check, so treat these shares as rough.)" else ""),
     P(class = "why", "Why it matters: anyone using a corrected exposure map inherits both kinds of uncertainty. ",
-      "Holding the map fixed ignores the calibration part; this split is descriptive and does not say what a different validation survey would achieve.")
+      "Holding the map fixed ignores the calibration part; this split is descriptive and does not say what a differently designed reference survey would achieve.")
   )
 }
 

@@ -11,7 +11,9 @@
 "calibration_sampler.csv",7,149,"c6be2937d0031b37d713eea3d4abebbb",FALSE
 "calibration_state_effect_check.csv",2,265,"8d9c958c82eac4eef02d246ba5b20c58",FALSE
 "calibration_support_summary.csv",1,279,"ced1e04c2b983ee63bc52a0de6d035c5",FALSE
+"comparison_levels.csv",6,351,"1b8b90dd71964cf988a531e38fdbbda6",FALSE
 "comparison_table.csv",6,1025,"afef24bfe3a2c86b080396341a74bac1",FALSE
+"correction_revision_by_state_2019.csv",35,843,"26ce80f103c4f2192042d3bcd84f81e4",FALSE
 "design_summary.csv",4,145,"8926113fcccd3153205ac23414132bcb",FALSE
 "design_variance_decomposition.csv",2,679,"9cbdb9f958345932fe8464f80713c8e3",FALSE
 "design_vc_plugin_penalty.csv",2,677,"43145433df4304708d92b2212a490cc8",FALSE
@@ -72,7 +74,7 @@
 "ppd_summary.csv",20,774,"bf307f3b1d99be674181c99e7514e3b3",FALSE
 "ppd_surface_comparison.csv",2,627,"77b2dec46b49c82f6a1ca1b14402b37f",FALSE
 "reference_stacking_district.csv",202,11507,"f57778cd0318c092c27ac5830d3fbaff",FALSE
-"release_build.csv",10,558,"ab494235270b1d2b1caf407a3d40e204",TRUE
+"release_build.csv",10,588,"3bc4e06710a337a437c5b2ad82e0e303",TRUE
 "season_sensitivity.csv",3,287,"a0a229dc19330cb24e53352f075f974c",FALSE
 "si_adult_health_effects_all.csv",18,5442,"a446e285e341cd1c498fe62b7866216f",FALSE
 "si_adult_health_effects.csv",18,5459,"9e8ebab3e272e863a116043c10b8d41a",FALSE
@@ -101,7 +103,7 @@
 "diagnostics/bayes_fit_diagnostics.csv",3,265,"fb4d9647c5360003c130bd6756f82907",FALSE
 "diagnostics/model_fits_summary.csv",4,160,"cce481ea00fcbc99c79d10304367b222",FALSE
 "diagnostics/model_fits.csv",112,20217,"528eaf853c4989c2890f63b11d851131",FALSE
-"diagnostics/pipeline_checks.csv",242,32435,"08d9b9c6a98c8ea6158b3cb503ada687",FALSE
+"diagnostics/pipeline_checks.csv",244,32708,"755ff0bec636ef698952bd19b01228a8",FALSE
 "diagnostics/pipeline_warnings.csv",56,3539,"93be5f438971eb00b77b70aad4b5a838",FALSE
 "diagnostics/prev_model_fits.csv",51,8997,"1cc8bec0ea0840bf8deb2b4809893a55",FALSE
 "diagnostics/prev_pipeline_checks.csv",242,32792,"37b7392caac4a86435d61dcc48840289",FALSE
