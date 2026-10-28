@@ -13,10 +13,15 @@ rd <- function(f) {
 }
 
 # ---- formatting helpers ------------------------------------------------------
-pp   <- function(x, d = 1) ifelse(is.finite(x), formatC(100 * x, format = "f", digits = d), "NA")
-num  <- function(x, d = 2) ifelse(is.finite(x), formatC(x, format = "f", digits = d), "NA")
+# Round half away from zero on the decimal value, as the manuscript builder does
+# (nfmt), so the app and the paper print the same digits: formatC alone rounds
+# the binary value (-21.65 stored as -21.6499... prints -21.6 here but -21.7 in
+# the paper). "+ 0" turns a negative zero into "0.00" rather than "-0.00".
+rnd  <- function(x, d) { s <- signif(x * 10^d, 12); sign(s) * floor(abs(s) + 0.5) / 10^d + 0 }
+pp   <- function(x, d = 1) ifelse(is.finite(x), formatC(rnd(100 * x, d), format = "f", digits = d), "NA")
+num  <- function(x, d = 2) ifelse(is.finite(x), formatC(rnd(x, d), format = "f", digits = d), "NA")
 pfmt <- function(p) ifelse(!is.finite(p), "NA", ifelse(p < 0.001, "< 0.001", formatC(p, format = "f", digits = 3)))
-signed <- function(x, d = 1) ifelse(is.finite(x), sprintf(paste0("%+.", d, "f"), x), "NA")
+signed <- function(x, d = 1) ifelse(is.finite(x), sprintf(paste0("%+.", d, "f"), rnd(x, d)), "NA")
 qv <- function(tab, key, col = "value") {
   if (is.null(tab)) return(NA_real_)
   v <- tab[[col]][tab$quantity == key]
@@ -137,7 +142,7 @@ derive <- function(B) {
   # Corrected surfaces: district averages (unweighted)
   d <- B$dist
   if (!is.null(d)) {
-    K$raw15  <- mean(d$raw_wt_2015, na.rm = TRUE); K$raw19 <- mean(d$raw_wt_2019, na.rm = TRUE)
+    K$raw15  <- mean(d$raw_ml_2015, na.rm = TRUE); K$raw19 <- mean(d$raw_ml_2019, na.rm = TRUE)
     K$cor15  <- mean(d$bayes_2015,  na.rm = TRUE); K$cor19 <- mean(d$bayes_2019,  na.rm = TRUE)
     K$n_dist <- sum(is.finite(d$bayes_2019))
     K$ext19  <- mean(d$extrapolated_2019 %in% TRUE & is.finite(d$bayes_2019)) /
@@ -152,15 +157,17 @@ derive <- function(B) {
   if (!is.null(ml)) {
     g2 <- function(y, e) { v <- ml$mean_prev[ml$year == y & ml$estimator == e]; if (length(v)) as.numeric(v[1]) / 100 else NA_real_ }
     for (y in c(2015, 2019)) {
-      r <- g2(y, "Raw design-weighted"); c2 <- g2(y, "Bayesian-corrected")
+      r <- g2(y, "Raw multilevel"); c2 <- g2(y, "Bayesian-corrected")
       if (is.finite(r)) K[[paste0("raw", y %% 100)]] <- r
       if (is.finite(c2)) K[[paste0("cor", y %% 100)]] <- c2
     }
   }
   cs <- B$support
   if (!is.null(cs) && all(c("n_districts", "n_state_support_2015", "n_state_support_2019") %in% names(cs))) {
-    K$ext15 <- 1 - cs$n_state_support_2015[1] / cs$n_districts[1]
-    K$ext19 <- 1 - cs$n_state_support_2019[1] / cs$n_districts[1]
+    n15 <- if (!is.null(B$dist)) sum(is.finite(B$dist$bayes_2015)) else cs$n_districts[1]
+    n19 <- if (!is.null(B$dist)) sum(is.finite(B$dist$bayes_2019)) else cs$n_districts[1]
+    K$ext15 <- 1 - cs$n_state_support_2015[1] / n15   # districts corrected in that round
+    K$ext19 <- 1 - cs$n_state_support_2019[1] / n19
   }
   if (!is.null(B$loso_s)) {
     K$loso_impr <- B$loso_s$n_improved[1]; K$loso_n <- B$loso_s$n_states_tested[1]

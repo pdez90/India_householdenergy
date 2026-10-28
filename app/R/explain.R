@@ -42,7 +42,7 @@ story_lessons <- function(B, K) {
   vp <- B$vpart; ss <- B$stack_state_sum; ldo <- B$stack_ldo
   ires_vp <- if (!is.null(vp)) vp[grepl("IRES", vp$survey), ][1, ] else NULL
   loso <- if (!is.null(ss)) ss[grepl("leave-one-state-out", ss$check), ][1, ] else NULL
-  sig19 <- cal_par(B, "NFHS-5", "sd_residual"); sig15 <- cal_par(B, "NFHS-4", "sd_residual")
+  sig19 <- cal_par(B, "NFHS-5", "sd_residual_rms"); sig15 <- cal_par(B, "NFHS-4", "sd_residual_rms")   # posterior RMS, as in manuscript Section 3.4
   n19 <- cal_par(B, "NFHS-5", "n_districts")
   auc_rng <- if (!is.null(ldo)) paste0(num(min(ldo$auc), 2), "-", num(max(ldo$auc), 2)) else "NA"
 
