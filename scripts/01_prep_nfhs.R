@@ -344,9 +344,37 @@ india2019_hr <- add_wealth(india2019_hr)
 source("geo_crosswalk.R")
 .e15 <- new.env(); load(path_gps_2015, envir = .e15)
 .e19 <- new.env(); load(path_gps_2019, envir = .e19)
-XW <- build_nfhs_xwalk(.e15$gps, .e19$gps,
-  names4 = districts_2015 %>% st_drop_geometry() %>%
-    transmute(code = as.numeric(dist_code), name = dist_name))
+.names4 <- districts_2015 %>% st_drop_geometry() %>%
+  transmute(code = as.numeric(dist_code), name = dist_name)
+if (CROSSWALK_VERSION == "V2") {
+  # Version 2: documented history decides what each NFHS-5 district may contain;
+  # the 2011 boundaries (SHRUG) resolve membership among several documented
+  # parents. Version 1 is built inside and kept for comparison.
+  if (!file.exists(path_district_history)) stop("district history table not found: ", path_district_history)
+  if (!file.exists(path_pc11_districts))   stop("SHRUG 2011 district polygons not found: ", path_pc11_districts)
+  XW <- build_nfhs_xwalk_v2(.e15$gps, .e19$gps,
+                            pc11 = st_read(path_pc11_districts, quiet = TRUE),
+                            history = readr::read_csv(path_district_history, show_col_types = FALSE),
+                            names4 = .names4, variant = CROSSWALK_VARIANT)
+  message("crosswalk: version 2, variant '", CROSSWALK_VARIANT, "'")
+  # cluster-level files: restricted (DHS cluster IDs); never exported
+  readr::write_csv(XW$xwalk_v1, file.path(dir_out, "nfhs_cluster_district_xwalk_v1.csv"))
+  readr::write_csv(XW$audit,    file.path(dir_out, "nfhs5_crosswalk_audit.csv"))
+  # district-level summary of the audit: no cluster IDs, publishable
+  .au <- XW$audit
+  .ds <- .au %>% group_by(nfhs5_state, nfhs5_district, history_type, history_confidence) %>%
+    summarise(clusters = n(), with_gps = sum(has_gps),
+              outside_all_polygons = sum(overlay_status == "outside all 2011 polygons" | overlay_status == "outside all polygons"),
+              uncertain = sum(uncertain), near_boundary = sum(uncertainty_flag == "near boundary"),
+              fallback = sum(uncertainty_flag == "fallback"), no_gps_multi_parent = sum(uncertainty_flag == "no GPS"),
+              low_confidence_history = sum(history_low_confidence), excluded_by_variant = sum(excluded_by_variant),
+              changed_from_v1 = sum(changed_from_v1),
+              overlay_disagrees_with_final = sum(overlay_disagrees_with_final, na.rm = TRUE),
+              assigned_2011 = paste(sort(unique(stats::na.omit(final_district))), collapse = ";"), .groups = "drop")
+  readr::write_csv(.ds, file.path(dir_out, "crosswalk_v2_district_summary.csv"))
+} else {
+  XW <- build_nfhs_xwalk(.e15$gps, .e19$gps, names4 = .names4)
+}
 xw <- XW$xwalk
 readr::write_csv(xw, file.path(dir_out, "nfhs_cluster_district_xwalk.csv"))
 
@@ -373,6 +401,15 @@ india2019_hr <- india2019_hr %>%
   select(-any_of(c("district", "state_name", "dist_name"))) %>%
   left_join(xw5, by = c("hv001" = "cluster")) %>%
   left_join(nm_tbl, by = c("district" = "dist_code"))
+if (CROSSWALK_VERSION == "V2" && CROSSWALK_VARIANT == "exclude_uncertain") {
+  # Sensitivity variant: clusters with an uncertain assignment are absent from the
+  # crosswalk, so all of their households leave the analysis (H1/H4 drop their
+  # births and women the same way).
+  .n0 <- nrow(india2019_hr)
+  india2019_hr <- india2019_hr %>% filter(!is.na(district))
+  message(sprintf("crosswalk variant exclude_uncertain: %d NFHS-5 households in uncertain clusters removed",
+                  .n0 - nrow(india2019_hr)))
+}
 
 # ---- NFHS-5 -> NFHS-4 cluster-assignment diagnostics (for Methods/SI) ----------
 cluster_assign_2019 <- XW$nfhs5_detail %>%
@@ -527,6 +564,19 @@ chk("01", "every NFHS-5 location vote used same-state NFHS-4 neighbours",
     .dg("NFHS-5 clusters whose location vote had no same-state reference cluster") == 0,
     sprintf("%d clusters fell back to a national search (state-name mismatch)",
             as.integer(.dg("NFHS-5 clusters whose location vote had no same-state reference cluster"))))
+if (CROSSWALK_VERSION == "V2") {
+  chk("01", "v2 crosswalk: NFHS-4 clusters fall in their own DHS district on the 2011 boundaries (>= 95%)",
+      .dg("NFHS-4 clusters inside the polygon of their own DHS district (2011 boundaries, SHRUG)") >= 0.95,
+      sprintf("%.1f%%", 100 * .dg("NFHS-4 clusters inside the polygon of their own DHS district (2011 boundaries, SHRUG)")))
+  chk("01", "v2 crosswalk: every NFHS-5 cluster assigned",
+      .dg("v2: NFHS-5 clusters unassigned") == 0 &&
+        sum(XW$xwalk$survey == "NFHS5") == nrow(XW$audit) - sum(XW$audit$excluded_by_variant),
+      sprintf("%d clusters (%d excluded by the variant)", sum(XW$xwalk$survey == "NFHS5"), sum(XW$audit$excluded_by_variant)))
+  chk_warn("01", "v2 crosswalk: uncertain assignments (fallbacks) are few (< 1% of NFHS-5 clusters)",
+      .dg("v2: clusters flagged uncertain") < 0.01 * nrow(XW$audit),
+      sprintf("%d uncertain; %d clusters assigned differently from version 1",
+              as.integer(.dg("v2: clusters flagged uncertain")), as.integer(.dg("v2: clusters assigned differently from version 1"))))
+}
 chk("01", "every NFHS-4 household has a DHS district code",
     !anyNA(india2015_hr$district), sprintf("%d missing", sum(is.na(india2015_hr$district))))
 chk("01", "district table non-empty", nrow(nfhs_districts) > 500,

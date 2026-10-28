@@ -1,0 +1,14 @@
+metric,value
+NFHS-4 clusters with coordinates classified,28395
+"cluster-by-cluster accuracy (k = 7, same state, self excluded)",0.9193519985913012
+"cluster-by-cluster accuracy, clusters in 2011 districts later split or renamed",0.9013828238719068
+"cluster-by-cluster accuracy, other clusters",0.92127734237922565
+2011 districts later split or renamed (parents of location-assigned NFHS-5 districts),63
+share of clusters whose top label lacks an absolute majority (< 4 of 7),0.01887656277513647
+share of clusters with an exact tie for the top label,0.00979045606620884
+whole-district pooled vote: districts whose top label is their own code,1
+whole-district pooled vote: districts whose top label reaches VOTE_MIN (0.6),0.9984375
+whole-district pooled vote: districts wrongly labelled at or above VOTE_MIN,0
+whole-district pooled vote: accuracy among districts later split or renamed,1
+median pooled top-vote share (correct districts),0.8704318936877077
+median pooled top-vote share (incorrect districts),NA

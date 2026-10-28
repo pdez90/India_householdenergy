@@ -37,7 +37,7 @@ dir_out <- .dir_out()
 if (file.exists("checks.R")) source("checks.R")   # pipeline self-check helpers
 
 # NFHS-4 district shapefile (the dist_code geography used throughout 01-07/H1).
-path_districts_shp <- file.path(.dir_dhs(), "district_nfhs_shapefile/nfhs_data.shp")
+path_districts_shp <- file.path(.dir_dhs(), "district_pc11_shrug/nfhs_data.shp")   # SHRUG 2011 geometry; build_district_boundaries.R
 
 # van Donkelaar / ACAG annual PM2.5 netCDFs, named
 #   V5GL03.HybridPM25.Asia.<YYYY>01-<YYYY>12.nc   (same folder as India_lpg2.Rmd)

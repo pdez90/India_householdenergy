@@ -35,7 +35,7 @@
 ## ---- CONFIG (edit paths to match your machine) ------------------------------
 if (!exists(".env_dir")) source("paths.R")   # path resolution; fails loudly if unconfigured
 dir_out <- .dir_out()
-path_districts_shp <- file.path(.dir_dhs(), "district_nfhs_shapefile/nfhs_data.shp")
+path_districts_shp <- file.path(.dir_dhs(), "district_pc11_shrug/nfhs_data.shp")   # SHRUG 2011 geometry; build_district_boundaries.R
 
 # Optional fallback geometry (a GeoPackage carrying dist_code) if the shapefile
 # above is not found; the pipeline writes wave1_nfhs4.gpkg into dir_out.

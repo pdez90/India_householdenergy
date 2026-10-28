@@ -1,0 +1,641 @@
+district,district_name,state,n_clusters,share_in_own_polygon,modal_polygon,modal_polygon_name,modal_polygon_state,modal_share,pattern
+1,Kupwara,Jammu & Kashmir,37,0.972972972972973,1,Kupwara,Jammu & Kashmir,0.972972972972973,own polygon is modal
+2,Badgam,Jammu & Kashmir,37,1,2,Badgam,Jammu & Kashmir,1,own polygon is modal
+3,Leh(Ladakh),Jammu & Kashmir,38,1,3,Leh(Ladakh),Jammu & Kashmir,1,own polygon is modal
+4,Kargil,Jammu & Kashmir,38,0.9736842105263158,4,Kargil,Jammu & Kashmir,0.9736842105263158,own polygon is modal
+5,Punch,Jammu & Kashmir,38,1,5,Punch,Jammu & Kashmir,1,own polygon is modal
+6,Rajouri,Jammu & Kashmir,38,0.9736842105263158,6,Rajouri,Jammu & Kashmir,0.9736842105263158,own polygon is modal
+7,Kathua,Jammu & Kashmir,37,0.972972972972973,7,Kathua,Jammu & Kashmir,0.972972972972973,own polygon is modal
+8,Baramula,Jammu & Kashmir,37,0.9459459459459459,8,Baramula,Jammu & Kashmir,0.9459459459459459,own polygon is modal
+9,Bandipore,Jammu & Kashmir,38,0.9473684210526315,9,Bandipore,Jammu & Kashmir,0.9473684210526315,own polygon is modal
+10,Srinagar,Jammu & Kashmir,39,0.8974358974358975,10,Srinagar,Jammu & Kashmir,0.8974358974358975,own polygon is modal
+11,Ganderbal,Jammu & Kashmir,37,0.9459459459459459,11,Ganderbal,Jammu & Kashmir,0.9459459459459459,own polygon is modal
+12,Pulwama,Jammu & Kashmir,35,0.9428571428571428,12,Pulwama,Jammu & Kashmir,0.9428571428571428,own polygon is modal
+13,Shupiyan,Jammu & Kashmir,38,0.9473684210526315,13,Shupiyan,Jammu & Kashmir,0.9473684210526315,own polygon is modal
+14,Anantnag,Jammu & Kashmir,38,1,14,Anantnag,Jammu & Kashmir,1,own polygon is modal
+15,Kulgam,Jammu & Kashmir,36,0.8611111111111112,15,Kulgam,Jammu & Kashmir,0.8611111111111112,own polygon is modal
+16,Doda,Jammu & Kashmir,38,0.9736842105263158,16,Doda,Jammu & Kashmir,0.9736842105263158,own polygon is modal
+17,Ramban,Jammu & Kashmir,38,1,17,Ramban,Jammu & Kashmir,1,own polygon is modal
+18,Kishtwar,Jammu & Kashmir,38,1,18,Kishtwar,Jammu & Kashmir,1,own polygon is modal
+19,Udhampur,Jammu & Kashmir,37,0.972972972972973,19,Udhampur,Jammu & Kashmir,0.972972972972973,own polygon is modal
+20,Reasi,Jammu & Kashmir,38,0.9473684210526315,20,Reasi,Jammu & Kashmir,0.9473684210526315,own polygon is modal
+21,Jammu,Jammu & Kashmir,37,0.9459459459459459,21,Jammu,Jammu & Kashmir,0.9459459459459459,own polygon is modal
+22,Samba,Jammu & Kashmir,36,0.8888888888888888,22,Samba,Jammu & Kashmir,0.8888888888888888,own polygon is modal
+23,Chamba,Himachal Pradesh,38,0.9736842105263158,23,Chamba,Himachal Pradesh,0.9736842105263158,own polygon is modal
+24,Kangra,Himachal Pradesh,38,1,24,Kangra,Himachal Pradesh,1,own polygon is modal
+25,Lahul & Spiti,Himachal Pradesh,38,1,25,Lahul & Spiti,Himachal Pradesh,1,own polygon is modal
+26,Kullu,Himachal Pradesh,38,1,26,Kullu,Himachal Pradesh,1,own polygon is modal
+27,Mandi,Himachal Pradesh,38,1,27,Mandi,Himachal Pradesh,1,own polygon is modal
+28,Hamirpur,Himachal Pradesh,38,1,28,Hamirpur,Himachal Pradesh,1,own polygon is modal
+29,Una,Himachal Pradesh,37,0.9459459459459459,29,Una,Himachal Pradesh,0.9459459459459459,own polygon is modal
+30,Bilaspur,Himachal Pradesh,38,0.9736842105263158,30,Bilaspur,Himachal Pradesh,0.9736842105263158,own polygon is modal
+31,Solan,Himachal Pradesh,36,1,31,Solan,Himachal Pradesh,1,own polygon is modal
+32,Sirmaur,Himachal Pradesh,38,1,32,Sirmaur,Himachal Pradesh,1,own polygon is modal
+33,Shimla,Himachal Pradesh,37,1,33,Shimla,Himachal Pradesh,1,own polygon is modal
+34,Kinnaur,Himachal Pradesh,38,1,34,Kinnaur,Himachal Pradesh,1,own polygon is modal
+35,Gurdaspur,Punjab,38,1,35,Gurdaspur,Punjab,1,own polygon is modal
+36,Kapurthala,Punjab,38,0.9736842105263158,36,Kapurthala,Punjab,0.9736842105263158,own polygon is modal
+37,Jalandhar,Punjab,38,1,37,Jalandhar,Punjab,1,own polygon is modal
+38,Hoshiarpur,Punjab,38,1,38,Hoshiarpur,Punjab,1,own polygon is modal
+39,Shahid Bhagat Singh Nagar,Punjab,38,0.9736842105263158,39,Shahid Bhagat Singh Nagar,Punjab,0.9736842105263158,own polygon is modal
+40,Fatehgarh Sahib,Punjab,38,0.9736842105263158,40,Fatehgarh Sahib,Punjab,0.9736842105263158,own polygon is modal
+41,Ludhiana,Punjab,37,0.8648648648648649,41,Ludhiana,Punjab,0.8648648648648649,own polygon is modal
+42,Moga,Punjab,38,0.8947368421052632,42,Moga,Punjab,0.8947368421052632,own polygon is modal
+43,Firozpur,Punjab,37,1,43,Firozpur,Punjab,1,own polygon is modal
+44,Muktsar,Punjab,37,0.9459459459459459,44,Muktsar,Punjab,0.9459459459459459,own polygon is modal
+45,Faridkot,Punjab,38,1,45,Faridkot,Punjab,1,own polygon is modal
+46,Bathinda,Punjab,38,1,46,Bathinda,Punjab,1,own polygon is modal
+47,Mansa,Punjab,38,1,47,Mansa,Punjab,1,own polygon is modal
+48,Patiala,Punjab,38,0.9736842105263158,48,Patiala,Punjab,0.9736842105263158,own polygon is modal
+49,Amritsar,Punjab,38,1,49,Amritsar,Punjab,1,own polygon is modal
+50,Tarn Taran,Punjab,38,0.9473684210526315,50,Tarn Taran,Punjab,0.9473684210526315,own polygon is modal
+51,Rupnagar,Punjab,37,0.918918918918919,51,Rupnagar,Punjab,0.918918918918919,own polygon is modal
+52,Sahibzada Ajit Singh Nagar,Punjab,38,0.8947368421052632,52,Sahibzada Ajit Singh Nagar,Punjab,0.8947368421052632,own polygon is modal
+53,Sangrur,Punjab,38,0.9736842105263158,53,Sangrur,Punjab,0.9736842105263158,own polygon is modal
+54,Barnala,Punjab,38,0.9736842105263158,54,Barnala,Punjab,0.9736842105263158,own polygon is modal
+55,Chandigarh,Chandigarh,38,1,55,Chandigarh,Chandigarh,1,own polygon is modal
+56,Uttarkashi,Uttarakhaand,43,1,56,Uttarkashi,Uttarakhaand,1,own polygon is modal
+57,Chamoli,Uttarakhaand,43,1,57,Chamoli,Uttarakhaand,1,own polygon is modal
+58,Rudraprayag,Uttarakhaand,43,0.9767441860465116,58,Rudraprayag,Uttarakhaand,0.9767441860465116,own polygon is modal
+59,Tehri Garhwal,Uttarakhaand,43,1,59,Tehri Garhwal,Uttarakhaand,1,own polygon is modal
+60,Dehradun,Uttarakhaand,86,0.9767441860465116,60,Dehradun,Uttarakhaand,0.9767441860465116,own polygon is modal
+61,Garhwal,Uttarakhaand,43,0.9767441860465116,61,Garhwal,Uttarakhaand,0.9767441860465116,own polygon is modal
+62,Pithoragarh,Uttarakhaand,42,1,62,Pithoragarh,Uttarakhaand,1,own polygon is modal
+63,Bageshwar,Uttarakhaand,43,1,63,Bageshwar,Uttarakhaand,1,own polygon is modal
+64,Almora,Uttarakhaand,43,0.9534883720930233,64,Almora,Uttarakhaand,0.9534883720930233,own polygon is modal
+65,Champawat,Uttarakhaand,43,1,65,Champawat,Uttarakhaand,1,own polygon is modal
+66,Nainital,Uttarakhaand,86,0.9883720930232558,66,Nainital,Uttarakhaand,0.9883720930232558,own polygon is modal
+67,Udham Singh Nagar,Uttarakhaand,86,1,67,Udham Singh Nagar,Uttarakhaand,1,own polygon is modal
+68,Hardwar,Uttarakhaand,86,0.9651162790697675,68,Hardwar,Uttarakhaand,0.9651162790697675,own polygon is modal
+69,Panchkula,Haryana,38,0.9473684210526315,69,Panchkula,Haryana,0.9473684210526315,own polygon is modal
+70,Ambala,Haryana,38,0.9736842105263158,70,Ambala,Haryana,0.9736842105263158,own polygon is modal
+71,Yamunanagar,Haryana,38,0.9736842105263158,71,Yamunanagar,Haryana,0.9736842105263158,own polygon is modal
+72,Kurukshetra,Haryana,38,1,72,Kurukshetra,Haryana,1,own polygon is modal
+73,Kaithal,Haryana,38,0.9473684210526315,73,Kaithal,Haryana,0.9473684210526315,own polygon is modal
+74,Karnal,Haryana,38,1,74,Karnal,Haryana,1,own polygon is modal
+75,Panipat,Haryana,38,1,75,Panipat,Haryana,1,own polygon is modal
+76,Sonipat,Haryana,38,1,76,Sonipat,Haryana,1,own polygon is modal
+77,Jind,Haryana,37,0.9459459459459459,77,Jind,Haryana,0.9459459459459459,own polygon is modal
+78,Fatehabad,Haryana,38,0.9473684210526315,78,Fatehabad,Haryana,0.9473684210526315,own polygon is modal
+79,Sirsa,Haryana,38,1,79,Sirsa,Haryana,1,own polygon is modal
+80,Hisar,Haryana,37,1,80,Hisar,Haryana,1,own polygon is modal
+81,Bhiwani,Haryana,38,1,81,Bhiwani,Haryana,1,own polygon is modal
+82,Rohtak,Haryana,38,0.9736842105263158,82,Rohtak,Haryana,0.9736842105263158,own polygon is modal
+83,Jhajjar,Haryana,38,0.9736842105263158,83,Jhajjar,Haryana,0.9736842105263158,own polygon is modal
+84,Mahendragarh,Haryana,38,1,84,Mahendragarh,Haryana,1,own polygon is modal
+85,Rewari,Haryana,38,0.9736842105263158,85,Rewari,Haryana,0.9736842105263158,own polygon is modal
+86,Gurgaon,Haryana,38,0.9736842105263158,86,Gurgaon,Haryana,0.9736842105263158,own polygon is modal
+87,Mewat,Haryana,38,0.9210526315789473,87,Mewat,Haryana,0.9210526315789473,own polygon is modal
+88,Faridabad,Haryana,38,1,88,Faridabad,Haryana,1,own polygon is modal
+89,Palwal,Haryana,38,1,89,Palwal,Haryana,1,own polygon is modal
+90,North West,Nct Of Delhi,35,0.9714285714285714,90,North West,Nct Of Delhi,0.9714285714285714,own polygon is modal
+91,North,Nct Of Delhi,37,0.9459459459459459,91,North,Nct Of Delhi,0.9459459459459459,own polygon is modal
+92,North East,Nct Of Delhi,37,0.8378378378378378,92,North East,Nct Of Delhi,0.8378378378378378,own polygon is modal
+93,East,Nct Of Delhi,37,0.972972972972973,93,East,Nct Of Delhi,0.972972972972973,own polygon is modal
+94,New Delhi,Nct Of Delhi,31,0.9354838709677419,94,New Delhi,Nct Of Delhi,0.9354838709677419,own polygon is modal
+95,Central,Nct Of Delhi,38,0.8947368421052632,95,Central,Nct Of Delhi,0.8947368421052632,own polygon is modal
+96,West,Nct Of Delhi,37,0.9459459459459459,96,West,Nct Of Delhi,0.9459459459459459,own polygon is modal
+97,South West,Nct Of Delhi,37,0.9459459459459459,97,South West,Nct Of Delhi,0.9459459459459459,own polygon is modal
+98,South,Nct Of Delhi,34,0.9411764705882353,98,South,Nct Of Delhi,0.9411764705882353,own polygon is modal
+99,Ganganagar,Rajasthan,43,0.9534883720930233,99,Ganganagar,Rajasthan,0.9534883720930233,own polygon is modal
+100,Hanumangarh,Rajasthan,43,1,100,Hanumangarh,Rajasthan,1,own polygon is modal
+101,Bikaner,Rajasthan,85,1,101,Bikaner,Rajasthan,1,own polygon is modal
+102,Churu,Rajasthan,43,1,102,Churu,Rajasthan,1,own polygon is modal
+103,Jhunjhunun,Rajasthan,43,0.9534883720930233,103,Jhunjhunun,Rajasthan,0.9534883720930233,own polygon is modal
+104,Alwar,Rajasthan,43,0.9534883720930233,104,Alwar,Rajasthan,0.9534883720930233,own polygon is modal
+105,Bharatpur,Rajasthan,43,0.9767441860465116,105,Bharatpur,Rajasthan,0.9767441860465116,own polygon is modal
+106,Dhaulpur,Rajasthan,43,1,106,Dhaulpur,Rajasthan,1,own polygon is modal
+107,Karauli,Rajasthan,43,1,107,Karauli,Rajasthan,1,own polygon is modal
+108,Sawai Madhopur,Rajasthan,43,1,108,Sawai Madhopur,Rajasthan,1,own polygon is modal
+109,Dausa,Rajasthan,43,1,109,Dausa,Rajasthan,1,own polygon is modal
+110,Jaipur,Rajasthan,86,1,110,Jaipur,Rajasthan,1,own polygon is modal
+111,Sikar,Rajasthan,42,0.9761904761904762,111,Sikar,Rajasthan,0.9761904761904762,own polygon is modal
+112,Nagaur,Rajasthan,43,1,112,Nagaur,Rajasthan,1,own polygon is modal
+113,Jodhpur,Rajasthan,86,0.9883720930232558,113,Jodhpur,Rajasthan,0.9883720930232558,own polygon is modal
+114,Jaisalmer,Rajasthan,43,1,114,Jaisalmer,Rajasthan,1,own polygon is modal
+115,Barmer,Rajasthan,43,0.9767441860465116,115,Barmer,Rajasthan,0.9767441860465116,own polygon is modal
+116,Jalor,Rajasthan,43,1,116,Jalor,Rajasthan,1,own polygon is modal
+117,Sirohi,Rajasthan,43,0.9767441860465116,117,Sirohi,Rajasthan,0.9767441860465116,own polygon is modal
+118,Pali,Rajasthan,43,1,118,Pali,Rajasthan,1,own polygon is modal
+119,Ajmer,Rajasthan,86,1,119,Ajmer,Rajasthan,1,own polygon is modal
+120,Tonk,Rajasthan,43,1,120,Tonk,Rajasthan,1,own polygon is modal
+121,Bundi,Rajasthan,43,1,121,Bundi,Rajasthan,1,own polygon is modal
+122,Bhilwara,Rajasthan,43,0.9767441860465116,122,Bhilwara,Rajasthan,0.9767441860465116,own polygon is modal
+123,Rajsamand,Rajasthan,43,0.9302325581395349,123,Rajsamand,Rajasthan,0.9302325581395349,own polygon is modal
+124,Dungarpur,Rajasthan,43,0.9767441860465116,124,Dungarpur,Rajasthan,0.9767441860465116,own polygon is modal
+125,Banswara,Rajasthan,43,1,125,Banswara,Rajasthan,1,own polygon is modal
+126,Chittaurgarh,Rajasthan,43,1,126,Chittaurgarh,Rajasthan,1,own polygon is modal
+127,Kota,Rajasthan,85,0.9764705882352941,127,Kota,Rajasthan,0.9764705882352941,own polygon is modal
+128,Baran,Rajasthan,43,1,128,Baran,Rajasthan,1,own polygon is modal
+129,Jhalawar,Rajasthan,42,1,129,Jhalawar,Rajasthan,1,own polygon is modal
+130,Udaipur,Rajasthan,43,1,130,Udaipur,Rajasthan,1,own polygon is modal
+131,Pratapgarh,Rajasthan,42,1,131,Pratapgarh,Rajasthan,1,own polygon is modal
+132,Saharanpur,Uttar Pradesh,86,0.9767441860465116,132,Saharanpur,Uttar Pradesh,0.9767441860465116,own polygon is modal
+133,Muzaffarnagar,Uttar Pradesh,43,0.9767441860465116,133,Muzaffarnagar,Uttar Pradesh,0.9767441860465116,own polygon is modal
+134,Bijnor,Uttar Pradesh,43,1,134,Bijnor,Uttar Pradesh,1,own polygon is modal
+135,Moradabad,Uttar Pradesh,86,0.9767441860465116,135,Moradabad,Uttar Pradesh,0.9767441860465116,own polygon is modal
+136,Rampur,Uttar Pradesh,43,1,136,Rampur,Uttar Pradesh,1,own polygon is modal
+137,Jyotiba Phule Nagar,Uttar Pradesh,43,0.9767441860465116,137,Jyotiba Phule Nagar,Uttar Pradesh,0.9767441860465116,own polygon is modal
+138,Meerut,Uttar Pradesh,112,1,138,Meerut,Uttar Pradesh,1,own polygon is modal
+139,Baghpat,Uttar Pradesh,43,0.9302325581395349,139,Baghpat,Uttar Pradesh,0.9302325581395349,own polygon is modal
+140,Ghaziabad,Uttar Pradesh,86,0.9534883720930233,140,Ghaziabad,Uttar Pradesh,0.9534883720930233,own polygon is modal
+141,Gautam Buddha Nagar,Uttar Pradesh,86,0.9302325581395349,141,Gautam Buddha Nagar,Uttar Pradesh,0.9302325581395349,own polygon is modal
+142,Bulandshahr,Uttar Pradesh,43,0.9534883720930233,142,Bulandshahr,Uttar Pradesh,0.9534883720930233,own polygon is modal
+143,Aligarh,Uttar Pradesh,86,1,143,Aligarh,Uttar Pradesh,1,own polygon is modal
+144,Mahamaya Nagar,Uttar Pradesh,43,0.8604651162790697,144,Mahamaya Nagar,Uttar Pradesh,0.8604651162790697,own polygon is modal
+145,Mathura,Uttar Pradesh,43,1,145,Mathura,Uttar Pradesh,1,own polygon is modal
+146,Agra,Uttar Pradesh,86,0.9651162790697675,146,Agra,Uttar Pradesh,0.9651162790697675,own polygon is modal
+147,Firozabad,Uttar Pradesh,86,1,147,Firozabad,Uttar Pradesh,1,own polygon is modal
+148,Mainpuri,Uttar Pradesh,43,0.9767441860465116,148,Mainpuri,Uttar Pradesh,0.9767441860465116,own polygon is modal
+149,Budaun,Uttar Pradesh,43,1,149,Budaun,Uttar Pradesh,1,own polygon is modal
+150,Bareilly,Uttar Pradesh,86,0.9883720930232558,150,Bareilly,Uttar Pradesh,0.9883720930232558,own polygon is modal
+151,Pilibhit,Uttar Pradesh,42,0.9285714285714286,151,Pilibhit,Uttar Pradesh,0.9285714285714286,own polygon is modal
+152,Shahjahanpur,Uttar Pradesh,43,0.9302325581395349,152,Shahjahanpur,Uttar Pradesh,0.9302325581395349,own polygon is modal
+153,Kheri,Uttar Pradesh,43,1,153,Kheri,Uttar Pradesh,1,own polygon is modal
+154,Sitapur,Uttar Pradesh,43,1,154,Sitapur,Uttar Pradesh,1,own polygon is modal
+155,Hardoi,Uttar Pradesh,43,0.9767441860465116,155,Hardoi,Uttar Pradesh,0.9767441860465116,own polygon is modal
+156,Unnao,Uttar Pradesh,42,0.9761904761904762,156,Unnao,Uttar Pradesh,0.9761904761904762,own polygon is modal
+157,Lucknow,Uttar Pradesh,86,0.9883720930232558,157,Lucknow,Uttar Pradesh,0.9883720930232558,own polygon is modal
+158,Rae Bareli,Uttar Pradesh,43,1,158,Rae Bareli,Uttar Pradesh,1,own polygon is modal
+159,Farrukhabad,Uttar Pradesh,43,0.9767441860465116,159,Farrukhabad,Uttar Pradesh,0.9767441860465116,own polygon is modal
+160,Kannauj,Uttar Pradesh,43,0.9534883720930233,160,Kannauj,Uttar Pradesh,0.9534883720930233,own polygon is modal
+161,Etawah,Uttar Pradesh,43,0.9767441860465116,161,Etawah,Uttar Pradesh,0.9767441860465116,own polygon is modal
+162,Auraiya,Uttar Pradesh,43,0.9302325581395349,162,Auraiya,Uttar Pradesh,0.9302325581395349,own polygon is modal
+163,Kanpur Dehat,Uttar Pradesh,43,1,163,Kanpur Dehat,Uttar Pradesh,1,own polygon is modal
+164,Kanpur Nagar,Uttar Pradesh,86,1,164,Kanpur Nagar,Uttar Pradesh,1,own polygon is modal
+165,Jalaun,Uttar Pradesh,43,1,165,Jalaun,Uttar Pradesh,1,own polygon is modal
+166,Jhansi,Uttar Pradesh,86,0.9883720930232558,166,Jhansi,Uttar Pradesh,0.9883720930232558,own polygon is modal
+167,Lalitpur,Uttar Pradesh,43,0.9767441860465116,167,Lalitpur,Uttar Pradesh,0.9767441860465116,own polygon is modal
+168,Hamirpur,Uttar Pradesh,43,0.9767441860465116,168,Hamirpur,Uttar Pradesh,0.9767441860465116,own polygon is modal
+169,Mahoba,Uttar Pradesh,43,0.9767441860465116,169,Mahoba,Uttar Pradesh,0.9767441860465116,own polygon is modal
+170,Banda,Uttar Pradesh,43,0.8604651162790697,170,Banda,Uttar Pradesh,0.8604651162790697,own polygon is modal
+171,Chitrakoot,Uttar Pradesh,43,0.9069767441860465,171,Chitrakoot,Uttar Pradesh,0.9069767441860465,own polygon is modal
+172,Fatehpur,Uttar Pradesh,43,1,172,Fatehpur,Uttar Pradesh,1,own polygon is modal
+173,Pratapgarh,Uttar Pradesh,43,1,173,Pratapgarh,Uttar Pradesh,1,own polygon is modal
+174,Kaushambi,Uttar Pradesh,43,1,174,Kaushambi,Uttar Pradesh,1,own polygon is modal
+175,Allahabad,Uttar Pradesh,43,1,175,Allahabad,Uttar Pradesh,1,own polygon is modal
+176,Bara Banki,Uttar Pradesh,43,1,176,Bara Banki,Uttar Pradesh,1,own polygon is modal
+177,Faizabad,Uttar Pradesh,43,0.9767441860465116,177,Faizabad,Uttar Pradesh,0.9767441860465116,own polygon is modal
+178,Ambedkar Nagar,Uttar Pradesh,43,1,178,Ambedkar Nagar,Uttar Pradesh,1,own polygon is modal
+179,Sultanpur,Uttar Pradesh,43,1,179,Sultanpur,Uttar Pradesh,1,own polygon is modal
+180,Bahraich,Uttar Pradesh,43,1,180,Bahraich,Uttar Pradesh,1,own polygon is modal
+181,Shrawasti,Uttar Pradesh,43,0.9534883720930233,181,Shrawasti,Uttar Pradesh,0.9534883720930233,own polygon is modal
+182,Balrampur,Uttar Pradesh,41,1,182,Balrampur,Uttar Pradesh,1,own polygon is modal
+183,Gonda,Uttar Pradesh,43,1,183,Gonda,Uttar Pradesh,1,own polygon is modal
+184,Siddharthnagar,Uttar Pradesh,43,0.9302325581395349,184,Siddharthnagar,Uttar Pradesh,0.9302325581395349,own polygon is modal
+185,Basti,Uttar Pradesh,43,1,185,Basti,Uttar Pradesh,1,own polygon is modal
+186,Sant Kabir Nagar,Uttar Pradesh,43,0.9069767441860465,186,Sant Kabir Nagar,Uttar Pradesh,0.9069767441860465,own polygon is modal
+187,Mahrajganj,Uttar Pradesh,43,0.9534883720930233,187,Mahrajganj,Uttar Pradesh,0.9534883720930233,own polygon is modal
+188,Gorakhpur,Uttar Pradesh,43,1,188,Gorakhpur,Uttar Pradesh,1,own polygon is modal
+189,Kushinagar,Uttar Pradesh,43,1,189,Kushinagar,Uttar Pradesh,1,own polygon is modal
+190,Deoria,Uttar Pradesh,43,1,190,Deoria,Uttar Pradesh,1,own polygon is modal
+191,Azamgarh,Uttar Pradesh,43,1,191,Azamgarh,Uttar Pradesh,1,own polygon is modal
+192,Mau,Uttar Pradesh,43,1,192,Mau,Uttar Pradesh,1,own polygon is modal
+193,Ballia,Uttar Pradesh,43,0.9534883720930233,193,Ballia,Uttar Pradesh,0.9534883720930233,own polygon is modal
+194,Jaunpur,Uttar Pradesh,43,0.9767441860465116,194,Jaunpur,Uttar Pradesh,0.9767441860465116,own polygon is modal
+195,Ghazipur,Uttar Pradesh,43,1,195,Ghazipur,Uttar Pradesh,1,own polygon is modal
+196,Chandauli,Uttar Pradesh,43,1,196,Chandauli,Uttar Pradesh,1,own polygon is modal
+197,Varanasi,Uttar Pradesh,86,1,197,Varanasi,Uttar Pradesh,1,own polygon is modal
+198,Sant Ravidas Nagar (Bhadohi),Uttar Pradesh,43,0.9767441860465116,198,Sant Ravidas Nagar (Bhadohi),Uttar Pradesh,0.9767441860465116,own polygon is modal
+199,Mirzapur,Uttar Pradesh,43,1,199,Mirzapur,Uttar Pradesh,1,own polygon is modal
+200,Sonbhadra,Uttar Pradesh,43,1,200,Sonbhadra,Uttar Pradesh,1,own polygon is modal
+201,Etah,Uttar Pradesh,43,0.9767441860465116,201,Etah,Uttar Pradesh,0.9767441860465116,own polygon is modal
+202,Kanshiram Nagar,Uttar Pradesh,43,0.9767441860465116,202,Kanshiram Nagar,Uttar Pradesh,0.9767441860465116,own polygon is modal
+203,Pashchim Champaran,Bihar,43,1,203,Pashchim Champaran,Bihar,1,own polygon is modal
+204,Purba Champaran,Bihar,43,1,204,Purba Champaran,Bihar,1,own polygon is modal
+205,Sheohar,Bihar,43,1,205,Sheohar,Bihar,1,own polygon is modal
+206,Sitamarhi,Bihar,43,1,206,Sitamarhi,Bihar,1,own polygon is modal
+207,Madhubani,Bihar,43,0.9767441860465116,207,Madhubani,Bihar,0.9767441860465116,own polygon is modal
+208,Supaul,Bihar,42,1,208,Supaul,Bihar,1,own polygon is modal
+209,Araria,Bihar,43,1,209,Araria,Bihar,1,own polygon is modal
+210,Kishanganj,Bihar,43,1,210,Kishanganj,Bihar,1,own polygon is modal
+211,Purnia,Bihar,43,1,211,Purnia,Bihar,1,own polygon is modal
+212,Katihar,Bihar,43,1,212,Katihar,Bihar,1,own polygon is modal
+213,Madhepura,Bihar,43,1,213,Madhepura,Bihar,1,own polygon is modal
+214,Saharsa,Bihar,43,1,214,Saharsa,Bihar,1,own polygon is modal
+215,Darbhanga,Bihar,43,0.9534883720930233,215,Darbhanga,Bihar,0.9534883720930233,own polygon is modal
+216,Muzaffarpur,Bihar,43,1,216,Muzaffarpur,Bihar,1,own polygon is modal
+217,Gopalganj,Bihar,43,1,217,Gopalganj,Bihar,1,own polygon is modal
+218,Siwan,Bihar,43,1,218,Siwan,Bihar,1,own polygon is modal
+219,Saran,Bihar,43,1,219,Saran,Bihar,1,own polygon is modal
+220,Vaishali,Bihar,43,1,220,Vaishali,Bihar,1,own polygon is modal
+221,Samastipur,Bihar,43,0.9767441860465116,221,Samastipur,Bihar,0.9767441860465116,own polygon is modal
+222,Begusarai,Bihar,43,0.9767441860465116,222,Begusarai,Bihar,0.9767441860465116,own polygon is modal
+223,Khagaria,Bihar,43,0.9767441860465116,223,Khagaria,Bihar,0.9767441860465116,own polygon is modal
+224,Bhagalpur,Bihar,43,1,224,Bhagalpur,Bihar,1,own polygon is modal
+225,Banka,Bihar,43,0.9767441860465116,225,Banka,Bihar,0.9767441860465116,own polygon is modal
+226,Munger,Bihar,43,1,226,Munger,Bihar,1,own polygon is modal
+227,Lakhisarai,Bihar,43,0.9767441860465116,227,Lakhisarai,Bihar,0.9767441860465116,own polygon is modal
+228,Sheikhpura,Bihar,43,0.9302325581395349,228,Sheikhpura,Bihar,0.9302325581395349,own polygon is modal
+229,Nalanda,Bihar,43,1,229,Nalanda,Bihar,1,own polygon is modal
+230,Patna,Bihar,86,1,230,Patna,Bihar,1,own polygon is modal
+231,Bhojpur,Bihar,43,0.9767441860465116,231,Bhojpur,Bihar,0.9767441860465116,own polygon is modal
+232,Buxar,Bihar,43,1,232,Buxar,Bihar,1,own polygon is modal
+233,Kaimur (Bhabua),Bihar,43,0.9534883720930233,233,Kaimur (Bhabua),Bihar,0.9534883720930233,own polygon is modal
+234,Rohtas,Bihar,43,1,234,Rohtas,Bihar,1,own polygon is modal
+235,Aurangabad,Bihar,43,1,235,Aurangabad,Bihar,1,own polygon is modal
+236,Gaya,Bihar,43,1,236,Gaya,Bihar,1,own polygon is modal
+237,Nawada,Bihar,43,1,237,Nawada,Bihar,1,own polygon is modal
+238,Jamui,Bihar,43,0.9767441860465116,238,Jamui,Bihar,0.9767441860465116,own polygon is modal
+239,Jehanabad,Bihar,43,1,239,Jehanabad,Bihar,1,own polygon is modal
+240,Arwal,Bihar,43,0.9767441860465116,240,Arwal,Bihar,0.9767441860465116,own polygon is modal
+241,North  District,Sikkim,43,1,241,North  District,Sikkim,1,own polygon is modal
+242,West District,Sikkim,43,1,242,West District,Sikkim,1,own polygon is modal
+243,South District,Sikkim,43,0.9302325581395349,243,South District,Sikkim,0.9302325581395349,own polygon is modal
+244,East District,Sikkim,86,1,244,East District,Sikkim,1,own polygon is modal
+245,Tawang,Arunachal Pradesh,40,1,245,Tawang,Arunachal Pradesh,1,own polygon is modal
+246,West Kameng,Arunachal Pradesh,43,0.9767441860465116,246,West Kameng,Arunachal Pradesh,0.9767441860465116,own polygon is modal
+247,East Kameng,Arunachal Pradesh,43,0.9767441860465116,247,East Kameng,Arunachal Pradesh,0.9767441860465116,own polygon is modal
+248,Papum Pare,Arunachal Pradesh,86,0.9883720930232558,248,Papum Pare,Arunachal Pradesh,0.9883720930232558,own polygon is modal
+249,Upper Subansiri,Arunachal Pradesh,41,1,249,Upper Subansiri,Arunachal Pradesh,1,own polygon is modal
+250,West Siang,Arunachal Pradesh,43,0.9767441860465116,250,West Siang,Arunachal Pradesh,0.9767441860465116,own polygon is modal
+251,East Siang,Arunachal Pradesh,43,0.9767441860465116,251,East Siang,Arunachal Pradesh,0.9767441860465116,own polygon is modal
+252,Upper Siang,Arunachal Pradesh,41,0.9512195121951219,252,Upper Siang,Arunachal Pradesh,0.9512195121951219,own polygon is modal
+253,Changlang,Arunachal Pradesh,43,0.9767441860465116,253,Changlang,Arunachal Pradesh,0.9767441860465116,own polygon is modal
+254,Tirap,Arunachal Pradesh,39,0.9743589743589743,254,Tirap,Arunachal Pradesh,0.9743589743589743,own polygon is modal
+255,Lower Subansiri,Arunachal Pradesh,41,0.975609756097561,255,Lower Subansiri,Arunachal Pradesh,0.975609756097561,own polygon is modal
+256,Kurung Kumey,Arunachal Pradesh,37,0.9459459459459459,256,Kurung Kumey,Arunachal Pradesh,0.9459459459459459,own polygon is modal
+257,Dibang Valley,Arunachal Pradesh,43,0.9767441860465116,257,Dibang Valley,Arunachal Pradesh,0.9767441860465116,own polygon is modal
+258,Lower Dibang Valley,Arunachal Pradesh,39,0.8974358974358975,258,Lower Dibang Valley,Arunachal Pradesh,0.8974358974358975,own polygon is modal
+259,Lohit,Arunachal Pradesh,43,1,259,Lohit,Arunachal Pradesh,1,own polygon is modal
+260,Anjaw,Arunachal Pradesh,43,1,260,Anjaw,Arunachal Pradesh,1,own polygon is modal
+261,Mon,Nagaland,38,1,261,Mon,Nagaland,1,own polygon is modal
+262,Mokokchung,Nagaland,40,1,262,Mokokchung,Nagaland,1,own polygon is modal
+263,Zunheboto,Nagaland,41,0.975609756097561,263,Zunheboto,Nagaland,0.975609756097561,own polygon is modal
+264,Wokha,Nagaland,40,0.975,264,Wokha,Nagaland,0.975,own polygon is modal
+265,Dimapur,Nagaland,86,0.9302325581395349,265,Dimapur,Nagaland,0.9302325581395349,own polygon is modal
+266,Phek,Nagaland,43,0.9767441860465116,266,Phek,Nagaland,0.9767441860465116,own polygon is modal
+267,Tuensang,Nagaland,39,1,267,Tuensang,Nagaland,1,own polygon is modal
+268,Longleng,Nagaland,39,0.9487179487179487,268,Longleng,Nagaland,0.9487179487179487,own polygon is modal
+269,Kiphire,Nagaland,39,0.9743589743589743,269,Kiphire,Nagaland,0.9743589743589743,own polygon is modal
+270,Kohima,Nagaland,86,1,270,Kohima,Nagaland,1,own polygon is modal
+271,Peren,Nagaland,42,0.9523809523809523,271,Peren,Nagaland,0.9523809523809523,own polygon is modal
+272,Senapati,Manipur,43,0.8604651162790697,272,Senapati,Manipur,0.8604651162790697,own polygon is modal
+273,Tamenglong,Manipur,43,0.9767441860465116,273,Tamenglong,Manipur,0.9767441860465116,own polygon is modal
+274,Churachandpur,Manipur,40,0.975,274,Churachandpur,Manipur,0.975,own polygon is modal
+275,Bishnupur,Manipur,86,0.8837209302325582,275,Bishnupur,Manipur,0.8837209302325582,own polygon is modal
+276,Thoubal,Manipur,86,0.9767441860465116,276,Thoubal,Manipur,0.9767441860465116,own polygon is modal
+277,Imphal West,Manipur,86,0.9302325581395349,277,Imphal West,Manipur,0.9302325581395349,own polygon is modal
+278,Imphal East,Manipur,86,0.8372093023255814,278,Imphal East,Manipur,0.8372093023255814,own polygon is modal
+279,Ukhrul,Manipur,43,1,279,Ukhrul,Manipur,1,own polygon is modal
+280,Chandel,Manipur,43,0.9534883720930233,280,Chandel,Manipur,0.9534883720930233,own polygon is modal
+281,Mamit,Mizoram,40,0.975,281,Mamit,Mizoram,0.975,own polygon is modal
+282,Kolasib,Mizoram,83,0.9759036144578314,282,Kolasib,Mizoram,0.9759036144578314,own polygon is modal
+283,Aizawl,Mizoram,43,1,283,Aizawl,Mizoram,1,own polygon is modal
+284,Champhai,Mizoram,86,1,284,Champhai,Mizoram,1,own polygon is modal
+285,Serchhip,Mizoram,83,0.9036144578313253,285,Serchhip,Mizoram,0.9036144578313253,own polygon is modal
+286,Lunglei,Mizoram,79,0.9873417721518988,286,Lunglei,Mizoram,0.9873417721518988,own polygon is modal
+287,Lawngtlai,Mizoram,40,0.825,287,Lawngtlai,Mizoram,0.825,own polygon is modal
+288,Saiha,Mizoram,85,0.9882352941176471,288,Saiha,Mizoram,0.9882352941176471,own polygon is modal
+289,West Tripura,Tripura,86,1,289,West Tripura,Tripura,1,own polygon is modal
+290,South Tripura,Tripura,43,1,290,South Tripura,Tripura,1,own polygon is modal
+291,Dhalai,Tripura,43,1,291,Dhalai,Tripura,1,own polygon is modal
+292,North Tripura,Tripura,43,1,292,North Tripura,Tripura,1,own polygon is modal
+293,West Garo Hills,Meghalaya,43,1,293,West Garo Hills,Meghalaya,1,own polygon is modal
+294,East Garo Hills,Meghalaya,43,1,294,East Garo Hills,Meghalaya,1,own polygon is modal
+295,South Garo Hills,Meghalaya,42,1,295,South Garo Hills,Meghalaya,1,own polygon is modal
+296,West Khasi Hills,Meghalaya,43,0.9534883720930233,296,West Khasi Hills,Meghalaya,0.9534883720930233,own polygon is modal
+297,Ribhoi,Meghalaya,42,0.9523809523809523,297,Ribhoi,Meghalaya,0.9523809523809523,own polygon is modal
+298,East Khasi Hills,Meghalaya,86,1,298,East Khasi Hills,Meghalaya,1,own polygon is modal
+299,Jaintia Hills,Meghalaya,43,1,299,Jaintia Hills,Meghalaya,1,own polygon is modal
+300,Kokrajhar,Assam,41,0.975609756097561,300,Kokrajhar,Assam,0.975609756097561,own polygon is modal
+301,Dhubri,Assam,43,0.9069767441860465,301,Dhubri,Assam,0.9069767441860465,own polygon is modal
+302,Goalpara,Assam,43,0.9767441860465116,302,Goalpara,Assam,0.9767441860465116,own polygon is modal
+303,Barpeta,Assam,43,0.9767441860465116,303,Barpeta,Assam,0.9767441860465116,own polygon is modal
+304,Morigaon,Assam,43,0.9767441860465116,304,Morigaon,Assam,0.9767441860465116,own polygon is modal
+305,Nagaon,Assam,42,1,305,Nagaon,Assam,1,own polygon is modal
+306,Sonitpur,Assam,43,0.9767441860465116,306,Sonitpur,Assam,0.9767441860465116,own polygon is modal
+307,Lakhimpur,Assam,43,0.9767441860465116,307,Lakhimpur,Assam,0.9767441860465116,own polygon is modal
+308,Dhemaji,Assam,42,0.9761904761904762,308,Dhemaji,Assam,0.9761904761904762,own polygon is modal
+309,Tinsukia,Assam,43,0.9767441860465116,309,Tinsukia,Assam,0.9767441860465116,own polygon is modal
+310,Dibrugarh,Assam,42,1,310,Dibrugarh,Assam,1,own polygon is modal
+311,Sivasagar,Assam,42,0.9761904761904762,311,Sivasagar,Assam,0.9761904761904762,own polygon is modal
+312,Jorhat,Assam,43,0.9534883720930233,312,Jorhat,Assam,0.9534883720930233,own polygon is modal
+313,Golaghat,Assam,43,0.9767441860465116,313,Golaghat,Assam,0.9767441860465116,own polygon is modal
+314,Karbi Anglong,Assam,43,0.9069767441860465,314,Karbi Anglong,Assam,0.9069767441860465,own polygon is modal
+315,Dima Hasao,Assam,38,1,315,Dima Hasao,Assam,1,own polygon is modal
+316,Cachar,Assam,43,1,316,Cachar,Assam,1,own polygon is modal
+317,Karimganj,Assam,43,0.9767441860465116,317,Karimganj,Assam,0.9767441860465116,own polygon is modal
+318,Hailakandi,Assam,43,0.9767441860465116,318,Hailakandi,Assam,0.9767441860465116,own polygon is modal
+319,Bongaigaon,Assam,40,1,319,Bongaigaon,Assam,1,own polygon is modal
+320,Chirang,Assam,39,0.9743589743589743,320,Chirang,Assam,0.9743589743589743,own polygon is modal
+321,Kamrup,Assam,42,1,321,Kamrup,Assam,1,own polygon is modal
+322,Kamrup Metropolitan,Assam,42,0.9761904761904762,322,Kamrup Metropolitan,Assam,0.9761904761904762,own polygon is modal
+323,Nalbari,Assam,42,0.9285714285714286,323,Nalbari,Assam,0.9285714285714286,own polygon is modal
+324,Baksa,Assam,41,0.926829268292683,324,Baksa,Assam,0.926829268292683,own polygon is modal
+325,Darrang,Assam,42,0.9761904761904762,325,Darrang,Assam,0.9761904761904762,own polygon is modal
+326,Udalguri,Assam,41,1,326,Udalguri,Assam,1,own polygon is modal
+327,Darjiling,West Bengal,38,1,327,Darjiling,West Bengal,1,own polygon is modal
+328,Jalpaiguri,West Bengal,38,1,328,Jalpaiguri,West Bengal,1,own polygon is modal
+329,Koch Bihar,West Bengal,38,1,329,Koch Bihar,West Bengal,1,own polygon is modal
+330,Uttar Dinajpur,West Bengal,38,1,330,Uttar Dinajpur,West Bengal,1,own polygon is modal
+331,Dakshin Dinajpur,West Bengal,37,1,331,Dakshin Dinajpur,West Bengal,1,own polygon is modal
+332,Maldah,West Bengal,38,1,332,Maldah,West Bengal,1,own polygon is modal
+333,Murshidabad,West Bengal,38,1,333,Murshidabad,West Bengal,1,own polygon is modal
+334,Birbhum,West Bengal,38,1,334,Birbhum,West Bengal,1,own polygon is modal
+335,Barddhaman,West Bengal,38,1,335,Barddhaman,West Bengal,1,own polygon is modal
+336,Nadia,West Bengal,38,1,336,Nadia,West Bengal,1,own polygon is modal
+337,North Twenty Four Parganas,West Bengal,38,1,337,North Twenty Four Parganas,West Bengal,1,own polygon is modal
+338,Hugli,West Bengal,38,0.9736842105263158,338,Hugli,West Bengal,0.9736842105263158,own polygon is modal
+339,Bankura,West Bengal,38,1,339,Bankura,West Bengal,1,own polygon is modal
+340,Puruliya,West Bengal,38,1,340,Puruliya,West Bengal,1,own polygon is modal
+341,Haora,West Bengal,38,1,341,Haora,West Bengal,1,own polygon is modal
+342,Kolkata,West Bengal,38,0.9736842105263158,342,Kolkata,West Bengal,0.9736842105263158,own polygon is modal
+343,South Twenty Four Parganas,West Bengal,38,0.9473684210526315,343,South Twenty Four Parganas,West Bengal,0.9473684210526315,own polygon is modal
+344,Paschim Medinipur,West Bengal,38,1,344,Paschim Medinipur,West Bengal,1,own polygon is modal
+345,Purba Medinipur,West Bengal,38,0.9736842105263158,345,Purba Medinipur,West Bengal,0.9736842105263158,own polygon is modal
+346,Garhwa,Jharkhand,43,0.9767441860465116,346,Garhwa,Jharkhand,0.9767441860465116,own polygon is modal
+347,Chatra,Jharkhand,42,1,347,Chatra,Jharkhand,1,own polygon is modal
+348,Kodarma,Jharkhand,43,0.9767441860465116,348,Kodarma,Jharkhand,0.9767441860465116,own polygon is modal
+349,Giridih,Jharkhand,43,0.9767441860465116,349,Giridih,Jharkhand,0.9767441860465116,own polygon is modal
+350,Deoghar,Jharkhand,42,1,350,Deoghar,Jharkhand,1,own polygon is modal
+351,Godda,Jharkhand,43,0.9767441860465116,351,Godda,Jharkhand,0.9767441860465116,own polygon is modal
+352,Sahibganj,Jharkhand,43,0.813953488372093,352,Sahibganj,Jharkhand,0.813953488372093,own polygon is modal
+353,Pakur,Jharkhand,43,0.9767441860465116,353,Pakur,Jharkhand,0.9767441860465116,own polygon is modal
+354,Dhanbad,Jharkhand,85,1,354,Dhanbad,Jharkhand,1,own polygon is modal
+355,Bokaro,Jharkhand,86,0.9883720930232558,355,Bokaro,Jharkhand,0.9883720930232558,own polygon is modal
+356,Lohardaga,Jharkhand,43,1,356,Lohardaga,Jharkhand,1,own polygon is modal
+357,Purbi Singhbhum,Jharkhand,83,0.963855421686747,357,Purbi Singhbhum,Jharkhand,0.963855421686747,own polygon is modal
+358,Palamu,Jharkhand,43,1,358,Palamu,Jharkhand,1,own polygon is modal
+359,Latehar,Jharkhand,43,0.9534883720930233,359,Latehar,Jharkhand,0.9534883720930233,own polygon is modal
+360,Hazaribagh,Jharkhand,43,1,360,Hazaribagh,Jharkhand,1,own polygon is modal
+361,Ramgarh,Jharkhand,86,1,361,Ramgarh,Jharkhand,1,own polygon is modal
+362,Dumka,Jharkhand,43,1,362,Dumka,Jharkhand,1,own polygon is modal
+363,Jamtara,Jharkhand,43,1,363,Jamtara,Jharkhand,1,own polygon is modal
+364,Ranchi,Jharkhand,86,1,364,Ranchi,Jharkhand,1,own polygon is modal
+365,Khunti,Jharkhand,42,0.9523809523809523,365,Khunti,Jharkhand,0.9523809523809523,own polygon is modal
+366,Gumla,Jharkhand,43,1,366,Gumla,Jharkhand,1,own polygon is modal
+367,Simdega,Jharkhand,43,1,367,Simdega,Jharkhand,1,own polygon is modal
+368,Pashchimi Singhbhum,Jharkhand,43,1,368,Pashchimi Singhbhum,Jharkhand,1,own polygon is modal
+369,Saraikela-Kharsawan,Jharkhand,43,0.9767441860465116,369,Saraikela-Kharsawan,Jharkhand,0.9767441860465116,own polygon is modal
+370,Bargarh,Odisha,43,0.8604651162790697,370,Bargarh,Odisha,0.8604651162790697,own polygon is modal
+371,Jharsuguda,Odisha,86,0.9767441860465116,371,Jharsuguda,Odisha,0.9767441860465116,own polygon is modal
+372,Sambalpur,Odisha,43,0.9767441860465116,372,Sambalpur,Odisha,0.9767441860465116,own polygon is modal
+373,Debagarh,Odisha,42,0.9761904761904762,373,Debagarh,Odisha,0.9761904761904762,own polygon is modal
+374,Sundargarh,Odisha,86,1,374,Sundargarh,Odisha,1,own polygon is modal
+375,Kendujhar,Odisha,43,0.9767441860465116,375,Kendujhar,Odisha,0.9767441860465116,own polygon is modal
+376,Mayurbhanj,Odisha,43,0.9767441860465116,376,Mayurbhanj,Odisha,0.9767441860465116,own polygon is modal
+377,Baleshwar,Odisha,43,0.9767441860465116,377,Baleshwar,Odisha,0.9767441860465116,own polygon is modal
+378,Bhadrak,Odisha,42,0.9523809523809523,378,Bhadrak,Odisha,0.9523809523809523,own polygon is modal
+379,Kendrapara,Odisha,43,1,379,Kendrapara,Odisha,1,own polygon is modal
+380,Jagatsinghapur,Odisha,43,1,380,Jagatsinghapur,Odisha,1,own polygon is modal
+381,Cuttack,Odisha,41,1,381,Cuttack,Odisha,1,own polygon is modal
+382,Jajapur,Odisha,43,1,382,Jajapur,Odisha,1,own polygon is modal
+383,Dhenkanal,Odisha,43,0.9069767441860465,383,Dhenkanal,Odisha,0.9069767441860465,own polygon is modal
+384,Anugul,Odisha,43,0.9302325581395349,384,Anugul,Odisha,0.9302325581395349,own polygon is modal
+385,Nayagarh,Odisha,43,1,385,Nayagarh,Odisha,1,own polygon is modal
+386,Khordha,Odisha,86,0.9767441860465116,386,Khordha,Odisha,0.9767441860465116,own polygon is modal
+387,Puri,Odisha,43,1,387,Puri,Odisha,1,own polygon is modal
+388,Ganjam,Odisha,42,1,388,Ganjam,Odisha,1,own polygon is modal
+389,Gajapati,Odisha,43,1,389,Gajapati,Odisha,1,own polygon is modal
+390,Kandhamal,Odisha,43,0.9534883720930233,390,Kandhamal,Odisha,0.9534883720930233,own polygon is modal
+391,Baudh,Odisha,43,0.9534883720930233,391,Baudh,Odisha,0.9534883720930233,own polygon is modal
+392,Subarnapur,Odisha,42,1,392,Subarnapur,Odisha,1,own polygon is modal
+393,Balangir,Odisha,43,0.9534883720930233,393,Balangir,Odisha,0.9534883720930233,own polygon is modal
+394,Nuapada,Odisha,43,0.9302325581395349,394,Nuapada,Odisha,0.9302325581395349,own polygon is modal
+395,Kalahandi,Odisha,43,1,395,Kalahandi,Odisha,1,own polygon is modal
+396,Rayagada,Odisha,43,0.9767441860465116,396,Rayagada,Odisha,0.9767441860465116,own polygon is modal
+397,Nabarangapur,Odisha,43,1,397,Nabarangapur,Odisha,1,own polygon is modal
+398,Koraput,Odisha,43,1,398,Koraput,Odisha,1,own polygon is modal
+399,Malkangiri,Odisha,43,1,399,Malkangiri,Odisha,1,own polygon is modal
+400,Koriya,Chattisgarh,84,0.9880952380952381,400,Koriya,Chattisgarh,0.9880952380952381,own polygon is modal
+401,Surguja,Chattisgarh,43,1,401,Surguja,Chattisgarh,1,own polygon is modal
+402,Jashpur,Chattisgarh,43,1,402,Jashpur,Chattisgarh,1,own polygon is modal
+403,Raigarh,Chattisgarh,43,0.9767441860465116,403,Raigarh,Chattisgarh,0.9767441860465116,own polygon is modal
+404,Korba,Chattisgarh,86,1,404,Korba,Chattisgarh,1,own polygon is modal
+405,Janjgir - Champa,Chattisgarh,43,1,405,Janjgir - Champa,Chattisgarh,1,own polygon is modal
+406,Bilaspur,Chattisgarh,41,1,406,Bilaspur,Chattisgarh,1,own polygon is modal
+407,Kabeerdham,Chattisgarh,42,1,407,Kabeerdham,Chattisgarh,1,own polygon is modal
+408,Rajnandgaon,Chattisgarh,42,1,408,Rajnandgaon,Chattisgarh,1,own polygon is modal
+409,Durg,Chattisgarh,86,1,409,Durg,Chattisgarh,1,own polygon is modal
+410,Raipur,Chattisgarh,85,1,410,Raipur,Chattisgarh,1,own polygon is modal
+411,Mahasamund,Chattisgarh,43,0.9767441860465116,411,Mahasamund,Chattisgarh,0.9767441860465116,own polygon is modal
+412,Dhamtari,Chattisgarh,43,1,412,Dhamtari,Chattisgarh,1,own polygon is modal
+413,Uttar Bastar Kanker,Chattisgarh,43,0.9767441860465116,413,Uttar Bastar Kanker,Chattisgarh,0.9767441860465116,own polygon is modal
+414,Bastar,Chattisgarh,43,1,414,Bastar,Chattisgarh,1,own polygon is modal
+415,Narayanpur,Chattisgarh,41,1,415,Narayanpur,Chattisgarh,1,own polygon is modal
+416,Dakshin Bastar Dantewada,Chattisgarh,43,1,416,Dakshin Bastar Dantewada,Chattisgarh,1,own polygon is modal
+417,Bijapur,Chattisgarh,42,0.9285714285714286,417,Bijapur,Chattisgarh,0.9285714285714286,own polygon is modal
+418,Sheopur,Madhya Pradesh,43,1,418,Sheopur,Madhya Pradesh,1,own polygon is modal
+419,Morena,Madhya Pradesh,43,0.9767441860465116,419,Morena,Madhya Pradesh,0.9767441860465116,own polygon is modal
+420,Bhind,Madhya Pradesh,43,0.9767441860465116,420,Bhind,Madhya Pradesh,0.9767441860465116,own polygon is modal
+421,Gwalior,Madhya Pradesh,86,0.9767441860465116,421,Gwalior,Madhya Pradesh,0.9767441860465116,own polygon is modal
+422,Datia,Madhya Pradesh,41,1,422,Datia,Madhya Pradesh,1,own polygon is modal
+423,Shivpuri,Madhya Pradesh,43,0.9767441860465116,423,Shivpuri,Madhya Pradesh,0.9767441860465116,own polygon is modal
+424,Tikamgarh,Madhya Pradesh,43,1,424,Tikamgarh,Madhya Pradesh,1,own polygon is modal
+425,Chhatarpur,Madhya Pradesh,43,1,425,Chhatarpur,Madhya Pradesh,1,own polygon is modal
+426,Panna,Madhya Pradesh,43,0.9767441860465116,426,Panna,Madhya Pradesh,0.9767441860465116,own polygon is modal
+427,Sagar,Madhya Pradesh,43,1,427,Sagar,Madhya Pradesh,1,own polygon is modal
+428,Damoh,Madhya Pradesh,43,1,428,Damoh,Madhya Pradesh,1,own polygon is modal
+429,Satna,Madhya Pradesh,43,1,429,Satna,Madhya Pradesh,1,own polygon is modal
+430,Rewa,Madhya Pradesh,43,1,430,Rewa,Madhya Pradesh,1,own polygon is modal
+431,Umaria,Madhya Pradesh,43,1,431,Umaria,Madhya Pradesh,1,own polygon is modal
+432,Neemuch,Madhya Pradesh,43,1,432,Neemuch,Madhya Pradesh,1,own polygon is modal
+433,Mandsaur,Madhya Pradesh,43,0.9767441860465116,433,Mandsaur,Madhya Pradesh,0.9767441860465116,own polygon is modal
+434,Ratlam,Madhya Pradesh,43,1,434,Ratlam,Madhya Pradesh,1,own polygon is modal
+435,Ujjain,Madhya Pradesh,86,0.9767441860465116,435,Ujjain,Madhya Pradesh,0.9767441860465116,own polygon is modal
+436,Shajapur,Madhya Pradesh,43,1,436,Shajapur,Madhya Pradesh,1,own polygon is modal
+437,Dewas,Madhya Pradesh,43,0.9767441860465116,437,Dewas,Madhya Pradesh,0.9767441860465116,own polygon is modal
+438,Dhar,Madhya Pradesh,43,1,438,Dhar,Madhya Pradesh,1,own polygon is modal
+439,Indore,Madhya Pradesh,88,1,439,Indore,Madhya Pradesh,1,own polygon is modal
+440,Khargone (West Nimar),Madhya Pradesh,43,1,440,Khargone (West Nimar),Madhya Pradesh,1,own polygon is modal
+441,Barwani,Madhya Pradesh,43,0.9767441860465116,441,Barwani,Madhya Pradesh,0.9767441860465116,own polygon is modal
+442,Rajgarh,Madhya Pradesh,43,1,442,Rajgarh,Madhya Pradesh,1,own polygon is modal
+443,Vidisha,Madhya Pradesh,43,0.9767441860465116,443,Vidisha,Madhya Pradesh,0.9767441860465116,own polygon is modal
+444,Bhopal,Madhya Pradesh,43,1,444,Bhopal,Madhya Pradesh,1,own polygon is modal
+445,Sehore,Madhya Pradesh,43,1,445,Sehore,Madhya Pradesh,1,own polygon is modal
+446,Raisen,Madhya Pradesh,43,0.9767441860465116,446,Raisen,Madhya Pradesh,0.9767441860465116,own polygon is modal
+447,Betul,Madhya Pradesh,43,1,447,Betul,Madhya Pradesh,1,own polygon is modal
+448,Harda,Madhya Pradesh,43,1,448,Harda,Madhya Pradesh,1,own polygon is modal
+449,Hoshangabad,Madhya Pradesh,86,0.9767441860465116,449,Hoshangabad,Madhya Pradesh,0.9767441860465116,own polygon is modal
+450,Katni,Madhya Pradesh,43,1,450,Katni,Madhya Pradesh,1,own polygon is modal
+451,Jabalpur,Madhya Pradesh,86,0.9767441860465116,451,Jabalpur,Madhya Pradesh,0.9767441860465116,own polygon is modal
+452,Narsimhapur,Madhya Pradesh,43,1,452,Narsimhapur,Madhya Pradesh,1,own polygon is modal
+453,Dindori,Madhya Pradesh,43,0.9767441860465116,453,Dindori,Madhya Pradesh,0.9767441860465116,own polygon is modal
+454,Mandla,Madhya Pradesh,43,1,454,Mandla,Madhya Pradesh,1,own polygon is modal
+455,Chhindwara,Madhya Pradesh,43,0.9767441860465116,455,Chhindwara,Madhya Pradesh,0.9767441860465116,own polygon is modal
+456,Seoni,Madhya Pradesh,43,0.9767441860465116,456,Seoni,Madhya Pradesh,0.9767441860465116,own polygon is modal
+457,Balaghat,Madhya Pradesh,43,1,457,Balaghat,Madhya Pradesh,1,own polygon is modal
+458,Guna,Madhya Pradesh,43,1,458,Guna,Madhya Pradesh,1,own polygon is modal
+459,Ashoknagar,Madhya Pradesh,43,0.9767441860465116,459,Ashoknagar,Madhya Pradesh,0.9767441860465116,own polygon is modal
+460,Shahdol,Madhya Pradesh,43,1,460,Shahdol,Madhya Pradesh,1,own polygon is modal
+461,Anuppur,Madhya Pradesh,43,1,461,Anuppur,Madhya Pradesh,1,own polygon is modal
+462,Sidhi,Madhya Pradesh,43,0.9767441860465116,462,Sidhi,Madhya Pradesh,0.9767441860465116,own polygon is modal
+463,Singrauli,Madhya Pradesh,43,1,463,Singrauli,Madhya Pradesh,1,own polygon is modal
+464,Jhabua,Madhya Pradesh,43,1,464,Jhabua,Madhya Pradesh,1,own polygon is modal
+465,Alirajpur,Madhya Pradesh,43,1,465,Alirajpur,Madhya Pradesh,1,own polygon is modal
+466,Khandwa (East Nimar),Madhya Pradesh,43,0.9767441860465116,466,Khandwa (East Nimar),Madhya Pradesh,0.9767441860465116,own polygon is modal
+467,Burhanpur,Madhya Pradesh,86,1,467,Burhanpur,Madhya Pradesh,1,own polygon is modal
+468,Kachchh,Gujarat,38,1,468,Kachchh,Gujarat,1,own polygon is modal
+469,Banas Kantha,Gujarat,38,0.9736842105263158,469,Banas Kantha,Gujarat,0.9736842105263158,own polygon is modal
+470,Patan,Gujarat,38,0.9473684210526315,470,Patan,Gujarat,0.9473684210526315,own polygon is modal
+471,Mahesana,Gujarat,37,0.9459459459459459,471,Mahesana,Gujarat,0.9459459459459459,own polygon is modal
+472,Sabar Kantha,Gujarat,38,0.9473684210526315,472,Sabar Kantha,Gujarat,0.9473684210526315,own polygon is modal
+473,Gandhinagar,Gujarat,38,1,473,Gandhinagar,Gujarat,1,own polygon is modal
+474,Ahmadabad,Gujarat,38,1,474,Ahmadabad,Gujarat,1,own polygon is modal
+475,Surendranagar,Gujarat,38,1,475,Surendranagar,Gujarat,1,own polygon is modal
+476,Rajkot,Gujarat,38,1,476,Rajkot,Gujarat,1,own polygon is modal
+477,Jamnagar,Gujarat,38,1,477,Jamnagar,Gujarat,1,own polygon is modal
+478,Porbandar,Gujarat,38,1,478,Porbandar,Gujarat,1,own polygon is modal
+479,Junagadh,Gujarat,38,0.9736842105263158,479,Junagadh,Gujarat,0.9736842105263158,own polygon is modal
+480,Amreli,Gujarat,38,0.9473684210526315,480,Amreli,Gujarat,0.9473684210526315,own polygon is modal
+481,Bhavnagar,Gujarat,38,1,481,Bhavnagar,Gujarat,1,own polygon is modal
+482,Anand,Gujarat,38,1,482,Anand,Gujarat,1,own polygon is modal
+483,Kheda,Gujarat,38,0.9473684210526315,483,Kheda,Gujarat,0.9473684210526315,own polygon is modal
+484,Panch Mahals,Gujarat,38,1,484,Panch Mahals,Gujarat,1,own polygon is modal
+485,Dohad,Gujarat,38,0.9736842105263158,485,Dohad,Gujarat,0.9736842105263158,own polygon is modal
+486,Vadodara,Gujarat,38,1,486,Vadodara,Gujarat,1,own polygon is modal
+487,Narmada,Gujarat,38,0.9736842105263158,487,Narmada,Gujarat,0.9736842105263158,own polygon is modal
+488,Bharuch,Gujarat,37,0.9459459459459459,488,Bharuch,Gujarat,0.9459459459459459,own polygon is modal
+489,The Dangs,Gujarat,38,1,489,The Dangs,Gujarat,1,own polygon is modal
+490,Navsari,Gujarat,38,1,490,Navsari,Gujarat,1,own polygon is modal
+491,Valsad,Gujarat,38,0.9736842105263158,491,Valsad,Gujarat,0.9736842105263158,own polygon is modal
+492,Surat,Gujarat,38,1,492,Surat,Gujarat,1,own polygon is modal
+493,Tapi,Gujarat,38,1,493,Tapi,Gujarat,1,own polygon is modal
+494,Diu,Daman & Diu,38,1,494,Diu,Daman & Diu,1,own polygon is modal
+495,Daman,Daman & Diu,38,1,495,Daman,Daman & Diu,1,own polygon is modal
+496,Dadra & Nagar Haveli,Dadra & Nagar Haveli,38,0.9473684210526315,496,Dadra & Nagar Haveli,Dadra & Nagar Haveli,0.9473684210526315,own polygon is modal
+497,Nandurbar,Maharashtra,38,1,497,Nandurbar,Maharashtra,1,own polygon is modal
+498,Dhule,Maharashtra,38,1,498,Dhule,Maharashtra,1,own polygon is modal
+499,Jalgaon,Maharashtra,38,1,499,Jalgaon,Maharashtra,1,own polygon is modal
+500,Buldana,Maharashtra,38,1,500,Buldana,Maharashtra,1,own polygon is modal
+501,Akola,Maharashtra,38,1,501,Akola,Maharashtra,1,own polygon is modal
+502,Washim,Maharashtra,38,1,502,Washim,Maharashtra,1,own polygon is modal
+503,Amravati,Maharashtra,38,1,503,Amravati,Maharashtra,1,own polygon is modal
+504,Wardha,Maharashtra,38,1,504,Wardha,Maharashtra,1,own polygon is modal
+505,Nagpur,Maharashtra,50,1,505,Nagpur,Maharashtra,1,own polygon is modal
+506,Bhandara,Maharashtra,38,0.9736842105263158,506,Bhandara,Maharashtra,0.9736842105263158,own polygon is modal
+507,Gondiya,Maharashtra,38,1,507,Gondiya,Maharashtra,1,own polygon is modal
+508,Gadchiroli,Maharashtra,38,1,508,Gadchiroli,Maharashtra,1,own polygon is modal
+509,Chandrapur,Maharashtra,38,1,509,Chandrapur,Maharashtra,1,own polygon is modal
+510,Yavatmal,Maharashtra,38,1,510,Yavatmal,Maharashtra,1,own polygon is modal
+511,Nanded,Maharashtra,38,1,511,Nanded,Maharashtra,1,own polygon is modal
+512,Hingoli,Maharashtra,38,1,512,Hingoli,Maharashtra,1,own polygon is modal
+513,Parbhani,Maharashtra,38,0.9736842105263158,513,Parbhani,Maharashtra,0.9736842105263158,own polygon is modal
+514,Jalna,Maharashtra,38,1,514,Jalna,Maharashtra,1,own polygon is modal
+515,Aurangabad,Maharashtra,38,0.9736842105263158,515,Aurangabad,Maharashtra,0.9736842105263158,own polygon is modal
+516,Nashik,Maharashtra,38,1,516,Nashik,Maharashtra,1,own polygon is modal
+517,Thane,Maharashtra,38,1,517,Thane,Maharashtra,1,own polygon is modal
+518,Mumbai Suburban,Maharashtra,38,1,518,Mumbai Suburban,Maharashtra,1,own polygon is modal
+519,Mumbai,Maharashtra,37,1,519,Mumbai,Maharashtra,1,own polygon is modal
+520,Raigarh,Maharashtra,38,1,520,Raigarh,Maharashtra,1,own polygon is modal
+521,Pune,Maharashtra,38,1,521,Pune,Maharashtra,1,own polygon is modal
+522,Ahmadnagar,Maharashtra,38,1,522,Ahmadnagar,Maharashtra,1,own polygon is modal
+523,Bid,Maharashtra,38,0.9736842105263158,523,Bid,Maharashtra,0.9736842105263158,own polygon is modal
+524,Latur,Maharashtra,38,0.9736842105263158,524,Latur,Maharashtra,0.9736842105263158,own polygon is modal
+525,Osmanabad,Maharashtra,38,1,525,Osmanabad,Maharashtra,1,own polygon is modal
+526,Solapur,Maharashtra,38,1,526,Solapur,Maharashtra,1,own polygon is modal
+527,Satara,Maharashtra,38,1,527,Satara,Maharashtra,1,own polygon is modal
+528,Ratnagiri,Maharashtra,38,1,528,Ratnagiri,Maharashtra,1,own polygon is modal
+529,Sindhudurg,Maharashtra,38,1,529,Sindhudurg,Maharashtra,1,own polygon is modal
+530,Kolhapur,Maharashtra,38,1,530,Kolhapur,Maharashtra,1,own polygon is modal
+531,Sangli,Maharashtra,38,1,531,Sangli,Maharashtra,1,own polygon is modal
+532,Adilabad,Andhra Pradesh,38,0.9736842105263158,532,Adilabad,Andhra Pradesh,0.9736842105263158,own polygon is modal
+533,Nizamabad,Andhra Pradesh,38,1,533,Nizamabad,Andhra Pradesh,1,own polygon is modal
+534,Karimnagar,Andhra Pradesh,38,0.9736842105263158,534,Karimnagar,Andhra Pradesh,0.9736842105263158,own polygon is modal
+535,Medak,Andhra Pradesh,38,0.9736842105263158,535,Medak,Andhra Pradesh,0.9736842105263158,own polygon is modal
+536,Hyderabad,Andhra Pradesh,38,0.868421052631579,536,Hyderabad,Andhra Pradesh,0.868421052631579,own polygon is modal
+537,Rangareddy,Andhra Pradesh,38,0.9736842105263158,537,Rangareddy,Andhra Pradesh,0.9736842105263158,own polygon is modal
+538,Mahbubnagar,Andhra Pradesh,38,1,538,Mahbubnagar,Andhra Pradesh,1,own polygon is modal
+539,Nalgonda,Andhra Pradesh,38,0.9736842105263158,539,Nalgonda,Andhra Pradesh,0.9736842105263158,own polygon is modal
+540,Warangal,Andhra Pradesh,38,1,540,Warangal,Andhra Pradesh,1,own polygon is modal
+541,Khammam,Andhra Pradesh,38,1,541,Khammam,Andhra Pradesh,1,own polygon is modal
+542,Srikakulam,Andhra Pradesh,38,1,542,Srikakulam,Andhra Pradesh,1,own polygon is modal
+543,Vizianagaram,Andhra Pradesh,38,0.9473684210526315,543,Vizianagaram,Andhra Pradesh,0.9473684210526315,own polygon is modal
+544,Visakhapatnam,Andhra Pradesh,38,1,544,Visakhapatnam,Andhra Pradesh,1,own polygon is modal
+545,East Godavari,Andhra Pradesh,38,1,545,East Godavari,Andhra Pradesh,1,own polygon is modal
+546,West Godavari,Andhra Pradesh,38,1,546,West Godavari,Andhra Pradesh,1,own polygon is modal
+547,Krishna,Andhra Pradesh,38,1,547,Krishna,Andhra Pradesh,1,own polygon is modal
+548,Guntur,Andhra Pradesh,38,1,548,Guntur,Andhra Pradesh,1,own polygon is modal
+549,Prakasam,Andhra Pradesh,38,1,549,Prakasam,Andhra Pradesh,1,own polygon is modal
+550,Sri Potti Sriramulu Nellore,Andhra Pradesh,38,1,550,Sri Potti Sriramulu Nellore,Andhra Pradesh,1,own polygon is modal
+551,Y.S.R.,Andhra Pradesh,38,1,551,Y.S.R.,Andhra Pradesh,1,own polygon is modal
+552,Kurnool,Andhra Pradesh,38,1,552,Kurnool,Andhra Pradesh,1,own polygon is modal
+553,Anantapur,Andhra Pradesh,38,1,553,Anantapur,Andhra Pradesh,1,own polygon is modal
+554,Chittoor,Andhra Pradesh,38,1,554,Chittoor,Andhra Pradesh,1,own polygon is modal
+555,Belgaum,Karnataka,38,1,555,Belgaum,Karnataka,1,own polygon is modal
+556,Bagalkot,Karnataka,38,1,556,Bagalkot,Karnataka,1,own polygon is modal
+557,Bijapur,Karnataka,38,1,557,Bijapur,Karnataka,1,own polygon is modal
+558,Bidar,Karnataka,38,1,558,Bidar,Karnataka,1,own polygon is modal
+559,Raichur,Karnataka,38,1,559,Raichur,Karnataka,1,own polygon is modal
+560,Koppal,Karnataka,38,1,560,Koppal,Karnataka,1,own polygon is modal
+561,Gadag,Karnataka,38,1,561,Gadag,Karnataka,1,own polygon is modal
+562,Dharwad,Karnataka,38,0.9736842105263158,562,Dharwad,Karnataka,0.9736842105263158,own polygon is modal
+563,Uttara Kannada,Karnataka,38,1,563,Uttara Kannada,Karnataka,1,own polygon is modal
+564,Haveri,Karnataka,38,1,564,Haveri,Karnataka,1,own polygon is modal
+565,Bellary,Karnataka,38,1,565,Bellary,Karnataka,1,own polygon is modal
+566,Chitradurga,Karnataka,38,1,566,Chitradurga,Karnataka,1,own polygon is modal
+567,Davanagere,Karnataka,38,1,567,Davanagere,Karnataka,1,own polygon is modal
+568,Shimoga,Karnataka,38,1,568,Shimoga,Karnataka,1,own polygon is modal
+569,Udupi,Karnataka,38,0.9736842105263158,569,Udupi,Karnataka,0.9736842105263158,own polygon is modal
+570,Chikmagalur,Karnataka,38,1,570,Chikmagalur,Karnataka,1,own polygon is modal
+571,Tumkur,Karnataka,38,0.9736842105263158,571,Tumkur,Karnataka,0.9736842105263158,own polygon is modal
+572,Bangalore,Karnataka,38,1,572,Bangalore,Karnataka,1,own polygon is modal
+573,Mandya,Karnataka,38,0.9736842105263158,573,Mandya,Karnataka,0.9736842105263158,own polygon is modal
+574,Hassan,Karnataka,38,1,574,Hassan,Karnataka,1,own polygon is modal
+575,Dakshina Kannada,Karnataka,38,1,575,Dakshina Kannada,Karnataka,1,own polygon is modal
+576,Kodagu,Karnataka,38,1,576,Kodagu,Karnataka,1,own polygon is modal
+577,Mysore,Karnataka,38,1,577,Mysore,Karnataka,1,own polygon is modal
+578,Chamarajanagar,Karnataka,37,1,578,Chamarajanagar,Karnataka,1,own polygon is modal
+579,Gulbarga,Karnataka,38,1,579,Gulbarga,Karnataka,1,own polygon is modal
+580,Yadgir,Karnataka,38,1,580,Yadgir,Karnataka,1,own polygon is modal
+581,Kolar,Karnataka,38,0.9736842105263158,581,Kolar,Karnataka,0.9736842105263158,own polygon is modal
+582,Chikkaballapura,Karnataka,38,1,582,Chikkaballapura,Karnataka,1,own polygon is modal
+583,Bangalore Rural,Karnataka,38,0.9736842105263158,583,Bangalore Rural,Karnataka,0.9736842105263158,own polygon is modal
+584,Ramanagara,Karnataka,38,1,584,Ramanagara,Karnataka,1,own polygon is modal
+585,North Goa,Goa,38,1,585,North Goa,Goa,1,own polygon is modal
+586,South Goa,Goa,38,1,586,South Goa,Goa,1,own polygon is modal
+587,Lakshadweep,Lakshadweep,24,1,587,Lakshadweep,Lakshadweep,1,own polygon is modal
+588,Kasaragod,Kerala,37,0.972972972972973,588,Kasaragod,Kerala,0.972972972972973,own polygon is modal
+589,Kannur,Kerala,38,1,589,Kannur,Kerala,1,own polygon is modal
+590,Wayanad,Kerala,38,1,590,Wayanad,Kerala,1,own polygon is modal
+591,Kozhikode,Kerala,38,1,591,Kozhikode,Kerala,1,own polygon is modal
+592,Malappuram,Kerala,38,1,592,Malappuram,Kerala,1,own polygon is modal
+593,Palakkad,Kerala,38,1,593,Palakkad,Kerala,1,own polygon is modal
+594,Thrissur,Kerala,38,1,594,Thrissur,Kerala,1,own polygon is modal
+595,Ernakulam,Kerala,38,0.9736842105263158,595,Ernakulam,Kerala,0.9736842105263158,own polygon is modal
+596,Idukki,Kerala,37,1,596,Idukki,Kerala,1,own polygon is modal
+597,Kottayam,Kerala,38,1,597,Kottayam,Kerala,1,own polygon is modal
+598,Alappuzha,Kerala,38,1,598,Alappuzha,Kerala,1,own polygon is modal
+599,Pathanamthitta,Kerala,38,1,599,Pathanamthitta,Kerala,1,own polygon is modal
+600,Kollam,Kerala,38,1,600,Kollam,Kerala,1,own polygon is modal
+601,Thiruvananthapuram,Kerala,38,0.9736842105263158,601,Thiruvananthapuram,Kerala,0.9736842105263158,own polygon is modal
+602,Thiruvallur,Tamil Nadu,38,0.8947368421052632,602,Thiruvallur,Tamil Nadu,0.8947368421052632,own polygon is modal
+603,Chennai,Tamil Nadu,38,1,603,Chennai,Tamil Nadu,1,own polygon is modal
+604,Kancheepuram,Tamil Nadu,38,0.9473684210526315,604,Kancheepuram,Tamil Nadu,0.9473684210526315,own polygon is modal
+605,Vellore,Tamil Nadu,38,0.9736842105263158,605,Vellore,Tamil Nadu,0.9736842105263158,own polygon is modal
+606,Tiruvannamalai,Tamil Nadu,38,0.9736842105263158,606,Tiruvannamalai,Tamil Nadu,0.9736842105263158,own polygon is modal
+607,Viluppuram,Tamil Nadu,38,0.9736842105263158,607,Viluppuram,Tamil Nadu,0.9736842105263158,own polygon is modal
+608,Salem,Tamil Nadu,37,0.972972972972973,608,Salem,Tamil Nadu,0.972972972972973,own polygon is modal
+609,Namakkal,Tamil Nadu,38,0.9736842105263158,609,Namakkal,Tamil Nadu,0.9736842105263158,own polygon is modal
+610,Erode,Tamil Nadu,38,1,610,Erode,Tamil Nadu,1,own polygon is modal
+611,The Nilgiris,Tamil Nadu,38,1,611,The Nilgiris,Tamil Nadu,1,own polygon is modal
+612,Dindigul,Tamil Nadu,38,1,612,Dindigul,Tamil Nadu,1,own polygon is modal
+613,Karur,Tamil Nadu,38,1,613,Karur,Tamil Nadu,1,own polygon is modal
+614,Tiruchirappalli,Tamil Nadu,38,1,614,Tiruchirappalli,Tamil Nadu,1,own polygon is modal
+615,Perambalur,Tamil Nadu,38,0.9736842105263158,615,Perambalur,Tamil Nadu,0.9736842105263158,own polygon is modal
+616,Ariyalur,Tamil Nadu,38,1,616,Ariyalur,Tamil Nadu,1,own polygon is modal
+617,Cuddalore,Tamil Nadu,38,1,617,Cuddalore,Tamil Nadu,1,own polygon is modal
+618,Nagapattinam,Tamil Nadu,38,0.9736842105263158,618,Nagapattinam,Tamil Nadu,0.9736842105263158,own polygon is modal
+619,Thiruvarur,Tamil Nadu,38,1,619,Thiruvarur,Tamil Nadu,1,own polygon is modal
+620,Thanjavur,Tamil Nadu,38,1,620,Thanjavur,Tamil Nadu,1,own polygon is modal
+621,Pudukkottai,Tamil Nadu,38,0.9736842105263158,621,Pudukkottai,Tamil Nadu,0.9736842105263158,own polygon is modal
+622,Sivaganga,Tamil Nadu,38,0.9736842105263158,622,Sivaganga,Tamil Nadu,0.9736842105263158,own polygon is modal
+623,Madurai,Tamil Nadu,37,1,623,Madurai,Tamil Nadu,1,own polygon is modal
+624,Theni,Tamil Nadu,38,1,624,Theni,Tamil Nadu,1,own polygon is modal
+625,Virudhunagar,Tamil Nadu,38,1,625,Virudhunagar,Tamil Nadu,1,own polygon is modal
+626,Ramanathapuram,Tamil Nadu,38,1,626,Ramanathapuram,Tamil Nadu,1,own polygon is modal
+627,Thoothukkudi,Tamil Nadu,38,1,627,Thoothukkudi,Tamil Nadu,1,own polygon is modal
+628,Tirunelveli,Tamil Nadu,38,1,628,Tirunelveli,Tamil Nadu,1,own polygon is modal
+629,Kanniyakumari,Tamil Nadu,38,1,629,Kanniyakumari,Tamil Nadu,1,own polygon is modal
+630,Dharmapuri,Tamil Nadu,37,1,630,Dharmapuri,Tamil Nadu,1,own polygon is modal
+631,Krishnagiri,Tamil Nadu,38,1,631,Krishnagiri,Tamil Nadu,1,own polygon is modal
+632,Coimbatore,Tamil Nadu,38,1,632,Coimbatore,Tamil Nadu,1,own polygon is modal
+633,Tiruppur,Tamil Nadu,38,1,633,Tiruppur,Tamil Nadu,1,own polygon is modal
+634,Yanam,Puducherry,38,0.9210526315789473,634,Yanam,Puducherry,0.9210526315789473,own polygon is modal
+635,Puducherry,Puducherry,38,1,635,Puducherry,Puducherry,1,own polygon is modal
+636,Mahe,Puducherry,38,0.8421052631578947,636,Mahe,Puducherry,0.8421052631578947,own polygon is modal
+637,Karaikal,Puducherry,38,0.9473684210526315,637,Karaikal,Puducherry,0.9473684210526315,own polygon is modal
+638,Nicobars,Andaman & Nicobar Islands,34,1,638,Nicobars,Andaman & Nicobar Islands,1,own polygon is modal
+639,North  & Middle Andaman,Andaman & Nicobar Islands,27,1,639,North  & Middle Andaman,Andaman & Nicobar Islands,1,own polygon is modal
+640,South Andaman,Andaman & Nicobar Islands,38,1,640,South Andaman,Andaman & Nicobar Islands,1,own polygon is modal

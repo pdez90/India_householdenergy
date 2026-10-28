@@ -58,7 +58,7 @@ RURAL_ONLY <- (POP == "rural")
 message("H4 population: ", POP)
 
 path_cvd_load      <- file.path(.dir_dhs(), "cvd_load.RData")
-path_districts_shp <- file.path(.dir_dhs(), "district_nfhs_shapefile/nfhs_data.shp")
+path_districts_shp <- file.path(.dir_dhs(), "district_pc11_shrug/nfhs_data.shp")   # SHRUG 2011 geometry; build_district_boundaries.R
 path_corr          <- file.path(dir_out, "corrected_nfhs_districts.rds")
 path_health        <- file.path(dir_out, paste0("health_district_wide", sfx, ".rds"))  # optional (SES)
 path_dfwide        <- file.path(dir_out, "df_wide_health.rds")        # optional
@@ -192,7 +192,9 @@ attach_geo <- function(df, tag = "", survey) {
   snap_audit[[length(snap_audit) + 1L]] <<- list(tag = tag, n_points = nrow(out),
     n_unmatched = sum(is.na(out$dist_code)))
   message(sprintf("  [%s] %.2f%% of records unmatched to the district crosswalk (dropped).", tag, 100 * miss))
-  if (miss > 0.02) stop("H4: ", tag, ": more than 2% of records unmatched to the crosswalk", call. = FALSE)
+  # the exclude_uncertain crosswalk variant removes clusters on purpose
+  .miss_max <- if (tolower(Sys.getenv("CROSSWALK_VARIANT", "primary")) == "exclude_uncertain") 0.10 else 0.02
+  if (miss > .miss_max) stop("H4: ", tag, ": more than " , 100 * .miss_max, "% of records unmatched to the crosswalk", call. = FALSE)
   out %>% filter(!is.na(dist_code)) %>%
     mutate(district = as.character(as.numeric(dist_code)), state = state_name) %>%
     select(-.clnum)

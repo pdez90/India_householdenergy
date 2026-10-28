@@ -61,7 +61,7 @@ path_gps_2015 <- file.path(.dir_dhs(), "India2015/gps_india.RData")
 path_gps_2019 <- file.path(.dir_dhs(), "India2019/gps_india.RData")
 
 # NFHS-4 district shapefile (the dist_code geography used throughout 01-07)
-path_districts_shp <- file.path(.dir_dhs(), "district_nfhs_shapefile/nfhs_data.shp")
+path_districts_shp <- file.path(.dir_dhs(), "district_pc11_shrug/nfhs_data.shp")   # SHRUG 2011 geometry; build_district_boundaries.R
 
 # This script writes BOTH population versions in a single run:
 #   health_district_wide.rds       -> RURAL births   (MAIN analysis; matches the
@@ -217,7 +217,9 @@ attach_geo <- function(kr, gps, shp, survey) {
   miss <- mean(is.na(out$dist_code))
   message(sprintf("  [%s] %.2f%% of records have no district in the crosswalk (dropped).",
                   survey, 100 * miss))
-  if (miss > 0.02) stop("H1: ", survey, ": more than 2% of records unmatched to the district crosswalk", call. = FALSE)
+  # the exclude_uncertain crosswalk variant removes clusters on purpose
+  .miss_max <- if (tolower(Sys.getenv("CROSSWALK_VARIANT", "primary")) == "exclude_uncertain") 0.10 else 0.02
+  if (miss > .miss_max) stop("H1: ", survey, ": more than " , 100 * .miss_max, "% of records unmatched to the district crosswalk", call. = FALSE)
   out %>%
     filter(!is.na(dist_code)) %>%
     mutate(district = as.character(as.numeric(dist_code)),

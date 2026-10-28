@@ -1,0 +1,11 @@
+metric,value
+NFHS-4 clusters with coordinates,28395
+share inside the polygon of their own DHS district,0.980700827610495
+share outside every polygon,0.00102130656805776
+share inside a polygon of another state,0.00373305159359042
+share inside another district's polygon in the same state,0.014544814227857
+boundary-file polygons (non-empty),641
+distinct district codes in the boundary file,641
+DHS NFHS-4 district codes without a polygon,0
+boundary-file CRS,WGS 84 / UTM zone 44N
+boundary-file attribute fields,dist_code; Id; state_name; dist_name; dist_cod_1; dist_id; state_dist; st_cd; censuscode; Districts; X8; X9; X17; X19; X26; X29; X30; X40; X44; X47; X68; X69; X71; X74; X75; X81; X83; X45

@@ -1,10 +1,10 @@
 "survey","specification","term","pp_vs_winter","se_pp","p","n_clusters","n_districts_multi_season","n_districts_total"
-"NFHS5","district fixed effects","Summer (Mar-May)",0.702528678101834,0.855329274969544,0.411444286606018,8117,211,631
-"NFHS5","district fixed effects","Monsoon (Jun-Sep)",0.873061988019667,2.26732596718949,0.700191181476183,8117,211,631
-"NFHS5","district fixed effects","Post-monsoon (Oct-Nov)",2.3352607764927,1.37210603034956,0.088764069653478,8117,211,631
-"NFHS5","district fixed effects + linear time trend","Summer (Mar-May)",0.588504540228125,0.848573422951804,0.487981874475796,8117,211,631
-"NFHS5","district fixed effects + linear time trend","Monsoon (Jun-Sep)",1.0576503225553,2.25131826622828,0.638503944251877,8117,211,631
-"NFHS5","district fixed effects + linear time trend","Post-monsoon (Oct-Nov)",2.4231093239148,1.36639186558324,0.0761685097216032,8117,211,631
+"NFHS5","district fixed effects","Summer (Mar-May)",0.576066692504066,0.90152762273185,0.522829757089508,8120,210,630
+"NFHS5","district fixed effects","Monsoon (Jun-Sep)",0.602749584681976,2.31884115275643,0.794913377399356,8120,210,630
+"NFHS5","district fixed effects","Post-monsoon (Oct-Nov)",2.33749776749494,1.37132036006504,0.0882765257739179,8120,210,630
+"NFHS5","district fixed effects + linear time trend","Summer (Mar-May)",0.628835857374001,0.883285410058196,0.476509192760111,8120,210,630
+"NFHS5","district fixed effects + linear time trend","Monsoon (Jun-Sep)",0.522170923525043,2.31122896676009,0.821257559428344,8120,210,630
+"NFHS5","district fixed effects + linear time trend","Post-monsoon (Oct-Nov)",2.29928248117404,1.37082345809502,0.0934837905326331,8120,210,630
 "NFHS4","district fixed effects","Summer (Mar-May)",-1.56099104832991,0.887614839152582,0.0786394235407012,8132,249,627
 "NFHS4","district fixed effects","Monsoon (Jun-Sep)",1.01072180092539,1.39341740109457,0.468234482650293,8132,249,627
 "NFHS4","district fixed effects","Post-monsoon (Oct-Nov)",1.91388571248323,1.329549962228,0.150009220473419,8132,249,627

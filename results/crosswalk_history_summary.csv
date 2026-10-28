@@ -1,0 +1,10 @@
+metric,value
+split-district clusters assigned outside their documented parent districts (production),68
+split-district clusters (production),381
+clusters reassigned by the history-constrained variant,150
+rural households in reassigned clusters,1720
+districts whose rural design-weighted LPG estimate moves by more than 1 point,5
+largest change in a district estimate (points),3.460265120722761
+correlation of district estimates with production,0.9999623647340397
+"NFHS-5 - IRES rural design-weighted gap, production (points)",-18.122064517642137
+"NFHS-5 - IRES rural design-weighted gap, history-constrained (points)",-18.14134758706351

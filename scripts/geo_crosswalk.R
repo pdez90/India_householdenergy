@@ -182,3 +182,244 @@ build_nfhs_xwalk <- function(gps15, gps19, k = 7, VOTE_MIN = 0.6, OVERRIDE = 0.8
               sum(is.na(xw5$district)), n_fallback, round(val, 4)))
   list(xwalk = rbind(xw4, xw5[, names(xw4)]), nfhs5_detail = xw5, diagnostics = diag)
 }
+
+# ==============================================================================
+# Version 2 (primary from 2026-10-27): documented district history + 2011 Census
+# district boundaries (SHRUG 2.2 PC11 district polygons).
+#
+# The location rule above uses geography only. Validation (30_crosswalk_
+# validation.R) showed it assigns some clusters of split districts to 2011
+# districts that contributed no territory, and that name matching keeps
+# districts whose territory was redrawn (Delhi, 2012). Version 2 lets
+# documented administrative history decide what a district may contain, and
+# uses the validated 2011 boundaries (NFHS-4 overlay agreement with DHS's own
+# district code ~98%) only where several documented parents are possible:
+#
+#   not listed in history   -> name match (territory not documented as changed)
+#   type "unchanged"        -> name match; must equal the documented district
+#   type "single_parent"    -> every cluster to that parent, with or without GPS
+#   type "multi_parent"     -> the 2011 polygon the cluster falls in, if it is a
+#                              documented parent; otherwise (outside the parents,
+#                              outside all polygons) the nearest documented
+#                              parent, flagged uncertain; clusters without GPS
+#                              go to the district's majority parent, flagged
+#   any location-assigned district missing from history -> the run stops.
+#
+# Version 1 is built first and returned alongside, so the two can be compared
+# and every change traced in the per-cluster audit.
+# ==============================================================================
+# Uncertainty is flagged per cluster and carried to named variants, so its effect
+# can be tested rather than assumed (each variant is a complete crosswalk; every
+# NFHS-5 record of a cluster -- households, women, births -- follows it, with its
+# original survey weight):
+#   flag "fallback"           GPS point outside the documented parents or outside
+#                             all polygons: nearest documented parent;
+#                             alternative = the next-nearest documented parent
+#   flag "no GPS"             no coordinates in a multi-parent district: the
+#                             district's majority parent; alternative = its
+#                             next most common parent (or the other parent)
+#   flag "near boundary"      inside a documented parent but within DHS's
+#                             displacement distance (urban 2 km, rural 5 km) of
+#                             another documented parent; alternative = that parent
+#   flag "low-confidence history" (district level) every cluster of a district
+#                             whose history row has confidence "low"; the
+#                             alternative is the row's alt_type/alt_parents_2011,
+#                             applied to the whole district at once
+# variant = "primary"                 best-supported assignment (default)
+#           "alternative_assignment"  flagged clusters (first three flags) moved
+#                                     to their alternative
+#           "exclude_uncertain"       flagged clusters (first three flags) left
+#                                     out of the crosswalk, so every NFHS-5 record
+#                                     of those clusters drops out of the analysis
+#           "alternative_history"     low-confidence history rows replaced by
+#                                     their documented alternative, district-wide
+build_nfhs_xwalk_v2 <- function(gps15, gps19, pc11, history, k = 7, VOTE_MIN = 0.6,
+                                OVERRIDE = 0.8, names4 = NULL, variant = "primary",
+                                near_km = c(U = 2, R = 5)) {
+  VARIANTS <- c("primary", "alternative_assignment", "exclude_uncertain", "alternative_history")
+  if (!variant %in% VARIANTS) stop("crosswalk variant must be one of: ", paste(VARIANTS, collapse = ", "))
+  v1  <- build_nfhs_xwalk(gps15, gps19, k = k, VOTE_MIN = VOTE_MIN, OVERRIDE = OVERRIDE,
+                          names4 = names4)
+  det <- v1$nfhs5_detail
+  old_s2 <- suppressMessages(sf::sf_use_s2(FALSE))
+  on.exit(suppressMessages(sf::sf_use_s2(old_s2)), add = TRUE)
+  pc11 <- sf::st_make_valid(sf::st_transform(pc11, 4326))
+  pid  <- as.numeric(pc11$pc11_d_id)
+
+  overlay_pts <- function(lon, lat) {
+    ok <- is.finite(lat) & is.finite(lon) & lat != 0 & lon != 0
+    hits <- vector("list", length(lon)); n <- rep(NA_integer_, length(lon))
+    if (any(ok)) {
+      ij <- sf::st_intersects(sf::st_as_sf(data.frame(lon = lon[ok], lat = lat[ok]),
+                                           coords = c("lon", "lat"), crs = 4326), pc11)
+      hits[ok] <- lapply(ij, function(x) pid[x]); n[ok] <- lengths(ij)
+    }
+    list(ok = ok, hits = hits, n = n)
+  }
+  pt <- function(lon, lat) sf::st_as_sf(data.frame(lon = lon, lat = lat), coords = c("lon", "lat"), crs = 4326)
+
+  # Validation on NFHS-4, where the true 2011 district is known.
+  o4 <- overlay_pts(as.numeric(gps15$LONGNUM), as.numeric(gps15$LATNUM))
+  ov4 <- vapply(o4$hits, function(x) if (length(x) == 1) x else NA_real_, numeric(1))
+  nfhs4_agree <- mean((ov4 == as.numeric(gps15$DHSREGCO))[o4$ok] %in% TRUE)
+
+  g5 <- data.frame(cluster = as.numeric(gps19$cluster), d5 = as.numeric(gps19$DHSREGCO),
+                   name5 = trimws(as.character(gps19$DHSREGNA)),
+                   state5 = trimws(as.character(gps19$ADM1NAME)),
+                   lon = as.numeric(gps19$LONGNUM), lat = as.numeric(gps19$LATNUM),
+                   urban = if ("URBAN_RURA" %in% names(gps19)) toupper(substr(as.character(gps19$URBAN_RURA), 1, 1)) == "U" else NA,
+                   stringsAsFactors = FALSE)
+  o5 <- overlay_pts(g5$lon, g5$lat)
+  g5$has_gps <- o5$ok
+  g5$overlay_status <- ifelse(!o5$ok, "no GPS", ifelse(o5$n == 0, "outside all polygons",
+                        ifelse(o5$n > 1, "multiple polygons", "one polygon")))
+  g5$overlay_district <- vapply(o5$hits, function(x) if (length(x) == 1) x else NA_real_, numeric(1))
+  thr_km <- ifelse(g5$urban %in% TRUE, near_km[["U"]], near_km[["R"]])   # unknown -> rural (larger)
+
+  key <- function(s, d) paste(toupper(trimws(s)), toupper(trimws(d)), sep = "|")
+  history <- as.data.frame(history, stringsAsFactors = FALSE)
+  for (cc in c("alt_type", "alt_parents_2011")) if (!cc %in% names(history)) history[[cc]] <- NA_character_
+  history$key <- key(history$state5, history$district5)
+  if (anyDuplicated(history$key)) stop("district history: duplicated state/district rows")
+  TYPES <- c("unchanged", "single_parent", "multi_parent")
+  if (!all(history$type %in% TYPES)) stop("district history: type must be one of ", paste(TYPES, collapse = ", "))
+  alt_ok <- is.na(history$alt_type) | history$alt_type %in% c(TYPES, "")
+  if (!all(alt_ok)) stop("district history: alt_type must be empty or one of ", paste(TYPES, collapse = ", "))
+  history$low_conf <- tolower(history$confidence) %in% "low"
+  history$alt_applied <- FALSE
+  if (variant == "alternative_history") {
+    sw <- history$low_conf & !is.na(history$alt_type) & history$alt_type != ""
+    history$type[sw] <- history$alt_type[sw]; history$parents_2011[sw] <- history$alt_parents_2011[sw]
+    history$alt_applied[sw] <- TRUE
+  }
+  hrow <- match(key(g5$state5, g5$name5), history$key)
+  unused <- setdiff(history$key, key(g5$state5, g5$name5))
+  if (length(unused)) stop("district history rows match no NFHS-5 district: ", paste(unused, collapse = "; "))
+
+  m <- match(g5$cluster, det$cluster)
+  g5$v1_district <- det$district[m]; g5$v1_method <- det$method[m]
+  g5$history_type <- ifelse(is.na(hrow), "not listed", history$type[hrow])
+  g5$history_confidence <- ifelse(is.na(hrow), NA_character_, history$confidence[hrow])
+  g5$history_low_confidence <- !is.na(hrow) & history$low_conf[hrow]
+  g5$history_alternative_applied <- !is.na(hrow) & history$alt_applied[hrow]
+  bad <- is.na(hrow) & !grepl("^name match", g5$v1_method)
+  if (any(bad))
+    stop("v2 crosswalk: location-assigned NFHS-5 districts without a documented history row: ",
+         paste(unique(paste(g5$state5[bad], g5$name5[bad], sep = " / ")), collapse = "; "))
+  parents <- lapply(hrow, function(r) if (is.na(r)) numeric(0)
+                    else as.numeric(strsplit(as.character(history$parents_2011[r]), ";")[[1]]))
+
+  n5 <- nrow(g5)
+  final <- rep(NA_real_, n5); method <- rep(NA_character_, n5); alt <- rep(NA_real_, n5)
+  flag <- rep("", n5); km <- rep(NA_real_, n5); km_other <- rep(NA_real_, n5)
+
+  i <- g5$history_type == "not listed"
+  final[i] <- g5$v1_district[i]; method[i] <- "name match (territory not documented as changed)"
+
+  i <- g5$history_type == "unchanged"
+  if (any(i)) {
+    mism <- i & !mapply(function(p, d) d %in% p, parents, g5$v1_district)
+    if (any(mism)) stop("documented-unchanged districts whose name match is not the documented district: ",
+                        paste(unique(g5$name5[mism]), collapse = "; "))
+    final[i] <- g5$v1_district[i]; method[i] <- "name match (documented unchanged)"
+  }
+
+  i <- g5$history_type == "single_parent"
+  if (any(i)) {
+    final[i] <- vapply(parents[i], function(p) p[1], numeric(1))
+    method[i] <- "location: single documented parent"
+  }
+
+  multi <- which(g5$history_type == "multi_parent" & g5$has_gps)
+  for (j in multi) {
+    p <- parents[[j]]; h <- intersect(o5$hits[[j]], p)
+    pp <- pc11[pid %in% p, ]
+    dd <- as.numeric(sf::st_distance(pt(g5$lon[j], g5$lat[j]), pp)) / 1000   # great-circle km
+    ord <- order(dd); pcode <- as.numeric(pp$pc11_d_id)
+    if (length(h) == 1) {
+      final[j] <- h; method[j] <- "location: 2011 boundary within documented parents"
+      other <- which(pcode != h)
+      if (length(other)) {
+        o <- other[which.min(dd[other])]; km_other[j] <- dd[o]
+        if (dd[o] <= thr_km[j]) { flag[j] <- "near boundary"; alt[j] <- pcode[o] }
+      }
+    } else {
+      final[j] <- pcode[ord[1]]; km[j] <- dd[ord[1]]
+      method[j] <- paste0("location: fallback, nearest documented parent (",
+                          if (length(h) > 1) "inside several parent polygons"
+                          else if (g5$overlay_status[j] == "one polygon") "point in a non-parent district"
+                          else "outside all 2011 polygons", ")")
+      flag[j] <- "fallback"
+      if (length(ord) > 1) { alt[j] <- pcode[ord[2]]; km_other[j] <- dd[ord[2]] }
+    }
+  }
+  # clusters without GPS in multi-parent districts: the district's majority parent
+  nog <- which(g5$history_type == "multi_parent" & !g5$has_gps)
+  for (j in nog) {
+    sib <- which(g5$d5 == g5$d5[j] & !is.na(final) & grepl("2011 boundary within", method))
+    tv <- if (length(sib)) sort(table(final[sib]), decreasing = TRUE) else integer(0)
+    final[j] <- if (length(tv)) as.numeric(names(tv)[1]) else parents[[j]][1]
+    alt[j] <- if (length(tv) > 1) as.numeric(names(tv)[2]) else setdiff(parents[[j]], final[j])[1]
+    method[j] <- "location: fallback, no GPS (district's majority documented parent)"
+    flag[j] <- "no GPS"
+  }
+  if (any(is.na(final))) stop("v2 crosswalk left ", sum(is.na(final)), " NFHS-5 clusters unassigned")
+  uncertain <- flag != ""
+
+  primary <- final
+  if (variant == "alternative_assignment") {
+    sw <- uncertain & !is.na(alt); final[sw] <- alt[sw]
+    method[sw] <- paste0(method[sw], " [variant: alternative parent]")
+  }
+  excluded <- if (variant == "exclude_uncertain") uncertain else rep(FALSE, n5)
+
+  audit <- data.frame(cluster = g5$cluster, nfhs5_district_code = g5$d5, nfhs5_district = g5$name5,
+                      nfhs5_state = g5$state5, urban = g5$urban, has_gps = g5$has_gps,
+                      overlay_status = g5$overlay_status, overlay_district = g5$overlay_district,
+                      v1_district = g5$v1_district, v1_method = g5$v1_method,
+                      history_type = g5$history_type, history_confidence = g5$history_confidence,
+                      history_low_confidence = g5$history_low_confidence,
+                      history_alternative_applied = g5$history_alternative_applied,
+                      primary_district = primary, alternative_district = alt,
+                      final_district = ifelse(excluded, NA_real_, final), method = method,
+                      uncertain = uncertain, uncertainty_flag = flag, excluded_by_variant = excluded,
+                      km_to_assigned_parent = round(km, 2), km_to_other_parent = round(km_other, 2),
+                      changed_from_v1 = final != g5$v1_district,
+                      overlay_disagrees_with_final = g5$overlay_status == "one polygon" &
+                        g5$overlay_district != final, variant = variant, stringsAsFactors = FALSE)
+
+  det5 <- det; mm <- match(det5$cluster, audit$cluster)
+  det5$district <- audit$final_district[mm]; det5$method <- audit$method[mm]
+  det5$uncertain <- audit$uncertain[mm]
+  det5 <- det5[!audit$excluded_by_variant[mm], , drop = FALSE]
+  xw4 <- v1$xwalk[v1$xwalk$survey == "NFHS4", ]
+  keep <- !excluded
+  xw5 <- data.frame(survey = "NFHS5", cluster = audit$cluster[keep], district = audit$final_district[keep],
+                    method = audit$method[keep], stringsAsFactors = FALSE)
+
+  tab <- table(audit$method[keep]); ft <- table(factor(flag[uncertain], levels = c("fallback", "no GPS", "near boundary")))
+  diag2 <- data.frame(
+    metric = c("crosswalk version", "crosswalk variant",
+               "NFHS-4 clusters inside the polygon of their own DHS district (2011 boundaries, SHRUG)",
+               "NFHS-5 clusters inside exactly one 2011 polygon",
+               "NFHS-5 clusters outside all 2011 polygons",
+               "NFHS-5 clusters inside more than one 2011 polygon",
+               "NFHS-5 clusters without GPS coordinates",
+               paste0("v2 method: ", names(tab)),
+               "v2: clusters flagged uncertain",
+               paste0("v2: uncertainty flag: ", names(ft)),
+               "v2: clusters in districts whose history has low confidence",
+               "v2: clusters excluded by the variant",
+               "v2: clusters assigned differently from version 1",
+               "v2: NFHS-5 districts with a documented history row",
+               "v2: clusters whose 2011 polygon differs from the final assignment (single-parent and unchanged districts kept by history)",
+               "v2: NFHS-5 clusters unassigned"),
+    value = c(2, match(variant, VARIANTS), round(nfhs4_agree, 4), sum(g5$overlay_status == "one polygon"),
+              sum(g5$overlay_status == "outside all polygons"), sum(g5$overlay_status == "multiple polygons"),
+              sum(!g5$has_gps), as.numeric(tab), sum(uncertain), as.numeric(ft),
+              sum(g5$history_low_confidence), sum(excluded), sum(final != g5$v1_district & !excluded),
+              length(unique(hrow[!is.na(hrow)])), sum(audit$overlay_disagrees_with_final & !excluded, na.rm = TRUE),
+              sum(is.na(audit$final_district) & !excluded)))
+  list(xwalk = rbind(xw4, xw5), nfhs5_detail = det5, audit = audit,
+       diagnostics = rbind(v1$diagnostics, diag2), xwalk_v1 = v1$xwalk)
+}

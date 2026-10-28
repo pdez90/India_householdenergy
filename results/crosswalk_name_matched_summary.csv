@@ -1,0 +1,6 @@
+metric,value
+name-matched NFHS-5 districts,633
+name-matched districts with >= 80% of pooled votes for the matched district,523
+name-matched districts with 50-80% of pooled votes for the matched district,107
+name-matched districts with < 50% of pooled votes for the matched district,3
+clusters in name-matched districts with < 50% of votes for the matched district,126

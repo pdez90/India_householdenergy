@@ -1,4 +1,4 @@
 variant,n_districts,pearson,pearson_ref_samplewt,mean_diff
-NFHS-5 all interviews,144,0.719,0.734,-0.175
-"NFHS-5 winter interviews only (Dec-Feb, season-matched to IRES)",67,0.603,0.59,-0.189
-NFHS-5 interviews through Feb 2020 (pre-COVID; excludes Mar 2020 onward),102,0.738,0.751,-0.172
+NFHS-5 all interviews,144,0.718,0.734,-0.176
+"NFHS-5 winter interviews only (Dec-Feb, season-matched to IRES)",67,0.603,0.589,-0.189
+NFHS-5 interviews through Feb 2020 (pre-COVID; excludes Mar 2020 onward),102,0.738,0.752,-0.172

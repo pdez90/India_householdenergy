@@ -1,5 +1,11 @@
 "script","n","sing","unk","pct_singular"
+"01_prep_nfhs",4,0,0,0
+"02_prep_access",5,2,0,40
+"03_prep_ires",5,0,0,0
+"06_stacking_prediction",4,0,0,0
 "08_si_benchmarks",32,0,0,0
 "09_season_sensitivity",2,0,0,0
+"21_transfer_diagnostics",5,0,0,0
+"25_prep_nsso78",2,0,0,0
 "H1_prep_mortality",54,0,0,0
 "H4_si_adult_health",12,0,0,0

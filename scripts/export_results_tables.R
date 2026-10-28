@@ -54,7 +54,11 @@ rel  <- sub(paste0("^", gsub("([.\\\\+*?^$(){}|\\[\\]])", "\\\\\\1", dir_out), "
 DENY <- c("nfhs5_fallback_clusters.csv" =
           "DHS cluster IDs with GPS coordinates: restricted DHS data, not redistributable",
           "nfhs_cluster_district_xwalk.csv" =
-          "DHS cluster IDs linked to districts: derived from restricted DHS GPS data")
+          "DHS cluster IDs linked to districts: derived from restricted DHS GPS data",
+          "nfhs_cluster_district_xwalk_v1.csv" =
+          "DHS cluster IDs linked to districts (version 1 crosswalk): derived from restricted DHS GPS data",
+          "nfhs5_crosswalk_audit.csv" =
+          "per-cluster crosswalk audit: DHS cluster IDs, derived from restricted DHS GPS data")
 reason <- rep(NA_character_, length(src))
 reason[basename(src) %in% names(DENY)] <- DENY[basename(src)[basename(src) %in% names(DENY)]]
 ## Outputs of the abandoned outcome-conditioned imputation and of the precision

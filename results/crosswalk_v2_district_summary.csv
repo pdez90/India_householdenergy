@@ -1,0 +1,708 @@
+nfhs5_state,nfhs5_district,history_type,history_confidence,clusters,with_gps,outside_all_polygons,uncertain,near_boundary,fallback,no_gps_multi_parent,low_confidence_history,excluded_by_variant,changed_from_v1,overlay_disagrees_with_final,assigned_2011
+ANDAMAN & NICOBAR ISLANDS,Nicobars,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,638
+ANDAMAN & NICOBAR ISLANDS,North & Middle Andaman,not listed,NA,42,42,7,0,0,0,0,0,0,0,0,639
+ANDAMAN & NICOBAR ISLANDS,South Andaman,not listed,NA,42,42,1,0,0,0,0,0,0,0,0,640
+ANDHRA PRADESH,Anantapur,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,553
+ANDHRA PRADESH,Chittoor,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,554
+ANDHRA PRADESH,East Godavari,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,545
+ANDHRA PRADESH,Guntur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,548
+ANDHRA PRADESH,Krishna,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,547
+ANDHRA PRADESH,Kurnool,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,552
+ANDHRA PRADESH,Prakasam,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,549
+ANDHRA PRADESH,Sri Potti Sriramulu Nellore,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,550
+ANDHRA PRADESH,Srikakulam,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,542
+ANDHRA PRADESH,Visakhapatnam,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,544
+ANDHRA PRADESH,Vizianagaram,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,543
+ANDHRA PRADESH,West Godavari,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,546
+ANDHRA PRADESH,Y.S.R.,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,551
+ARUNACHAL PRADESH,Anjaw,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,260
+ARUNACHAL PRADESH,Changlang,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,253
+ARUNACHAL PRADESH,Dibang Valley,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,257
+ARUNACHAL PRADESH,East Kameng,not listed,NA,43,43,0,0,0,0,0,0,0,0,0,247
+ARUNACHAL PRADESH,East Siang,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,251
+ARUNACHAL PRADESH,Kra Daadi,single_parent,high,25,25,0,0,0,0,0,0,0,0,0,256
+ARUNACHAL PRADESH,Kurung Kumey,not listed,NA,25,25,0,0,0,0,0,0,0,0,0,256
+ARUNACHAL PRADESH,Lohit,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,259
+ARUNACHAL PRADESH,Longding,single_parent,high,45,45,0,0,0,0,0,0,0,0,0,254
+ARUNACHAL PRADESH,Lower Dibang Valley,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,258
+ARUNACHAL PRADESH,Lower Subansiri,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,255
+ARUNACHAL PRADESH,Namsai,single_parent,high,45,45,0,0,0,0,0,0,0,0,0,259
+ARUNACHAL PRADESH,Papum Pare,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,248
+ARUNACHAL PRADESH,Siang,multi_parent,high,45,43,0,10,8,0,2,0,0,12,0,250;251
+ARUNACHAL PRADESH,Tawang,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,245
+ARUNACHAL PRADESH,Tirap,not listed,NA,45,42,0,0,0,0,0,0,0,0,0,254
+ARUNACHAL PRADESH,Upper Siang,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,252
+ARUNACHAL PRADESH,Upper Subansiri,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,249
+ARUNACHAL PRADESH,West Kameng,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,246
+ARUNACHAL PRADESH,West Siang,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,250
+ASSAM,Baksa,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,324
+ASSAM,Barpeta,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,303
+ASSAM,Biswanath,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,306
+ASSAM,Bongaigaon,not listed,NA,42,42,0,0,0,0,0,0,0,0,3,319
+ASSAM,Cachar,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,316
+ASSAM,Charaideo,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,311
+ASSAM,Chirang,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,320
+ASSAM,Darrang,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,325
+ASSAM,Dhemaji,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,308
+ASSAM,Dhubri,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,301
+ASSAM,Dibrugarh,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,310
+ASSAM,Dima Hasao,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,315
+ASSAM,Goalpara,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,302
+ASSAM,Golaghat,not listed,NA,42,41,0,0,0,0,0,0,0,0,1,313
+ASSAM,Hailakandi,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,318
+ASSAM,Hojai,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,305
+ASSAM,Jorhat,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,312
+ASSAM,Kamrup,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,321
+ASSAM,Kamrup Metropolitan,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,322
+ASSAM,Karbi Anglong,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,314
+ASSAM,Karimganj,not listed,NA,42,42,1,0,0,0,0,0,0,0,0,317
+ASSAM,Kokrajhar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,300
+ASSAM,Lakhimpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,307
+ASSAM,Majuli,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,312
+ASSAM,Morigaon,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,304
+ASSAM,Nagaon,unchanged,medium,42,32,0,0,0,0,0,0,0,0,4,305
+ASSAM,Nalbari,not listed,NA,42,41,0,0,0,0,0,0,0,0,1,323
+ASSAM,Sivasagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,311
+ASSAM,Sonitpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,306
+ASSAM,South Salmara Mancachar,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,301
+ASSAM,Tinsukia,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,309
+ASSAM,Udalguri,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,326
+ASSAM,West Karbi Anglong,single_parent,high,42,42,0,0,0,0,0,0,0,19,2,314
+BIHAR,Araria,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,209
+BIHAR,Arwal,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,240
+BIHAR,Aurangabad,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,235
+BIHAR,Banka,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,225
+BIHAR,Begusarai,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,222
+BIHAR,Bhagalpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,224
+BIHAR,Bhojpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,231
+BIHAR,Buxar,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,232
+BIHAR,Darbhanga,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,215
+BIHAR,Gaya,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,236
+BIHAR,Gopalganj,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,217
+BIHAR,Jamui,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,238
+BIHAR,Jehanabad,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,239
+BIHAR,Kaimur (Bhabua),not listed,NA,45,45,0,0,0,0,0,0,0,0,0,233
+BIHAR,Katihar,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,212
+BIHAR,Khagaria,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,223
+BIHAR,Kishanganj,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,210
+BIHAR,Lakhisarai,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,227
+BIHAR,Madhepura,not listed,NA,45,45,0,0,0,0,0,0,0,0,3,213
+BIHAR,Madhubani,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,207
+BIHAR,Munger,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,226
+BIHAR,Muzaffarpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,216
+BIHAR,Nalanda,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,229
+BIHAR,Nawada,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,237
+BIHAR,Pashchim Champaran,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,203
+BIHAR,Patna,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,230
+BIHAR,Purba Champaran,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,204
+BIHAR,Purnia,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,211
+BIHAR,Rohtas,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,234
+BIHAR,Saharsa,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,214
+BIHAR,Samastipur,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,221
+BIHAR,Saran,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,219
+BIHAR,Sheikhpura,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,228
+BIHAR,Sheohar,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,205
+BIHAR,Sitamarhi,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,206
+BIHAR,Siwan,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,218
+BIHAR,Supaul,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,208
+BIHAR,Vaishali,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,220
+CHANDIGARH,Chandigarh,not listed,NA,41,41,0,0,0,0,0,0,0,0,4,55
+CHHATTISGARH,Balod,single_parent,high,42,37,0,0,0,0,0,0,0,0,1,409
+CHHATTISGARH,Baloda Bazar,single_parent,medium,42,42,0,0,0,0,0,0,0,0,1,410
+CHHATTISGARH,Balrampur,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,401
+CHHATTISGARH,Bastar,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,414
+CHHATTISGARH,Bemetara,single_parent,high,42,42,0,0,0,0,0,0,0,0,2,409
+CHHATTISGARH,Bijapur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,417
+CHHATTISGARH,Bilaspur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,406
+CHHATTISGARH,Dantewada,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,416
+CHHATTISGARH,Dhamtari,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,412
+CHHATTISGARH,Durg,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,409
+CHHATTISGARH,Gariyaband,single_parent,high,42,35,0,0,0,0,0,0,0,20,0,410
+CHHATTISGARH,Janjgir - Champa,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,405
+CHHATTISGARH,Jashpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,402
+CHHATTISGARH,Kabeerdham,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,407
+CHHATTISGARH,Kodagaon,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,414
+CHHATTISGARH,Korba,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,404
+CHHATTISGARH,Koriya,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,400
+CHHATTISGARH,Mahasamund,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,411
+CHHATTISGARH,Mungeli,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,406
+CHHATTISGARH,Narayanpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,415
+CHHATTISGARH,Raigarh,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,403
+CHHATTISGARH,Raipur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,410
+CHHATTISGARH,Rajnandgaon,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,408
+CHHATTISGARH,Sukma,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,416
+CHHATTISGARH,Surajpur,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,401
+CHHATTISGARH,Surguja,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,401
+CHHATTISGARH,Uttar Bastar Kanker,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,413
+DADRA & NAGAR HAVELI AND DAMAN & DIU,Dadra & Nagar Haveli,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,496
+DADRA & NAGAR HAVELI AND DAMAN & DIU,Daman,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,495
+DADRA & NAGAR HAVELI AND DAMAN & DIU,Diu,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,494
+GOA,North Goa,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,585
+GOA,South Goa,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,586
+GUJARAT,Ahmadabad,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,474
+GUJARAT,Amreli,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,480
+GUJARAT,Anand,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,482
+GUJARAT,Aravali,single_parent,high,42,42,0,0,0,0,0,0,0,0,1,472
+GUJARAT,Banas Kantha,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,469
+GUJARAT,Bharuch,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,488
+GUJARAT,Bhavnagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,481
+GUJARAT,Botad,multi_parent,high,42,42,0,9,9,0,0,0,0,15,0,474;481
+GUJARAT,Chhota Udaipur,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,486
+GUJARAT,Devbhumi Dwarka,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,477
+GUJARAT,Dohad,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,485
+GUJARAT,Gandhinagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,473
+GUJARAT,Gir Somnath,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,479
+GUJARAT,Jamnagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,477
+GUJARAT,Junagadh,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,479
+GUJARAT,Kachchh,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,468
+GUJARAT,Kheda,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,483
+GUJARAT,Mahesana,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,471
+GUJARAT,Mahisagar,multi_parent,high,42,42,0,8,8,0,0,0,0,11,0,483;484
+GUJARAT,Morbi,multi_parent,high,42,42,0,6,6,0,0,0,0,3,0,475;476
+GUJARAT,Narmada,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,487
+GUJARAT,Navsari,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,490
+GUJARAT,Panch Mahals,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,484
+GUJARAT,Patan,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,470
+GUJARAT,Porbandar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,478
+GUJARAT,Rajkot,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,476
+GUJARAT,Sabar Kantha,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,472
+GUJARAT,Surat,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,492
+GUJARAT,Surendranagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,475
+GUJARAT,Tapi,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,493
+GUJARAT,The Dangs,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,489
+GUJARAT,Vadodara,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,486
+GUJARAT,Valsad,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,491
+HARYANA,Ambala,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,70
+HARYANA,Bhiwani,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,81
+HARYANA,Charkhi Dadri,single_parent,high,41,41,0,0,0,0,0,0,0,0,2,81
+HARYANA,Faridabad,not listed,NA,40,40,0,0,0,0,0,0,0,0,0,88
+HARYANA,Fatehabad,not listed,NA,36,36,0,0,0,0,0,0,0,0,0,78
+HARYANA,Gurgaon,not listed,NA,41,41,0,0,0,0,0,0,0,0,1,86
+HARYANA,Hisar,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,80
+HARYANA,Jhajjar,not listed,NA,39,39,0,0,0,0,0,0,0,0,1,83
+HARYANA,Jind,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,77
+HARYANA,Kaithal,not listed,NA,36,36,0,0,0,0,0,0,0,0,1,73
+HARYANA,Karnal,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,74
+HARYANA,Kurukshetra,not listed,NA,41,41,0,0,0,0,0,0,0,0,0,72
+HARYANA,Mahendragarh,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,84
+HARYANA,Mewat,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,87
+HARYANA,Palwal,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,89
+HARYANA,Panchkula,not listed,NA,35,35,0,0,0,0,0,0,0,0,2,69
+HARYANA,Panipat,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,75
+HARYANA,Rewari,not listed,NA,41,41,0,0,0,0,0,0,0,0,1,85
+HARYANA,Rohtak,not listed,NA,41,41,0,0,0,0,0,0,0,0,0,82
+HARYANA,Sirsa,not listed,NA,24,24,0,0,0,0,0,0,0,0,0,79
+HARYANA,Sonipat,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,76
+HARYANA,Yamunanagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,71
+HIMACHAL PRADESH,Bilaspur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,30
+HIMACHAL PRADESH,Chamba,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,23
+HIMACHAL PRADESH,Hamirpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,28
+HIMACHAL PRADESH,Kangra,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,24
+HIMACHAL PRADESH,Kinnaur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,34
+HIMACHAL PRADESH,Kullu,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,26
+HIMACHAL PRADESH,Lahul & Spiti,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,25
+HIMACHAL PRADESH,Mandi,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,27
+HIMACHAL PRADESH,Shimla,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,33
+HIMACHAL PRADESH,Sirmaur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,32
+HIMACHAL PRADESH,Solan,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,31
+HIMACHAL PRADESH,Una,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,29
+JAMMU & KASHMIR,Anantnag,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,14
+JAMMU & KASHMIR,Badgam,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,2
+JAMMU & KASHMIR,Bandipore,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,9
+JAMMU & KASHMIR,Baramula,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,8
+JAMMU & KASHMIR,Doda,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,16
+JAMMU & KASHMIR,Ganderbal,unchanged,low,42,42,0,0,0,0,0,42,0,0,6,11
+JAMMU & KASHMIR,Jammu,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,21
+JAMMU & KASHMIR,Kathua,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,7
+JAMMU & KASHMIR,Kishtwar,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,18
+JAMMU & KASHMIR,Kulgam,unchanged,low,42,42,0,0,0,0,0,42,0,0,5,15
+JAMMU & KASHMIR,Kupwara,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,1
+JAMMU & KASHMIR,Pulwama,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,12
+JAMMU & KASHMIR,Punch,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,5
+JAMMU & KASHMIR,Rajouri,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,6
+JAMMU & KASHMIR,Ramban,unchanged,low,42,42,0,0,0,0,0,42,0,0,9,17
+JAMMU & KASHMIR,Reasi,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,20
+JAMMU & KASHMIR,Samba,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,22
+JAMMU & KASHMIR,Shupiyan,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,13
+JAMMU & KASHMIR,Srinagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,10
+JAMMU & KASHMIR,Udhampur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,19
+JHARKHAND,Bokaro,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,355
+JHARKHAND,Chatra,not listed,NA,45,45,0,0,0,0,0,0,0,0,3,347
+JHARKHAND,Deoghar,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,350
+JHARKHAND,Dhanbad,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,354
+JHARKHAND,Dumka,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,362
+JHARKHAND,Garhwa,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,346
+JHARKHAND,Giridih,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,349
+JHARKHAND,Godda,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,351
+JHARKHAND,Gumla,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,366
+JHARKHAND,Hazaribagh,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,360
+JHARKHAND,Jamtara,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,363
+JHARKHAND,Khunti,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,365
+JHARKHAND,Kodarma,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,348
+JHARKHAND,Latehar,not listed,NA,45,45,0,0,0,0,0,0,0,0,4,359
+JHARKHAND,Lohardaga,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,356
+JHARKHAND,Pakur,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,353
+JHARKHAND,Palamu,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,358
+JHARKHAND,Pashchimi Singhbhum,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,368
+JHARKHAND,Purbi Singhbhum,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,357
+JHARKHAND,Ramgarh,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,361
+JHARKHAND,Ranchi,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,364
+JHARKHAND,Sahibganj,unchanged,medium,45,45,0,0,0,0,0,0,0,0,5,352
+JHARKHAND,Saraikela-Kharsawan,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,369
+JHARKHAND,Simdega,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,367
+KARNATAKA,Bagalkot,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,556
+KARNATAKA,Bangalore,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,572
+KARNATAKA,Bangalore Rural,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,583
+KARNATAKA,Belgaum,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,555
+KARNATAKA,Bellary,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,565
+KARNATAKA,Bidar,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,558
+KARNATAKA,Bijapur,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,557
+KARNATAKA,Chamarajanagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,578
+KARNATAKA,Chikkaballapura,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,582
+KARNATAKA,Chikmagalur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,570
+KARNATAKA,Chitradurga,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,566
+KARNATAKA,Dakshina Kannada,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,575
+KARNATAKA,Davanagere,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,567
+KARNATAKA,Dharwad,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,562
+KARNATAKA,Gadag,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,561
+KARNATAKA,Gulbarga,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,579
+KARNATAKA,Hassan,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,574
+KARNATAKA,Haveri,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,564
+KARNATAKA,Kodagu,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,576
+KARNATAKA,Kolar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,581
+KARNATAKA,Koppal,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,560
+KARNATAKA,Mandya,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,573
+KARNATAKA,Mysore,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,577
+KARNATAKA,Raichur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,559
+KARNATAKA,Ramanagara,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,584
+KARNATAKA,Shimoga,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,568
+KARNATAKA,Tumkur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,571
+KARNATAKA,Udupi,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,569
+KARNATAKA,Uttara Kannada,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,563
+KARNATAKA,Yadgir,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,580
+KERALA,Alappuzha,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,598
+KERALA,Ernakulam,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,595
+KERALA,Idukki,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,596
+KERALA,Kannur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,589
+KERALA,Kasaragod,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,588
+KERALA,Kollam,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,600
+KERALA,Kottayam,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,597
+KERALA,Kozhikode,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,591
+KERALA,Malappuram,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,592
+KERALA,Palakkad,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,593
+KERALA,Pathanamthitta,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,599
+KERALA,Thiruvananthapuram,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,601
+KERALA,Thrissur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,594
+KERALA,Wayanad,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,590
+LADAKH,Kargil,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,4
+LADAKH,Leh,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,3
+LAKSHADWEEP,Lakshadweep,not listed,NA,42,42,7,0,0,0,0,0,0,0,0,587
+MADHYA PRADESH,Agar Malwa,single_parent,high,45,45,0,0,0,0,0,0,0,0,1,436
+MADHYA PRADESH,Alirajpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,465
+MADHYA PRADESH,Anuppur,not listed,NA,45,33,0,0,0,0,0,0,0,0,0,461
+MADHYA PRADESH,Ashoknagar,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,459
+MADHYA PRADESH,Balaghat,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,457
+MADHYA PRADESH,Barwani,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,441
+MADHYA PRADESH,Betul,not listed,NA,45,44,0,0,0,0,0,0,0,0,0,447
+MADHYA PRADESH,Bhind,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,420
+MADHYA PRADESH,Bhopal,not listed,NA,33,33,0,0,0,0,0,0,0,0,0,444
+MADHYA PRADESH,Burhanpur,not listed,NA,44,44,0,0,0,0,0,0,0,0,0,467
+MADHYA PRADESH,Chhatarpur,not listed,NA,45,44,0,0,0,0,0,0,0,0,0,425
+MADHYA PRADESH,Chhindwara,not listed,NA,45,44,0,0,0,0,0,0,0,0,0,455
+MADHYA PRADESH,Damoh,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,428
+MADHYA PRADESH,Datia,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,422
+MADHYA PRADESH,Dewas,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,437
+MADHYA PRADESH,Dhar,not listed,NA,32,32,0,0,0,0,0,0,0,0,0,438
+MADHYA PRADESH,Dindori,not listed,NA,44,44,0,0,0,0,0,0,0,0,4,453
+MADHYA PRADESH,Guna,not listed,NA,44,44,0,0,0,0,0,0,0,0,1,458
+MADHYA PRADESH,Gwalior,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,421
+MADHYA PRADESH,Harda,not listed,NA,45,44,0,0,0,0,0,0,0,0,0,448
+MADHYA PRADESH,Hoshangabad,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,449
+MADHYA PRADESH,Indore,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,439
+MADHYA PRADESH,Jabalpur,not listed,NA,12,10,0,0,0,0,0,0,0,0,1,451
+MADHYA PRADESH,Jhabua,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,464
+MADHYA PRADESH,Katni,not listed,NA,34,34,0,0,0,0,0,0,0,0,1,450
+MADHYA PRADESH,Khandwa (East Nimar),not listed,NA,29,29,0,0,0,0,0,0,0,0,0,466
+MADHYA PRADESH,Khargone (West Nimar),not listed,NA,45,45,0,0,0,0,0,0,0,0,0,440
+MADHYA PRADESH,Mandla,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,454
+MADHYA PRADESH,Mandsaur,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,433
+MADHYA PRADESH,Morena,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,419
+MADHYA PRADESH,Narsimhapur,not listed,NA,45,43,0,0,0,0,0,0,0,0,0,452
+MADHYA PRADESH,Neemuch,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,432
+MADHYA PRADESH,Panna,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,426
+MADHYA PRADESH,Raisen,not listed,NA,38,38,0,0,0,0,0,0,0,0,0,446
+MADHYA PRADESH,Rajgarh,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,442
+MADHYA PRADESH,Ratlam,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,434
+MADHYA PRADESH,Rewa,not listed,NA,40,40,0,0,0,0,0,0,0,0,0,430
+MADHYA PRADESH,Sagar,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,427
+MADHYA PRADESH,Satna,not listed,NA,31,31,0,0,0,0,0,0,0,0,0,429
+MADHYA PRADESH,Sehore,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,445
+MADHYA PRADESH,Seoni,not listed,NA,44,44,0,0,0,0,0,0,0,0,2,456
+MADHYA PRADESH,Shahdol,not listed,NA,41,41,0,0,0,0,0,0,0,0,1,460
+MADHYA PRADESH,Shajapur,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,436
+MADHYA PRADESH,Sheopur,not listed,NA,45,45,0,0,0,0,0,0,0,0,3,418
+MADHYA PRADESH,Shivpuri,not listed,NA,44,44,0,0,0,0,0,0,0,0,1,423
+MADHYA PRADESH,Sidhi,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,462
+MADHYA PRADESH,Singrauli,not listed,NA,44,44,0,0,0,0,0,0,0,0,0,463
+MADHYA PRADESH,Tikamgarh,not listed,NA,38,38,0,0,0,0,0,0,0,0,0,424
+MADHYA PRADESH,Ujjain,not listed,NA,43,43,0,0,0,0,0,0,0,0,1,435
+MADHYA PRADESH,Umaria,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,431
+MADHYA PRADESH,Vidisha,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,443
+MAHARASHTRA,Ahmadnagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,522
+MAHARASHTRA,Akola,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,501
+MAHARASHTRA,Amravati,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,503
+MAHARASHTRA,Aurangabad,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,515
+MAHARASHTRA,Bhandara,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,506
+MAHARASHTRA,Bid,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,523
+MAHARASHTRA,Buldana,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,500
+MAHARASHTRA,Chandrapur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,509
+MAHARASHTRA,Dhule,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,498
+MAHARASHTRA,Gadchiroli,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,508
+MAHARASHTRA,Gondiya,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,507
+MAHARASHTRA,Hingoli,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,512
+MAHARASHTRA,Jalgaon,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,499
+MAHARASHTRA,Jalna,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,514
+MAHARASHTRA,Kolhapur,not listed,NA,42,41,0,0,0,0,0,0,0,0,0,530
+MAHARASHTRA,Latur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,524
+MAHARASHTRA,Mumbai,not listed,NA,42,33,0,0,0,0,0,0,0,0,0,519
+MAHARASHTRA,Mumbai Suburban,not listed,NA,42,35,0,0,0,0,0,0,0,0,0,518
+MAHARASHTRA,Nagpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,505
+MAHARASHTRA,Nanded,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,511
+MAHARASHTRA,Nandurbar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,497
+MAHARASHTRA,Nashik,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,516
+MAHARASHTRA,Osmanabad,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,525
+MAHARASHTRA,Palghar,single_parent,high,42,42,0,0,0,0,0,0,0,0,1,517
+MAHARASHTRA,Parbhani,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,513
+MAHARASHTRA,Pune,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,521
+MAHARASHTRA,Raigarh,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,520
+MAHARASHTRA,Ratnagiri,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,528
+MAHARASHTRA,Sangli,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,531
+MAHARASHTRA,Satara,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,527
+MAHARASHTRA,Sindhudurg,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,529
+MAHARASHTRA,Solapur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,526
+MAHARASHTRA,Thane,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,517
+MAHARASHTRA,Wardha,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,504
+MAHARASHTRA,Washim,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,502
+MAHARASHTRA,Yavatmal,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,510
+MANIPUR,Bishnupur,not listed,NA,42,42,0,0,0,0,0,0,0,0,4,275
+MANIPUR,Chandel,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,280
+MANIPUR,Churachandpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,274
+MANIPUR,Imphal East,single_parent,high,42,42,0,0,0,0,0,0,0,0,9,278
+MANIPUR,Imphal West,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,277
+MANIPUR,Senapati,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,272
+MANIPUR,Tamenglong,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,273
+MANIPUR,Thoubal,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,276
+MANIPUR,Ukhrul,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,279
+MEGHALAYA,East Garo Hills,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,294
+MEGHALAYA,East Jantia Hills,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,299
+MEGHALAYA,East Khasi Hills,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,298
+MEGHALAYA,North Garo Hills,single_parent,high,42,42,0,0,0,0,0,0,0,0,1,294
+MEGHALAYA,Ribhoi,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,297
+MEGHALAYA,South Garo Hills,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,295
+MEGHALAYA,South West Garo Hills,single_parent,medium,42,42,0,0,0,0,0,0,0,0,0,293
+MEGHALAYA,South West Khasi Hills,single_parent,high,42,42,0,0,0,0,0,0,0,0,3,296
+MEGHALAYA,West Garo Hills,not listed,NA,42,42,1,0,0,0,0,0,0,0,0,293
+MEGHALAYA,West Jaintia Hills,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,299
+MEGHALAYA,West Khasi Hills,not listed,NA,42,42,0,0,0,0,0,0,0,0,3,296
+MIZORAM,Aizawl,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,283
+MIZORAM,Champhai,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,284
+MIZORAM,Kolasib,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,282
+MIZORAM,Lawngtlai,unchanged,low,42,42,4,0,0,0,0,42,0,0,5,287
+MIZORAM,Lunglei,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,286
+MIZORAM,Mamit,not listed,NA,42,42,1,0,0,0,0,0,0,0,0,281
+MIZORAM,Saiha,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,288
+MIZORAM,Serchhip,not listed,NA,42,42,0,0,0,0,0,0,0,0,4,285
+NAGALAND,Dimapur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,265
+NAGALAND,Kiphire,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,269
+NAGALAND,Kohima,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,270
+NAGALAND,Longleng,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,268
+NAGALAND,Mokokchung,not listed,NA,42,41,0,0,0,0,0,0,0,0,0,262
+NAGALAND,Mon,not listed,NA,41,41,0,0,0,0,0,0,0,0,0,261
+NAGALAND,Peren,not listed,NA,42,42,0,0,0,0,0,0,0,0,3,271
+NAGALAND,Phek,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,266
+NAGALAND,Tuensang,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,267
+NAGALAND,Wokha,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,264
+NAGALAND,Zunheboto,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,263
+NCT OF DELHI,Central,multi_parent,medium,42,39,0,42,39,0,3,0,0,21,0,90;91;92;95;96
+NCT OF DELHI,East,multi_parent,medium,42,37,0,15,10,0,5,0,0,0,0,93
+NCT OF DELHI,New Delhi,multi_parent,medium,42,30,0,31,19,0,12,0,0,42,0,97;98
+NCT OF DELHI,North,multi_parent,medium,42,40,0,16,14,0,2,0,0,1,0,90;91
+NCT OF DELHI,North East,multi_parent,medium,42,39,0,25,22,0,3,0,0,1,0,92;93
+NCT OF DELHI,North West,multi_parent,medium,42,40,0,31,29,0,2,0,0,1,0,90;91
+NCT OF DELHI,Shahdara,multi_parent,medium,42,41,0,38,37,0,1,0,0,25,0,92;93
+NCT OF DELHI,South,multi_parent,medium,42,38,0,6,2,0,4,0,0,0,0,98
+NCT OF DELHI,South East,multi_parent,medium,42,40,0,11,8,1,2,0,0,0,1,98
+NCT OF DELHI,South West,multi_parent,medium,42,40,0,27,25,0,2,0,0,2,0,96;97
+NCT OF DELHI,West,multi_parent,medium,42,40,0,30,28,0,2,0,0,1,0,90;96
+ODISHA,Anugul,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,384
+ODISHA,Balangir,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,393
+ODISHA,Baleshwar,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,377
+ODISHA,Bargarh,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,370
+ODISHA,Baudh,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,391
+ODISHA,Bhadrak,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,378
+ODISHA,Cuttack,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,381
+ODISHA,Debagarh,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,373
+ODISHA,Dhenkanal,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,383
+ODISHA,Gajapati,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,389
+ODISHA,Ganjam,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,388
+ODISHA,Jagatsinghapur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,380
+ODISHA,Jajapur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,382
+ODISHA,Jharsuguda,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,371
+ODISHA,Kalahandi,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,395
+ODISHA,Kandhamal,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,390
+ODISHA,Kendrapara,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,379
+ODISHA,Kendujhar,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,375
+ODISHA,Khordha,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,386
+ODISHA,Koraput,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,398
+ODISHA,Malkangiri,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,399
+ODISHA,Mayurbhanj,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,376
+ODISHA,Nabarangapur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,397
+ODISHA,Nayagarh,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,385
+ODISHA,Nuapada,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,394
+ODISHA,Puri,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,387
+ODISHA,Rayagada,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,396
+ODISHA,Sambalpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,372
+ODISHA,Subarnapur,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,392
+ODISHA,Sundargarh,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,374
+PUDUCHERRY,Karaikal,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,637
+PUDUCHERRY,Mahe,unchanged,low,42,42,0,0,0,0,0,42,0,0,11,636
+PUDUCHERRY,Puducherry,unchanged,low,42,42,0,0,0,0,0,42,0,0,5,635
+PUDUCHERRY,Yanam,unchanged,low,42,42,0,0,0,0,0,42,0,0,15,634
+PUNJAB,Amritsar,not listed,NA,41,41,0,0,0,0,0,0,0,0,1,49
+PUNJAB,Barnala,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,54
+PUNJAB,Bathinda,not listed,NA,41,41,0,0,0,0,0,0,0,0,2,46
+PUNJAB,Faridkot,not listed,NA,41,41,0,0,0,0,0,0,0,0,0,45
+PUNJAB,Fatehgarh Sahib,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,40
+PUNJAB,Fazilka,single_parent,high,42,42,1,0,0,0,0,0,0,0,0,43
+PUNJAB,Firozpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,43
+PUNJAB,Gurdaspur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,35
+PUNJAB,Hoshiarpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,38
+PUNJAB,Jalandhar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,37
+PUNJAB,Kapurthala,not listed,NA,41,41,0,0,0,0,0,0,0,0,2,36
+PUNJAB,Ludhiana,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,41
+PUNJAB,Mansa,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,47
+PUNJAB,Moga,not listed,NA,41,41,0,0,0,0,0,0,0,0,1,42
+PUNJAB,Muktsar,not listed,NA,41,41,0,0,0,0,0,0,0,0,1,44
+PUNJAB,Pathankot,single_parent,high,41,41,0,0,0,0,0,0,0,0,3,35
+PUNJAB,Patiala,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,48
+PUNJAB,Rupnagar,not listed,NA,40,40,0,0,0,0,0,0,0,0,3,51
+PUNJAB,Sahibzada Ajit Singh Nagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,52
+PUNJAB,Sangrur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,53
+PUNJAB,Shahid Bhagat Singh Nagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,39
+PUNJAB,Tarn Taran,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,50
+RAJASTHAN,Ajmer,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,119
+RAJASTHAN,Alwar,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,104
+RAJASTHAN,Banswara,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,125
+RAJASTHAN,Baran,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,128
+RAJASTHAN,Barmer,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,115
+RAJASTHAN,Bharatpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,105
+RAJASTHAN,Bhilwara,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,122
+RAJASTHAN,Bikaner,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,101
+RAJASTHAN,Bundi,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,121
+RAJASTHAN,Chittaurgarh,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,126
+RAJASTHAN,Churu,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,102
+RAJASTHAN,Dausa,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,109
+RAJASTHAN,Dhaulpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,106
+RAJASTHAN,Dungarpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,124
+RAJASTHAN,Ganganagar,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,99
+RAJASTHAN,Hanumangarh,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,100
+RAJASTHAN,Jaipur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,110
+RAJASTHAN,Jaisalmer,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,114
+RAJASTHAN,Jalor,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,116
+RAJASTHAN,Jhalawar,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,129
+RAJASTHAN,Jhunjhunun,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,103
+RAJASTHAN,Jodhpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,113
+RAJASTHAN,Karauli,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,107
+RAJASTHAN,Kota,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,127
+RAJASTHAN,Nagaur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,112
+RAJASTHAN,Pali,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,118
+RAJASTHAN,Pratapgarh,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,131
+RAJASTHAN,Rajsamand,not listed,NA,45,45,0,0,0,0,0,0,0,0,3,123
+RAJASTHAN,Sawai Madhopur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,108
+RAJASTHAN,Sikar,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,111
+RAJASTHAN,Sirohi,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,117
+RAJASTHAN,Tonk,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,120
+RAJASTHAN,Udaipur,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,130
+SIKKIM,East District,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,244
+SIKKIM,North District,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,241
+SIKKIM,South District,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,243
+SIKKIM,West District,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,242
+TAMIL NADU,Ariyalur,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,616
+TAMIL NADU,Chennai,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,603
+TAMIL NADU,Coimbatore,not listed,NA,42,40,0,0,0,0,0,0,0,0,0,632
+TAMIL NADU,Cuddalore,not listed,NA,42,42,0,0,0,0,0,0,0,0,3,617
+TAMIL NADU,Dharmapuri,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,630
+TAMIL NADU,Dindigul,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,612
+TAMIL NADU,Erode,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,610
+TAMIL NADU,Kancheepuram,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,604
+TAMIL NADU,Kanniyakumari,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,629
+TAMIL NADU,Karur,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,613
+TAMIL NADU,Krishnagiri,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,631
+TAMIL NADU,Madurai,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,623
+TAMIL NADU,Nagapattinam,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,618
+TAMIL NADU,Namakkal,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,609
+TAMIL NADU,Perambalur,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,615
+TAMIL NADU,Pudukkottai,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,621
+TAMIL NADU,Ramanathapuram,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,626
+TAMIL NADU,Salem,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,608
+TAMIL NADU,Sivaganga,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,622
+TAMIL NADU,Thanjavur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,620
+TAMIL NADU,The Nilgiris,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,611
+TAMIL NADU,Theni,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,624
+TAMIL NADU,Thiruvallur,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,602
+TAMIL NADU,Thiruvarur,not listed,NA,42,42,0,0,0,0,0,0,0,0,3,619
+TAMIL NADU,Thoothukkudi,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,627
+TAMIL NADU,Tiruchirappalli,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,614
+TAMIL NADU,Tirunelveli,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,628
+TAMIL NADU,Tiruppur,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,633
+TAMIL NADU,Tiruvannamalai,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,606
+TAMIL NADU,Vellore,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,605
+TAMIL NADU,Viluppuram,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,607
+TAMIL NADU,Virudhunagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,625
+TELANGANA,Adilabad,unchanged,high,42,42,0,0,0,0,0,0,0,0,0,532
+TELANGANA,Bhadradri Kothagudem,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,541
+TELANGANA,Hyderabad,unchanged,high,42,42,0,0,0,0,0,0,0,0,7,536
+TELANGANA,Jagitial,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,534
+TELANGANA,Jangoan,multi_parent,high,42,42,0,10,10,0,0,0,0,16,0,539;540
+TELANGANA,Jayashankar Bhupalapally,multi_parent,high,42,42,0,14,14,0,0,0,0,8,0,534;540;541
+TELANGANA,Jogulamba Gadwal,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,538
+TELANGANA,Kamareddy,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,533
+TELANGANA,Karimnagar,unchanged,high,42,42,0,0,0,0,0,0,0,0,0,534
+TELANGANA,Khammam,unchanged,high,42,42,0,0,0,0,0,0,0,0,2,541
+TELANGANA,Komaram Bheem Asifabad,single_parent,high,42,42,0,0,0,0,0,0,0,0,1,532
+TELANGANA,Mahabubabad,multi_parent,high,42,42,0,8,8,0,0,0,0,4,0,540;541
+TELANGANA,Mahabubnagar,multi_parent,high,42,42,0,2,2,0,0,0,0,2,0,537;538
+TELANGANA,Mancherial,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,532
+TELANGANA,Medak,unchanged,high,42,42,0,0,0,0,0,0,0,0,0,535
+TELANGANA,Medchal-Malkajgiri,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,537
+TELANGANA,Nagarkurnool,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,538
+TELANGANA,Nalgonda,unchanged,high,42,42,0,0,0,0,0,0,0,0,0,539
+TELANGANA,Nirmal,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,532
+TELANGANA,Nizamabad,unchanged,high,42,42,0,0,0,0,0,0,0,0,0,533
+TELANGANA,Peddapalli,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,534
+TELANGANA,Rajanna Sircilla,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,534
+TELANGANA,Ranga Reddy,multi_parent,high,42,37,0,11,6,0,5,0,0,10,0,537;538
+TELANGANA,Sangareddy,single_parent,high,42,42,0,0,0,0,0,0,0,0,2,535
+TELANGANA,Siddipet,multi_parent,high,42,42,0,6,6,0,0,0,0,11,0,534;535;540
+TELANGANA,Suryapet,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,539
+TELANGANA,Vikarabad,multi_parent,high,42,42,0,6,6,0,0,0,0,28,0,537;538
+TELANGANA,Wanaparthy,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,538
+TELANGANA,Warangal Rural,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,540
+TELANGANA,Warangal Urban,multi_parent,high,42,42,0,9,9,0,0,0,0,13,0,534;540
+TELANGANA,Yadadri Bhuvanagiri,single_parent,high,42,42,0,0,0,0,0,0,0,0,1,539
+TRIPURA,Dhalai,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,291
+TRIPURA,Gomati,single_parent,high,42,42,0,0,0,0,0,0,0,0,1,290
+TRIPURA,Khowai,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,289
+TRIPURA,North Tripura,not listed,NA,42,37,0,0,0,0,0,0,0,0,0,292
+TRIPURA,Sepahijala,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,289
+TRIPURA,South Tripura,not listed,NA,42,42,1,0,0,0,0,0,0,0,0,290
+TRIPURA,Unakoti,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,292
+TRIPURA,West Tripura,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,289
+UTTAR PRADESH,Agra,not listed,NA,44,44,0,0,0,0,0,0,0,0,0,146
+UTTAR PRADESH,Aligarh,not listed,NA,44,44,0,0,0,0,0,0,0,0,1,143
+UTTAR PRADESH,Allahabad,not listed,NA,44,44,0,0,0,0,0,0,0,0,0,175
+UTTAR PRADESH,Ambedkar Nagar,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,178
+UTTAR PRADESH,Amethi,multi_parent,high,45,45,0,13,13,0,0,0,0,14,0,158;179
+UTTAR PRADESH,Auraiya,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,162
+UTTAR PRADESH,Azamgarh,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,191
+UTTAR PRADESH,Baghpat,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,139
+UTTAR PRADESH,Bahraich,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,180
+UTTAR PRADESH,Ballia,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,193
+UTTAR PRADESH,Balrampur,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,182
+UTTAR PRADESH,Banda,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,170
+UTTAR PRADESH,Bara Banki,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,176
+UTTAR PRADESH,Bareilly,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,150
+UTTAR PRADESH,Basti,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,185
+UTTAR PRADESH,Bijnor,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,134
+UTTAR PRADESH,Budaun,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,149
+UTTAR PRADESH,Bulandshahr,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,142
+UTTAR PRADESH,Chandauli,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,196
+UTTAR PRADESH,Chitrakoot,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,171
+UTTAR PRADESH,Deoria,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,190
+UTTAR PRADESH,Etah,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,201
+UTTAR PRADESH,Etawah,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,161
+UTTAR PRADESH,Faizabad,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,177
+UTTAR PRADESH,Farrukhabad,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,159
+UTTAR PRADESH,Fatehpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,172
+UTTAR PRADESH,Firozabad,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,147
+UTTAR PRADESH,Gautam Buddha Nagar,not listed,NA,40,40,0,0,0,0,0,0,0,0,0,141
+UTTAR PRADESH,Ghaziabad,not listed,NA,42,42,0,0,0,0,0,0,0,0,2,140
+UTTAR PRADESH,Ghazipur,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,195
+UTTAR PRADESH,Gonda,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,183
+UTTAR PRADESH,Gorakhpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,188
+UTTAR PRADESH,Hamirpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,168
+UTTAR PRADESH,Hapur,single_parent,high,45,45,0,0,0,0,0,0,0,0,2,140
+UTTAR PRADESH,Hardoi,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,155
+UTTAR PRADESH,Jalaun,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,165
+UTTAR PRADESH,Jaunpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,194
+UTTAR PRADESH,Jhansi,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,166
+UTTAR PRADESH,Jyotiba Phule Nagar,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,137
+UTTAR PRADESH,Kannauj,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,160
+UTTAR PRADESH,Kanpur Dehat,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,163
+UTTAR PRADESH,Kanpur Nagar,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,164
+UTTAR PRADESH,Kanshiram Nagar,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,202
+UTTAR PRADESH,Kaushambi,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,174
+UTTAR PRADESH,Kheri,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,153
+UTTAR PRADESH,Kushinagar,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,189
+UTTAR PRADESH,Lalitpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,167
+UTTAR PRADESH,Lucknow,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,157
+UTTAR PRADESH,Mahamaya Nagar,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,144
+UTTAR PRADESH,Mahoba,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,169
+UTTAR PRADESH,Mahrajganj,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,187
+UTTAR PRADESH,Mainpuri,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,148
+UTTAR PRADESH,Mathura,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,145
+UTTAR PRADESH,Mau,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,192
+UTTAR PRADESH,Meerut,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,138
+UTTAR PRADESH,Mirzapur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,199
+UTTAR PRADESH,Moradabad,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,135
+UTTAR PRADESH,Muzaffarnagar,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,133
+UTTAR PRADESH,Pilibhit,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,151
+UTTAR PRADESH,Pratapgarh,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,173
+UTTAR PRADESH,Rae Bareli,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,158
+UTTAR PRADESH,Rampur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,136
+UTTAR PRADESH,Saharanpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,132
+UTTAR PRADESH,Sambhal,multi_parent,high,45,45,0,5,5,0,0,0,0,11,0,135;149
+UTTAR PRADESH,Sant Kabir Nagar,not listed,NA,45,45,0,0,0,0,0,0,0,0,2,186
+UTTAR PRADESH,Sant Ravidas Nagar (Bhadohi),not listed,NA,44,44,0,0,0,0,0,0,0,0,1,198
+UTTAR PRADESH,Shahjahanpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,152
+UTTAR PRADESH,Shamli,single_parent,high,45,45,0,0,0,0,0,0,0,0,0,133
+UTTAR PRADESH,Shrawasti,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,181
+UTTAR PRADESH,Siddharthnagar,not listed,NA,44,44,0,0,0,0,0,0,0,0,1,184
+UTTAR PRADESH,Sitapur,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,154
+UTTAR PRADESH,Sonbhadra,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,200
+UTTAR PRADESH,Sultanpur,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,179
+UTTAR PRADESH,Unnao,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,156
+UTTAR PRADESH,Varanasi,not listed,NA,44,44,0,0,0,0,0,0,0,0,0,197
+UTTARAKHAND,Almora,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,64
+UTTARAKHAND,Bageshwar,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,63
+UTTARAKHAND,Chamoli,not listed,NA,44,44,0,0,0,0,0,0,0,0,0,57
+UTTARAKHAND,Champawat,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,65
+UTTARAKHAND,Dehradun,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,60
+UTTARAKHAND,Garhwal,not listed,NA,44,44,0,0,0,0,0,0,0,0,1,61
+UTTARAKHAND,Hardwar,not listed,NA,44,44,0,0,0,0,0,0,0,0,1,68
+UTTARAKHAND,Nainital,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,66
+UTTARAKHAND,Pithoragarh,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,62
+UTTARAKHAND,Rudraprayag,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,58
+UTTARAKHAND,Tehri Garhwal,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,59
+UTTARAKHAND,Udham Singh Nagar,not listed,NA,45,45,0,0,0,0,0,0,0,0,1,67
+UTTARAKHAND,Uttarkashi,not listed,NA,45,45,0,0,0,0,0,0,0,0,0,56
+WEST BENGAL,Bankura,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,339
+WEST BENGAL,Birbhum,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,334
+WEST BENGAL,Dakshin Dinajpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,331
+WEST BENGAL,Darjiling,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,327
+WEST BENGAL,Haora,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,341
+WEST BENGAL,Hugli,not listed,NA,42,41,0,0,0,0,0,0,0,0,0,338
+WEST BENGAL,Jalpaiguri,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,328
+WEST BENGAL,Koch Bihar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,329
+WEST BENGAL,Kolkata,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,342
+WEST BENGAL,Maldah,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,332
+WEST BENGAL,Murshidabad,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,333
+WEST BENGAL,Nadia,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,336
+WEST BENGAL,North Twenty Four Parganas,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,337
+WEST BENGAL,Paschim Barddhaman,single_parent,high,42,42,0,0,0,0,0,0,0,0,1,335
+WEST BENGAL,Paschim Medinipur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,344
+WEST BENGAL,Purba Barddhaman,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,335
+WEST BENGAL,Purba Medinipur,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,345
+WEST BENGAL,Puruliya,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,340
+WEST BENGAL,South Twenty Four Parganas,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,343
+WEST BENGAL,Uttar Dinajpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,330

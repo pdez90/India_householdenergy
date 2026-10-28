@@ -1,0 +1,13 @@
+nfhs5_district,state,n_clusters,production_method,documented_parents,production_assigned,production_clusters_outside_parents,variant_assigned,clusters_reassigned_by_variant
+Siang,ARUNACHAL PRADESH,45,location: cluster by cluster (district spans several 2011 districts),West Siang; East Siang,East Siang; Upper Siang; West Siang,6,East Siang; West Siang,6
+West Karbi Anglong,ASSAM,42,location: cluster by cluster (district spans several 2011 districts),Karbi Anglong,Dima Hasao; Karbi Anglong; Morigaon; Nagaon,19,Karbi Anglong,19
+Gariyaband,CHHATTISGARH,42,location: cluster by cluster (district spans several 2011 districts),Raipur,Dhamtari; Mahasamund; Raipur,20,Raipur,20
+Botad,GUJARAT,42,location: cluster by cluster (district spans several 2011 districts),Ahmadabad; Bhavnagar,Amreli; Bhavnagar; Rajkot; Surendranagar,7,Bhavnagar,7
+Mahisagar,GUJARAT,42,location: cluster by cluster (district spans several 2011 districts),Kheda; Panch Mahals,Dohad; Kheda; Panch Mahals; Sabar Kantha,4,Kheda; Panch Mahals,4
+Morbi,GUJARAT,42,location: cluster by cluster (district spans several 2011 districts),Surendranagar; Rajkot,Rajkot; Surendranagar,0,Rajkot; Surendranagar,0
+Jangoan,TELANGANA,42,location: cluster by cluster (district spans several 2011 districts),Nalgonda; Warangal,Medak; Nalgonda; Warangal,2,Nalgonda; Warangal,5
+Jayashankar Bhupalapally,TELANGANA,42,location: cluster by cluster (district spans several 2011 districts),Karimnagar; Warangal; Khammam,Karimnagar; Khammam; Warangal,0,Karimnagar; Khammam; Warangal,4
+Vikarabad,TELANGANA,42,location: cluster by cluster (district spans several 2011 districts),Rangareddy; Mahbubnagar,Mahbubnagar; Medak; Rangareddy,10,Mahbubnagar; Rangareddy,10
+Ranga Reddy,TELANGANA,42,name match,Rangareddy; Mahbubnagar,Rangareddy,0,Mahbubnagar; Rangareddy,12
+New Delhi,NCT OF DELHI,42,name match,North West; North; North East; East; New Delhi; Central; West; South West; South,New Delhi,0,New Delhi; South West; West,41
+Central,NCT OF DELHI,42,name match,North West; North; North East; East; New Delhi; Central; West; South West; South,Central,0,Central; North,22

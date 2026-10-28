@@ -41,7 +41,7 @@ if (file.exists("checks.R")) source("checks.R")   # pipeline self-check helpers
 # attributed to the caller; .chk_tag() reads this.
 CHK_SCRIPT <- "13_benchmark_maps"
 
-path_districts_shp <- file.path(.dir_dhs(), "district_nfhs_shapefile/nfhs_data.shp")
+path_districts_shp <- file.path(.dir_dhs(), "district_pc11_shrug/nfhs_data.shp")   # SHRUG 2011 geometry; build_district_boundaries.R
 path_geom_fallback <- file.path(dir_out, "wave1_nfhs4.gpkg")
 
 FAST_MEANS <- TRUE    # TRUE = survey-weighted district means (fast, default);

@@ -36,7 +36,9 @@ Rscript prepare_data.R
 ```
 This copies the needed CSVs into `app/data/` and builds `districts.geojson` from the district
 shapefile (polygons only, simplified; set `DISTRICT_SHP` if it is not at
-`$DHS_DIR/district_nfhs_shapefile/nfhs_data.shp`).
+`$DHS_DIR/district_pc11_shrug/nfhs_data.shp`, built by `scripts/build_district_boundaries.R` from the SHRUG 2.2 2011 Census district polygons).
+
+District boundaries: SHRUG 2.2, Development Data Lab (Asher, Lunt, Matsuura and Novosad 2021, *World Bank Economic Review* 35(4)), licensed CC BY-NC-SA 4.0. `data/districts.geojson` is derived from them and is distributed under the same licence.
 
 ## Deploy to Posit Connect Cloud (from GitHub)
 Connect Cloud needs a `manifest.json` next to `app.R`. Write it with only the app's own files,

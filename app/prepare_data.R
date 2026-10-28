@@ -9,7 +9,8 @@
 #   ../data/district_lpg_estimates*  the public district file
 #   district shapefile               polygons only, simplified to GeoJSON for maps
 #                                    (env DISTRICT_SHP, default
-#                                     $DHS_DIR/district_nfhs_shapefile/nfhs_data.shp)
+#                                     $DHS_DIR/district_pc11_shrug/nfhs_data.shp,
+#                                     built by scripts/build_district_boundaries.R)
 #
 # This script is NOT part of the deployed app (it needs sf and the shapefile).
 # When writing the Connect Cloud manifest, list the app files explicitly so
@@ -127,15 +128,15 @@ for (f in c("district_lpg_estimates.csv", "district_lpg_estimates_dictionary.csv
 # District polygons -> simplified GeoJSON keyed on the 2011 district code.
 shp <- Sys.getenv("DISTRICT_SHP",
   file.path(Sys.getenv("DHS_DIR", "~/Downloads/DHS_India"),
-            "district_nfhs_shapefile/nfhs_data.shp"))
+            "district_pc11_shrug/nfhs_data.shp"))   # SHRUG 2.2 2011 geometry (CC BY-NC-SA 4.0)
 if (file.exists(path.expand(shp))) {
   g <- st_read(path.expand(shp), quiet = TRUE) %>%
-    transmute(district = as.integer(dist_code), dist_name = as.character(dist_name),
-              state_name = as.character(state_name)) %>%
+    transmute(district = as.integer(dist_code), pc11_d_id = sprintf("%03d", as.integer(dist_code)),
+              dist_name = as.character(dist_name), state_name = as.character(state_name)) %>%
     filter(!st_is_empty(.)) %>% st_make_valid()
   g <- st_simplify(g, dTolerance = 2500, preserveTopology = TRUE)   # metres (UTM 44N)
   g <- st_transform(g, 4326)
-  g <- g %>% group_by(district, dist_name, state_name) %>% summarise(.groups = "drop")
+  g <- g %>% group_by(district, pc11_d_id, dist_name, state_name) %>% summarise(.groups = "drop")
   f <- file.path(out_dir, "districts.geojson")
   if (file.exists(f)) file.remove(f)
   st_write(g, f, quiet = TRUE, layer_options = "COORDINATE_PRECISION=4")

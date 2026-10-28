@@ -96,6 +96,7 @@ if (length(missing))
 # static : TRUE = slow & essentially fixed; skipped if `out` exists and SKIP_STATIC
 steps <- list(
   # --- core exposure pipeline ---
+  list(s = "build_district_boundaries.R", pop = NA),  # 2011 district boundaries (SHRUG geometry) for maps/fallbacks
   list(s = "01_prep_nfhs.R",           pop = NA, static = TRUE, out = "nfhs_districts.rds"),
   list(s = "02_prep_access.R",         pop = NA),
   list(s = "03_prep_ires.R",           pop = NA),
@@ -165,6 +166,7 @@ steps <- list(
   # Reporting-only bootstrap of the between-round correlation (uncapped
   # replicates, share at the cap); read by the manuscript (SI Methods S1).
   list(s = "31_postrun_intervals.R",     pop = NA),
+  list(s = "30_crosswalk_validation.R",  pop = NA),  # SI: crosswalk validation, sensitivity, history, boundaries
   list(s = "20_pipeline_checks.R",       pop = NA)   # consolidate self-checks + end-to-end verification
 )
 

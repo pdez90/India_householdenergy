@@ -171,21 +171,26 @@ if (all(c("bayes_2015","bayes_2019") %in% names(out)))
 if (all(c("raw_ml_2015","raw_ml_2019") %in% names(out)))
   out$change_raw_ml <- out$raw_ml_2019 - out$raw_ml_2015
 
-out <- out %>% relocate(any_of(c("district","dist_name","state_name")))
+## SHRUG's identifier for the same 2011 district, so the file joins directly to
+## the SHRUG 2011 district polygons (zero-padded three-digit string, as SHRUG
+## stores pc11_d_id). It is the same number as `district`.
+out$pc11_d_id <- sprintf("%03d", as.integer(out$district))
+out <- out %>% relocate(any_of(c("district","pc11_d_id","dist_name","state_name")))
 readr::write_csv(out, file.path(pub, "district_lpg_estimates.csv"))
 message("wrote ", file.path(pub, "district_lpg_estimates.csv"),
         " (", nrow(out), " districts, ", ncol(out), " columns)")
 
 dict <- tibble::tribble(
  ~column, ~meaning,
- "district","2011 census district code, the key used throughout the analysis",
- "dist_name","district name as in the analysis shapefile",
- "state_name","state name as in the analysis shapefile",
+ "district","2011 census district code, the key used throughout the analysis (= the NFHS-4 DHS district code DHSREGCO)",
+ "pc11_d_id","the same code as SHRUG's pc11_d_id (zero-padded three-digit string), for joining to the SHRUG 2011 district polygons (Asher et al. 2021; CC BY-NC-SA 4.0)",
+ "dist_name","district name as in the NFHS-4 district attribute table",
+ "state_name","state name as in the NFHS-4 district attribute table",
  "raw_ml_2015/2019","RAW NFHS: multilevel (glmer) rural district estimate. The paper's primary raw specification.",
  "raw_wt_2015/2019","RAW NFHS: design-weighted direct rural estimate (Taylor-linearized).",
  "raw_wt_se_2015/2019","design-based standard error of the above, on the probability scale",
  "rc_ml_2015/2019","REGRESSION CALIBRATION fitted on the multilevel estimate. Transparent, carries no uncertainty.",
- "rc_wt_2015/2019","REGRESSION CALIBRATION refitted on the design-weighted estimate. The input-sensitivity variant; agrees with rc_ml at r = 0.98.",
+ "rc_wt_2015/2019","REGRESSION CALIBRATION refitted on the design-weighted estimate. The input-sensitivity variant; near-identical to rc_ml (SI Table S10).",
  "bayes_2015/2019","BAYESIAN measurement-error correction: posterior mean of the district's latent logit prevalence, back-transformed. THE PAPER'S PRIMARY CORRECTED SURFACE.",
  "bayes_lo_2015/2019","2.5th percentile of the posterior for the corrected prevalence",
  "bayes_hi_2015/2019","97.5th percentile of the posterior (with the above, a 95% credible interval)",

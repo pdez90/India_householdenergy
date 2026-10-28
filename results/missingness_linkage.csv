@@ -14,12 +14,35 @@ NFHS-5 clusters whose name match was overridden by location,42,NFHS5
 NFHS-5 clusters unassigned,0,NFHS5
 NFHS-5 clusters whose location vote had no same-state reference cluster,0,NFHS5
 "agreement of location vote with name match (name-matched clusters, before override)",0.9954,NFHS5
-NFHS-5 households assigned by district name,570415,NFHS5
-NFHS-5 households assigned by location,66284,NFHS5
+crosswalk version,2,NFHS5
+crosswalk variant,1,NFHS5
+"NFHS-4 clusters inside the polygon of their own DHS district (2011 boundaries, SHRUG)",0.9807,NFHS5
+NFHS-5 clusters inside exactly one 2011 polygon,30055,NFHS5
+NFHS-5 clusters outside all 2011 polygons,24,NFHS5
+NFHS-5 clusters inside more than one 2011 polygon,0,NFHS5
+NFHS-5 clusters without GPS coordinates,118,NFHS5
+v2 method: location: 2011 boundary within documented parents,1013,NFHS5
+"v2 method: location: fallback, nearest documented parent (point in a non-parent district)",1,NFHS5
+"v2 method: location: fallback, no GPS (district's majority documented parent)",45,NFHS5
+v2 method: location: single documented parent,2474,NFHS5
+v2 method: name match (documented unchanged),675,NFHS5
+v2 method: name match (territory not documented as changed),25989,NFHS5
+v2: clusters flagged uncertain,389,NFHS5
+v2: uncertainty flag: fallback,1,NFHS5
+v2: uncertainty flag: no GPS,45,NFHS5
+v2: uncertainty flag: near boundary,343,NFHS5
+v2: clusters in districts whose history has low confidence,294,NFHS5
+v2: clusters excluded by the variant,0,NFHS5
+v2: clusters assigned differently from version 1,291,NFHS5
+v2: NFHS-5 districts with a documented history row,100,NFHS5
+v2: clusters whose 2011 polygon differs from the final assignment (single-parent and unchanged districts kept by history),411,NFHS5
+v2: NFHS-5 clusters unassigned,0,NFHS5
+NFHS-5 households assigned by district name,561766,NFHS5
+NFHS-5 households assigned by location,74933,NFHS5
 households unassigned,0,NFHS5
 share of households assigned,1,NFHS5
-NFHS-4 clusters inside a shapefile polygon,27422,NFHS5
-share of those in the polygon of their own DHS district,0.7249,NFHS5
+NFHS-4 clusters inside a shapefile polygon,28366,NFHS5
+share of those in the polygon of their own DHS district,0.9817,NFHS5
 ACCESS households (both waves),17635,ACCESS
 ACCESS Wave 1 households,8563,ACCESS
 ACCESS Wave 2 households,9072,ACCESS

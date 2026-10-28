@@ -1,0 +1,11 @@
+metric,value
+clusters assigned cluster by cluster (split districts),381
+of which without GPS coordinates (assigned to the district-level top vote),9
+of which with an absolute majority (>= 4 of 7 neighbours),333
+of which with a plurality only (3 of 7 or fewer),39
+of which with an exact tie for the top label (resolved to the lowest district code),15
+clusters whose name match was overridden by location,42
+overrides: minimum pooled vote share for the alternative district,0.8035714285714286
+"clusters without GPS coordinates, all NFHS-5",118
+clusters without GPS coordinates in whole-district (parent) assignments,8
+clusters without GPS coordinates in name-matched districts,99

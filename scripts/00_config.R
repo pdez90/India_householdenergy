@@ -57,7 +57,21 @@ path_image2015       <- file.path(dir_dhs, "image2015.RData")
 path_image2019       <- file.path(dir_dhs, "image2019.RData")
 path_gps_2015        <- file.path(dir_dhs, "India2015/gps_india.RData")
 path_gps_2019        <- file.path(dir_dhs, "India2019/gps_india.RData")
-path_districts_shp   <- file.path(dir_dhs, "district_nfhs_shapefile/nfhs_data.shp")
+# District boundaries: SHRUG 2.2 2011 Census geometry with the original attribute
+# table (built by build_district_boundaries.R). The original file
+# district_nfhs_shapefile/nfhs_data.shp is kept only as the attribute source:
+# its shapes do not match its labels (30_crosswalk_validation.R, part D).
+path_districts_shp   <- file.path(dir_dhs, "district_pc11_shrug/nfhs_data.shp")
+path_pc11_districts  <- Sys.getenv("PC11_DISTRICT_SHP",
+                          file.path(dir_dhs, "shrug_pc11_district_polygons/district.shp"))
+# NFHS-5 -> 2011 district crosswalk. "V2" (primary): documented district history
+# + 2011 boundaries; "V1": the original name-match / nearest-neighbour rule.
+CROSSWALK_VERSION    <- toupper(Sys.getenv("CROSSWALK_VERSION", "V2"))
+# Version-2 sensitivity variants (geo_crosswalk.R): primary | alternative_assignment |
+# exclude_uncertain | alternative_history. Run each into its own OUTPUT_DIR.
+CROSSWALK_VARIANT    <- tolower(Sys.getenv("CROSSWALK_VARIANT", "primary"))
+path_district_history <- normalizePath(file.path(getwd(), "..", "data", "district_history_nfhs5.csv"),
+                                       mustWork = FALSE)
 
 path_access_appended <- file.path(dir_access, "dataverse/CEEWACCESS20152018_Appended.dta")
 path_access_weights  <- file.path(dir_access, "dataverse/weights.dta")   # year, m1_q11_village_code, weights

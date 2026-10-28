@@ -2397,58 +2397,58 @@
   },
   "files": {
     "app.R": {
-      "checksum": "6f277ac9c7e4d98ef57962821743f5b3"
+      "checksum": "7581ee93ded6fc789661873f1b2db925"
     },
     "data/benchmark_district_wide.csv": {
-      "checksum": "b42c6e0126c25de73d171741d1af59e1"
+      "checksum": "13360835c48afd17ebe54c63c6bead19"
     },
     "data/benchmark_reference_district.csv": {
       "checksum": "8e8f304f37a61303af71aa36dd4b86fe"
     },
     "data/benchmark_sidebyside_agreement.csv": {
-      "checksum": "3d00d03e675bf2d6bea9d695332fb619"
+      "checksum": "dfe2c113f6943a830cbaacb3bd7aac89"
     },
     "data/BUNDLE.csv": {
       "checksum": "8fa1d9cbbdf4fe37931e5b854d82e652"
     },
     "data/calibration_loso_summary.csv": {
-      "checksum": "035334926c290e04ffc3850a0e7b0447"
+      "checksum": "057d9d9239712fc6f7735ef5bbd37320"
     },
     "data/calibration_loso.csv": {
-      "checksum": "18fc9b8da62e2c18a5bb5dde94f4dfcb"
+      "checksum": "dd7138c26bda9401ddd8d6979d21e182"
     },
     "data/calibration_parameters_legA_wt.csv": {
       "checksum": "fb00d97053726da17d0ee934d798ad0f"
     },
     "data/calibration_parameters.csv": {
-      "checksum": "d639ad1dd0193756c3ee2392d1715190"
+      "checksum": "65c8cd5e39cf99dc12020135cd4c02c1"
     },
     "data/calibration_sampler.csv": {
       "checksum": "c6be2937d0031b37d713eea3d4abebbb"
     },
     "data/calibration_state_effect_check.csv": {
-      "checksum": "8d9c958c82eac4eef02d246ba5b20c58"
+      "checksum": "ec8ced26e14abca98fdf3d86bb78eca3"
     },
     "data/calibration_support_summary.csv": {
-      "checksum": "ced1e04c2b983ee63bc52a0de6d035c5"
+      "checksum": "7b68d8c37646ff4a67b94bbb375e6f51"
     },
     "data/comparison_table.csv": {
-      "checksum": "afef24bfe3a2c86b080396341a74bac1"
+      "checksum": "fa9c611a3e8f173762c440132df24a7c"
     },
     "data/design_summary.csv": {
-      "checksum": "8926113fcccd3153205ac23414132bcb"
+      "checksum": "ed646fb004d0a84b0753885da1c2b17d"
     },
     "data/design_variance_decomposition.csv": {
-      "checksum": "9cbdb9f958345932fe8464f80713c8e3"
+      "checksum": "99767198982563f41072d0872d1332de"
     },
     "data/diag_bayes_fit_diagnostics.csv": {
-      "checksum": "fb4d9647c5360003c130bd6756f82907"
+      "checksum": "e4b2eb5704dc6dfeda4449692ff9b77e"
     },
     "data/diag_model_fits_summary.csv": {
-      "checksum": "cce481ea00fcbc99c79d10304367b222"
+      "checksum": "2a6ba82798c8ab105f2a36623ea04c86"
     },
     "data/diag_pipeline_checks.csv": {
-      "checksum": "755ff0bec636ef698952bd19b01228a8"
+      "checksum": "9e19933737fb5b3b6c29c35fbd4e18dd"
     },
     "data/diag_transfer_coefficients.csv": {
       "checksum": "899ca4ecbb00fefe911e299e49ad72d0"
@@ -2460,97 +2460,97 @@
       "checksum": "4c485b7b4ff53bfe300bf98696bddf26"
     },
     "data/district_exposure_proxy.csv": {
-      "checksum": "5be5718d860c1dc0e19c1e17d4ebf9c6"
+      "checksum": "5672331b88b88b2e78f8c921d6a8a7cf"
     },
     "data/district_lpg_estimates_dictionary.csv": {
-      "checksum": "0a18896e1a729bde001d5a90b32bc8c0"
+      "checksum": "ddbd3fc5ab30fc892380e7cdfb2d0b84"
     },
     "data/district_lpg_estimates.csv": {
-      "checksum": "9794deba88e53a9e1cd8d87edf36aeb9"
+      "checksum": "6ebbdaba9b316bc3dc9bcd86e614422a"
     },
     "data/districts.geojson": {
-      "checksum": "1d63f85115f19a32c7ff2edaaba4a7f6"
+      "checksum": "2cb991db8ca597d137eeecf56cb9729b"
     },
     "data/estimator_mix_correlations.csv": {
-      "checksum": "09dd9cc854fc8671a6aa78aaa8ce5eae"
+      "checksum": "bece71b9cc9ba9749ae244a380f76414"
     },
     "data/estimator_mix_levels.csv": {
-      "checksum": "25c398f0fc8871f724869a4548c29202"
+      "checksum": "30416db3069637af5c7b23aeb011d81c"
     },
     "data/glmer_cluster_marginalisation.csv": {
-      "checksum": "1e995b6f7db620838412b39eef3dbd02"
+      "checksum": "9f615da659c94eb67d54530283dac22d"
     },
     "data/health_cluster_inference_calibration.csv": {
-      "checksum": "01d06eec2b04ca6040f6bcf055368ec6"
+      "checksum": "8020563b48f7ced1297b67ca0c29551d"
     },
     "data/health_effects_table_all.csv": {
-      "checksum": "247f403ee98a3a826af4acea9ddda4f4"
+      "checksum": "199d457a185552421d8348764ef18d13"
     },
     "data/health_effects_table_nonoverlap.csv": {
-      "checksum": "bd2444e9e4ffbfde8fcd5edce3c2ff87"
+      "checksum": "e2bf8ff5f55df4a0146b98167cc7d1ef"
     },
     "data/health_effects_table.csv": {
-      "checksum": "7a8439e037104815e666d63f3bd3034e"
+      "checksum": "fc5f5bb7f94f0c90388c8255456b785e"
     },
     "data/health_nuanced_effects.csv": {
-      "checksum": "9270c41106af1d7a23c4ee085fe45315"
+      "checksum": "b9a4166ae2127c8c72c5a97ed22bb1a2"
     },
     "data/health_small_cluster_inference_all.csv": {
-      "checksum": "2e0844c2252077221082aa942e2f5ba5"
+      "checksum": "0ef4749feb0a1af7a34a9cc3819b0fb5"
     },
     "data/health_small_cluster_inference_nonoverlap.csv": {
-      "checksum": "7dcf480384eb3849bccff0f749cefa8f"
+      "checksum": "ce6fb9b33dac95d1bf3515a79c37e9b8"
     },
     "data/health_small_cluster_inference.csv": {
-      "checksum": "9a889079c694bef03cf815aa5a6ef845"
+      "checksum": "ff928d0bd50dd7241372a3ed08b3d9c7"
     },
     "data/legA_symmetry_health_movement_all.csv": {
-      "checksum": "0b57a1df920bd272086c5cf68af28da0"
+      "checksum": "daa97703abf71e0fc4ad1715ceeae79b"
     },
     "data/legA_symmetry_health_movement_nonoverlap.csv": {
-      "checksum": "4117ed07d14b37d0e82308eb7354d105"
+      "checksum": "736bd61ec36b4f0e1cc5e286189264ae"
     },
     "data/legA_symmetry_health_movement.csv": {
-      "checksum": "8c409e66f3525b03e2569189c718cee6"
+      "checksum": "da184d9de09dd418d7b026394b89f070"
     },
     "data/legA_symmetry_sensitivity.csv": {
-      "checksum": "e9514c5e404fff1a11c941c1f60023b8"
+      "checksum": "130daa8e5ec3d3bd22ad4464c085d4f6"
     },
     "data/me_se_diagnostics.csv": {
       "checksum": "c7ddcbe24893809754b3f252e77a245c"
     },
     "data/me_shrinkage.csv": {
-      "checksum": "588396eb4dfd040dbd94329aa58bc9fa"
+      "checksum": "5a1d425ebd2167f9a44de1b192a3344f"
     },
     "data/ml_vs_designwt_agreement.csv": {
-      "checksum": "17f494245d4899e1376926c0e0c5c967"
+      "checksum": "b61a19f79184fa7b8893381bfa49acba"
     },
     "data/mortality_birth_counts.csv": {
-      "checksum": "accccf9f2eee70f785051a91aaa85cdf"
+      "checksum": "6226beba965d3ff1f34e0880829dbc77"
     },
     "data/nfhs_main_fuel_seasonality_cells.csv": {
-      "checksum": "99d309659cddcf3ae6466879d8050aa0"
+      "checksum": "70baad277d44e171abf514fc53d11cb1"
     },
     "data/nfhs_main_fuel_seasonality.csv": {
-      "checksum": "b6f7e03cdb40c39565eea7ef768cb12b"
+      "checksum": "ba76771df6ddba2a82646aa1f72718df"
     },
     "data/ppd_sensitivity.csv": {
-      "checksum": "71e15bdbf0eedd0c1974708589a32a71"
+      "checksum": "972181275702a90227b6c2daca0b6af9"
     },
     "data/ppd_summary.csv": {
-      "checksum": "bf307f3b1d99be674181c99e7514e3b3"
+      "checksum": "642a80deecbaa6349fa169b2cee1887a"
     },
     "data/ppd_surface_comparison.csv": {
-      "checksum": "77b2dec46b49c82f6a1ca1b14402b37f"
+      "checksum": "dc75d0f0df78e54957913586b950862e"
     },
     "data/PROVENANCE.csv": {
-      "checksum": "220fea70686596794f534403c5d9f458"
+      "checksum": "d2adefdba2497cef6bec4320987559f9"
     },
     "data/reference_stacking_district.csv": {
       "checksum": "f57778cd0318c092c27ac5830d3fbaff"
     },
     "data/season_sensitivity.csv": {
-      "checksum": "a0a229dc19330cb24e53352f075f974c"
+      "checksum": "018e905414ff10bbdfb799933c9ec810"
     },
     "data/stacking_ldo_validation.csv": {
       "checksum": "122e5f848c3f8d7338fb1ca450c48729"
@@ -2565,7 +2565,7 @@
       "checksum": "36690d8021a4a38f91a8302219acc8bc"
     },
     "data/state_agreement_nfhs5_ires.csv": {
-      "checksum": "84749e3b6d02812c8941947a4ebc4d1d"
+      "checksum": "b7749a8a1878272be771b8554885fe70"
     },
     "R/data.R": {
       "checksum": "a7a30dd21f4eb93226222634370cc2eb"

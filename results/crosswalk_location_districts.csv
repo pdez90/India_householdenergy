@@ -1,0 +1,75 @@
+nfhs5_district,state,method,n_clusters,n_clusters_without_gps,pooled_top_vote_share,name_match_candidate,assigned_2011_districts,n_assigned_2011_districts
+North,NCT OF DELHI,location (name match overridden: location vote points elsewhere),42,2,0.8035714285714286,North,North West,1
+Siang,ARUNACHAL PRADESH,location: cluster by cluster (district spans several 2011 districts),45,2,0.5980066445182725,,East Siang; Upper Siang; West Siang,3
+West Karbi Anglong,ASSAM,location: cluster by cluster (district spans several 2011 districts),42,0,0.5578231292517006,,Dima Hasao; Karbi Anglong; Morigaon; Nagaon,4
+Gariyaband,CHHATTISGARH,location: cluster by cluster (district spans several 2011 districts),42,7,0.4816326530612245,,Dhamtari; Mahasamund; Raipur,3
+Botad,GUJARAT,location: cluster by cluster (district spans several 2011 districts),42,0,0.5816326530612245,,Amreli; Bhavnagar; Rajkot; Surendranagar,4
+Mahisagar,GUJARAT,location: cluster by cluster (district spans several 2011 districts),42,0,0.5714285714285714,,Dohad; Kheda; Panch Mahals; Sabar Kantha,4
+Morbi,GUJARAT,location: cluster by cluster (district spans several 2011 districts),42,0,0.5918367346938775,,Rajkot; Surendranagar,2
+Jangoan,TELANGANA,location: cluster by cluster (district spans several 2011 districts),42,0,0.5544217687074829,,Medak; Nalgonda; Warangal,3
+Jayashankar Bhupalapally,TELANGANA,location: cluster by cluster (district spans several 2011 districts),42,0,0.5918367346938775,,Karimnagar; Khammam; Warangal,3
+Vikarabad,TELANGANA,location: cluster by cluster (district spans several 2011 districts),42,0,0.4013605442176871,,Mahbubnagar; Medak; Rangareddy,3
+Kra Daadi,ARUNACHAL PRADESH,location: whole district to its 2011 parent,25,0,0.9828571428571429,,Kurung Kumey,1
+Longding,ARUNACHAL PRADESH,location: whole district to its 2011 parent,45,0,1,,Tirap,1
+Namsai,ARUNACHAL PRADESH,location: whole district to its 2011 parent,45,0,0.9809523809523809,,Lohit,1
+Biswanath,ASSAM,location: whole district to its 2011 parent,42,0,0.8979591836734694,,Sonitpur,1
+Charaideo,ASSAM,location: whole district to its 2011 parent,42,0,0.9013605442176871,,Sivasagar,1
+Hojai,ASSAM,location: whole district to its 2011 parent,42,0,0.9795918367346939,,Nagaon,1
+Majuli,ASSAM,location: whole district to its 2011 parent,42,0,0.7142857142857143,,Jorhat,1
+South Salmara Mancachar,ASSAM,location: whole district to its 2011 parent,42,0,1,,Dhubri,1
+Balod,CHHATTISGARH,location: whole district to its 2011 parent,42,5,0.6795366795366795,,Durg,1
+Baloda Bazar,CHHATTISGARH,location: whole district to its 2011 parent,42,0,0.6700680272108843,,Raipur,1
+Balrampur,CHHATTISGARH,location: whole district to its 2011 parent,42,0,0.7891156462585034,,Surguja,1
+Bemetara,CHHATTISGARH,location: whole district to its 2011 parent,42,0,0.6802721088435374,,Durg,1
+Dantewada,CHHATTISGARH,location: whole district to its 2011 parent,42,0,0.9183673469387755,,Dakshin Bastar Dantewada,1
+Kodagaon,CHHATTISGARH,location: whole district to its 2011 parent,42,0,0.8299319727891157,,Bastar,1
+Mungeli,CHHATTISGARH,location: whole district to its 2011 parent,42,0,0.6904761904761905,,Bilaspur,1
+Sukma,CHHATTISGARH,location: whole district to its 2011 parent,42,0,0.9897959183673469,,Dakshin Bastar Dantewada,1
+Surajpur,CHHATTISGARH,location: whole district to its 2011 parent,42,0,0.8469387755102041,,Surguja,1
+Aravali,GUJARAT,location: whole district to its 2011 parent,42,0,0.8673469387755102,,Sabar Kantha,1
+Chhota Udaipur,GUJARAT,location: whole district to its 2011 parent,42,0,0.6938775510204082,,Vadodara,1
+Devbhumi Dwarka,GUJARAT,location: whole district to its 2011 parent,42,0,0.7448979591836735,,Jamnagar,1
+Gir Somnath,GUJARAT,location: whole district to its 2011 parent,42,0,0.8741496598639455,,Junagadh,1
+Charkhi Dadri,HARYANA,location: whole district to its 2011 parent,41,0,0.7770034843205574,,Bhiwani,1
+Leh,LADAKH,location: whole district to its 2011 parent,42,0,0.9591836734693877,,Leh(Ladakh),1
+Agar Malwa,MADHYA PRADESH,location: whole district to its 2011 parent,45,0,0.819047619047619,,Shajapur,1
+Palghar,MAHARASHTRA,location: whole district to its 2011 parent,42,0,0.9489795918367347,,Thane,1
+East Jantia Hills,MEGHALAYA,location: whole district to its 2011 parent,42,0,1,,Jaintia Hills,1
+North Garo Hills,MEGHALAYA,location: whole district to its 2011 parent,42,0,0.9727891156462585,,East Garo Hills,1
+South West Garo Hills,MEGHALAYA,location: whole district to its 2011 parent,42,0,1,,West Garo Hills,1
+South West Khasi Hills,MEGHALAYA,location: whole district to its 2011 parent,42,0,0.8435374149659864,,West Khasi Hills,1
+West Jaintia Hills,MEGHALAYA,location: whole district to its 2011 parent,42,0,0.8843537414965986,,Jaintia Hills,1
+Shahdara,NCT OF DELHI,location: whole district to its 2011 parent,42,1,0.6794425087108014,,North East,1
+South East,NCT OF DELHI,location: whole district to its 2011 parent,42,2,0.8142857142857143,,South,1
+Fazilka,PUNJAB,location: whole district to its 2011 parent,42,0,0.8673469387755102,,Firozpur,1
+Pathankot,PUNJAB,location: whole district to its 2011 parent,41,0,0.9965156794425087,,Gurdaspur,1
+Bhadradri Kothagudem,TELANGANA,location: whole district to its 2011 parent,42,0,0.9013605442176871,,Khammam,1
+Jagitial,TELANGANA,location: whole district to its 2011 parent,42,0,0.7687074829931972,,Karimnagar,1
+Jogulamba Gadwal,TELANGANA,location: whole district to its 2011 parent,42,0,0.6938775510204082,,Mahbubnagar,1
+Kamareddy,TELANGANA,location: whole district to its 2011 parent,42,0,0.9183673469387755,,Nizamabad,1
+Komaram Bheem Asifabad,TELANGANA,location: whole district to its 2011 parent,42,0,1,,Adilabad,1
+Mahabubabad,TELANGANA,location: whole district to its 2011 parent,42,0,0.6870748299319728,,Warangal,1
+Mahabubnagar,TELANGANA,location: whole district to its 2011 parent,42,0,0.9863945578231292,,Mahbubnagar,1
+Mancherial,TELANGANA,location: whole district to its 2011 parent,42,0,0.7687074829931972,,Adilabad,1
+Medchal-Malkajgiri,TELANGANA,location: whole district to its 2011 parent,42,0,0.7448979591836735,,Rangareddy,1
+Nagarkurnool,TELANGANA,location: whole district to its 2011 parent,42,0,0.9081632653061225,,Mahbubnagar,1
+Nirmal,TELANGANA,location: whole district to its 2011 parent,42,0,0.8163265306122449,,Adilabad,1
+Peddapalli,TELANGANA,location: whole district to its 2011 parent,42,0,0.8707482993197279,,Karimnagar,1
+Rajanna Sircilla,TELANGANA,location: whole district to its 2011 parent,42,0,0.7517006802721088,,Karimnagar,1
+Sangareddy,TELANGANA,location: whole district to its 2011 parent,42,0,0.7857142857142857,,Medak,1
+Siddipet,TELANGANA,location: whole district to its 2011 parent,42,0,0.6700680272108843,,Medak,1
+Suryapet,TELANGANA,location: whole district to its 2011 parent,42,0,0.7517006802721088,,Nalgonda,1
+Wanaparthy,TELANGANA,location: whole district to its 2011 parent,42,0,0.9727891156462585,,Mahbubnagar,1
+Warangal Rural,TELANGANA,location: whole district to its 2011 parent,42,0,0.9829931972789115,,Warangal,1
+Warangal Urban,TELANGANA,location: whole district to its 2011 parent,42,0,0.891156462585034,,Warangal,1
+Yadadri Bhuvanagiri,TELANGANA,location: whole district to its 2011 parent,42,0,0.7789115646258503,,Nalgonda,1
+Gomati,TRIPURA,location: whole district to its 2011 parent,42,0,0.8435374149659864,,South Tripura,1
+Khowai,TRIPURA,location: whole district to its 2011 parent,42,0,0.8333333333333334,,West Tripura,1
+Sepahijala,TRIPURA,location: whole district to its 2011 parent,42,0,0.8775510204081632,,West Tripura,1
+Unakoti,TRIPURA,location: whole district to its 2011 parent,42,0,0.9727891156462585,,North Tripura,1
+Amethi,UTTAR PRADESH,location: whole district to its 2011 parent,45,0,0.7587301587301587,,Sultanpur,1
+Hapur,UTTAR PRADESH,location: whole district to its 2011 parent,45,0,0.873015873015873,,Ghaziabad,1
+Sambhal,UTTAR PRADESH,location: whole district to its 2011 parent,45,0,0.707936507936508,,Moradabad,1
+Shamli,UTTAR PRADESH,location: whole district to its 2011 parent,45,0,0.7111111111111111,,Muzaffarnagar,1
+Paschim Barddhaman,WEST BENGAL,location: whole district to its 2011 parent,42,0,0.7653061224489796,,Barddhaman,1
+Purba Barddhaman,WEST BENGAL,location: whole district to its 2011 parent,42,0,0.6496598639455783,,Barddhaman,1

@@ -1,52 +1,186 @@
 "step","pop","message","call","class"
+"01_prep_nfhs.R","","There were 14 warnings in `dplyr::summarise()`.
+The first warning was:
+ℹ In argument: `p_wt = survey_mean(.data[[""lpg""]], na.rm = TRUE, vartype =
+  ""se"")`.
+ℹ In group 55: `district = 55`.
+Caused by warning in `onestrat()`:
+! Stratum (5521) has only one PSU at stage 1
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 13 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
+"04_compare.R","","Removed 7 rows containing non-finite outside the scale range (`stat_smooth()`).","NULL","ggplot dropped missing rows"
+"04_compare.R","","Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"04_compare.R","","Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"26_compare_nsso78.R","","Removed 3 rows containing non-finite outside the scale range (`stat_smooth()`).","NULL","ggplot dropped missing rows"
+"26_compare_nsso78.R","","Removed 3 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"26_compare_nsso78.R","","Removed 1 row containing non-finite outside the scale range (`stat_smooth()`).","NULL","UNCLASSIFIED -- READ IT"
+"26_compare_nsso78.R","","Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"26_compare_nsso78.R","","Removed 13 rows containing non-finite outside the scale range
+(`stat_smooth()`).","NULL","ggplot dropped missing rows"
+"26_compare_nsso78.R","","Removed 13 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"26_compare_nsso78.R","","Removed 7 rows containing non-finite outside the scale range (`stat_smooth()`).","NULL","ggplot dropped missing rows"
+"26_compare_nsso78.R","","Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"26_compare_nsso78.R","","Removed 13 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"26_compare_nsso78.R","","Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"05_correction.R","","Removed 10 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"05_correction.R","","Removed 10 rows containing missing values or values outside the scale range
+(`geom_point()`).","NULL","ggplot dropped missing rows"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","[extract] transforming vector data to the CRS of the raster","NULL","UNCLASSIFIED -- READ IT"
+"H3_env_covariates.R","","Polygons transformed to raster CRS (EPSG:NA)",".local(x, y, ...)","UNCLASSIFIED -- READ IT"
 "H1_prep_mortality.R","","There were 13 warnings in `dplyr::summarise()`.
 The first warning was:
 ℹ In argument: `m = survey_mean(.y, na.rm = TRUE)`.
-ℹ In group 229: `district = ""304""`.
+ℹ In group 417: `district = ""475""`.
 Caused by warning in `onestrat()`:
-! Stratum (82122) has only one PSU at stage 1
+! Stratum (85921) has only one PSU at stage 1
 ℹ Run `dplyr::last_dplyr_warnings()` to see the 12 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
 "H1_prep_mortality.R","","There were 13 warnings in `dplyr::summarise()`.
 The first warning was:
 ℹ In argument: `m = survey_mean(.y, na.rm = TRUE)`.
-ℹ In group 229: `district = ""304""`.
+ℹ In group 417: `district = ""475""`.
 Caused by warning in `onestrat()`:
-! Stratum (82122) has only one PSU at stage 1
+! Stratum (85921) has only one PSU at stage 1
 ℹ Run `dplyr::last_dplyr_warnings()` to see the 12 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
-"H1_prep_mortality.R","","There were 20 warnings in `dplyr::summarise()`.
+"H1_prep_mortality.R","","There were 25 warnings in `dplyr::summarise()`.
 The first warning was:
 ℹ In argument: `m = survey_mean(.y, na.rm = TRUE)`.
-ℹ In group 229: `district = ""304""`.
+ℹ In group 56: `district = ""149""`.
 Caused by warning in `onestrat()`:
-! Stratum (82122) has only one PSU at stage 1
-ℹ Run `dplyr::last_dplyr_warnings()` to see the 19 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
-"H1_prep_mortality.R","","There were 20 warnings in `dplyr::summarise()`.
+! Stratum (9281) has only one PSU at stage 1
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 24 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
+"H1_prep_mortality.R","","There were 25 warnings in `dplyr::summarise()`.
 The first warning was:
 ℹ In argument: `m = survey_mean(.y, na.rm = TRUE)`.
-ℹ In group 229: `district = ""304""`.
+ℹ In group 56: `district = ""149""`.
 Caused by warning in `onestrat()`:
-! Stratum (82122) has only one PSU at stage 1
-ℹ Run `dplyr::last_dplyr_warnings()` to see the 19 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
+! Stratum (9281) has only one PSU at stage 1
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 24 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
 "H1_prep_mortality.R","","There were 13 warnings in `dplyr::summarise()`.
 The first warning was:
 ℹ In argument: `m = survey_mean(.y, na.rm = TRUE)`.
-ℹ In group 229: `district = ""304""`.
+ℹ In group 417: `district = ""475""`.
 Caused by warning in `onestrat()`:
-! Stratum (82122) has only one PSU at stage 1
+! Stratum (85921) has only one PSU at stage 1
 ℹ Run `dplyr::last_dplyr_warnings()` to see the 12 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
-"H1_prep_mortality.R","","There were 13 warnings in `dplyr::summarise()`.
+"H1_prep_mortality.R","","There were 14 warnings in `dplyr::summarise()`.
 The first warning was:
 ℹ In argument: `m = survey_mean(.y, na.rm = TRUE)`.
-ℹ In group 171: `district = ""252""`.
+ℹ In group 56: `district = ""149""`.
 Caused by warning in `onestrat()`:
-! Stratum (80722) has only one PSU at stage 1
-ℹ Run `dplyr::last_dplyr_warnings()` to see the 12 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
+! Stratum (92823) has only one PSU at stage 1
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 13 remaining warnings.","NULL","UNCLASSIFIED -- READ IT"
 "07_diagnostics_maps.R","","Removed 7 rows containing missing values or values outside the scale range
 (`geom_point()`).","NULL","ggplot dropped missing rows"
 "07_diagnostics_maps.R","","Removed 7 rows containing missing values or values outside the scale range
 (`geom_point()`).","NULL","ggplot dropped missing rows"
-"07_diagnostics_maps.R","","Removed 8 rows containing non-finite outside the scale range (`stat_bin()`).","NULL","ggplot dropped missing rows"
-"07_diagnostics_maps.R","","Removed 32 rows containing non-finite outside the scale range (`stat_bin()`).","NULL","ggplot dropped missing rows"
+"07_diagnostics_maps.R","","Removed 9 rows containing non-finite outside the scale range (`stat_bin()`).","NULL","ggplot dropped missing rows"
+"07_diagnostics_maps.R","","Removed 36 rows containing non-finite outside the scale range (`stat_bin()`).","NULL","ggplot dropped missing rows"
 "10_make_figures.R","","Removed 7 rows containing missing values or values outside the scale range
 (`geom_point()`).","NULL","ggplot dropped missing rows"
 "10_make_figures.R","","Removed 7 rows containing missing values or values outside the scale range

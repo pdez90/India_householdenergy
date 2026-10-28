@@ -1,7 +1,7 @@
 metric,change_lpg_bayes,change_lpg_raw,change_excl_lpg,change_any_solid,change_stacking,change_kg
-change_lpg_bayes,1,0.672,0.775,-0.776,-0.177,0.784
-change_lpg_raw,0.672,1,0.679,-0.676,-0.285,0.486
-change_excl_lpg,0.775,0.679,1,-1,-0.248,0.791
-change_any_solid,-0.776,-0.676,-1,1,0.248,-0.791
-change_stacking,-0.177,-0.285,-0.248,0.248,1,0.104
-change_kg,0.784,0.486,0.791,-0.791,0.104,1
+change_lpg_bayes,1,0.667,0.775,-0.775,-0.173,0.783
+change_lpg_raw,0.667,1,0.676,-0.673,-0.282,0.484
+change_excl_lpg,0.775,0.676,1,-1,-0.244,0.791
+change_any_solid,-0.775,-0.673,-1,1,0.244,-0.791
+change_stacking,-0.173,-0.282,-0.244,0.244,1,0.106
+change_kg,0.783,0.484,0.791,-0.791,0.106,1

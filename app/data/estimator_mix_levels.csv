@@ -4,8 +4,8 @@ year,estimator,mean_prev
 2015,Reg.-calibrated (multilevel input),22.3
 2015,Reg.-calibrated (design-wt input),21.7
 2015,Bayesian-corrected,22.3
-2019,Raw multilevel,42.2
-2019,Raw design-weighted,42.3
+2019,Raw multilevel,42.1
+2019,Raw design-weighted,42.2
 2019,Reg.-calibrated (multilevel input),61.1
-2019,Reg.-calibrated (design-wt input),61.3
+2019,Reg.-calibrated (design-wt input),61.2
 2019,Bayesian-corrected,61.9

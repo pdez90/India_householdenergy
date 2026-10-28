@@ -126,7 +126,17 @@ providers:
 - **NSSO 78th round Multiple Indicator Survey (2020-21)** — unit-level data from
   the MoSPI microdata portal, https://microdata.gov.in. The household record
   used is the Level-03 file (Questionnaire 5.1, Block 4 items 1-28).
-- **District geography** — NFHS-4 (2011 Census) district shapefile.
+- **District geography** — 2011 Census district polygons from SHRUG 2.2
+  ("PC11 District Polygons", https://www.devdatalab.org/shrug_download/;
+  Asher, Lunt, Matsuura and Novosad 2021, *World Bank Economic Review* 35(4);
+  CC BY-NC-SA 4.0), unzipped under `$DHS_DIR/shrug_pc11_district_polygons/`.
+  `scripts/build_district_boundaries.R` joins them to the NFHS-4 district
+  attribute table and writes `$DHS_DIR/district_pc11_shrug/`. The derived
+  `app/data/districts.geojson` is distributed under CC BY-NC-SA 4.0 (see LICENSE).
+- **NFHS-5 district history** — `data/district_history_nfhs5.csv` (in this
+  repository) records, for each NFHS-5 district created, renamed or reorganised
+  after 2011, its 2011 parent district(s), the verifying source and a
+  confidence grade (SI Methods S13).
 
 ## Verification philosophy
 
