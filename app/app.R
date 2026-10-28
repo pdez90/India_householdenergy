@@ -218,6 +218,17 @@ ui <- page_navbar(
              tags$dl(lapply(GLOSSARY, function(g) tagList(tags$dt(g[1]), tags$dd(g[2])))))),
       card(card_header("Files in this bundle"), tableOutput("t_bundle")))),
 
+  # ---- Contact -------------------------------------------------------------------
+  nav_panel("Contact", value = "contact",
+    div(class = "page",
+      h2("Contact"),
+      card(card_header("Dr Priyanka deSouza"),
+           p("Department of Urban and Regional Planning", tags$br(), "University of Colorado Denver"),
+           p("Email: ",
+             tags$a(href = "mailto:priyanka.desouza@ucdenver.edu", "priyanka.desouza@ucdenver.edu"),
+             " or ",
+             tags$a(href = "mailto:priyankadesouza@gmail.com", "priyankadesouza@gmail.com"))))),
+
 )
 
 server <- function(input, output, session) {
