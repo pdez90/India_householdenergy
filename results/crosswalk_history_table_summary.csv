@@ -14,3 +14,9 @@
 "source: government website","low",5
 "source: other (press)","low",1
 "source: government website","medium",15
+"basis: parent inferred from named sub-units","high",1
+"basis: source states the relationship","high",77
+"basis: no record of change (absence of evidence)","low",7
+"basis: no record of change (absence of evidence)","medium",2
+"basis: parent inferred from named sub-units","medium",2
+"basis: reorganisation documented, candidates widened","medium",11

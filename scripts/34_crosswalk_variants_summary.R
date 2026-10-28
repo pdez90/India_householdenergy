@@ -106,6 +106,17 @@ hs <- rbind(hs, data.frame(type = "all", confidence = "all", Freq = nrow(h)),
             data.frame(type = "with documented alternative", confidence = "low",
                        Freq = sum(has_alt & tolower(h$confidence) == "low")),
             as.data.frame(table(type = src_cat, confidence = h$confidence), stringsAsFactors = FALSE))
+# What the cited source establishes for each entry, as against what the linkage
+# assumes (column `basis`): states the relationship; names sub-units, parent
+# inferred; documents a reorganisation only, candidates widened (analytic
+# choice); no record of change found (absence of evidence).
+if ("basis" %in% names(h)) {
+  bcat <- ifelse(grepl("^source states", h$basis), "basis: source states the relationship",
+          ifelse(grepl("^source names the sub-units", h$basis), "basis: parent inferred from named sub-units",
+          ifelse(grepl("^source documents a reorganisation", h$basis), "basis: reorganisation documented, candidates widened",
+          ifelse(grepl("^no record", h$basis), "basis: no record of change (absence of evidence)", "basis: other"))))
+  hs <- rbind(hs, as.data.frame(table(type = bcat, confidence = h$confidence), stringsAsFactors = FALSE))
+}
 hs <- hs[hs$Freq > 0, ]
 names(hs)[3] <- "districts"
 utils::write.csv(hs, file.path(dir_out, "crosswalk_history_table_summary.csv"), row.names = FALSE)
