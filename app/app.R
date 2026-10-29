@@ -36,7 +36,7 @@ nav_buttons <- function(page, prev = NULL, nxt = NULL) div(class = "step-nav",
 run_mix_note <- function(B) if (length(B$run_other)) tagList(
   " The exported files combine runs: everything comes from run ", tags$code(B$run_main),
   " except the checks of ", paste(vapply(B$run_other, function(o)
-    paste0("script ", o$scripts, " (", o$n, " checks, targeted rerun ", o$id, ")"), ""), collapse = "; "),
+    paste0("script ", o$scripts, " (", o$n, if (o$n == 1) " check" else " checks", ", targeted rerun ", o$id, ")"), ""), collapse = "; "),
   ", which do not feed any result shown in this app.") else NULL
 provisional_banner <- div(class = "runinfo",
   "Results from pipeline run ", tags$code(B$run_main), " (exported ", B$run_date, ").", run_mix_note(B))
