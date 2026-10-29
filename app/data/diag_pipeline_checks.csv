@@ -457,3 +457,4 @@
 "20","H1: nonoverlap-cohort SI file present","PASS","","20261027191905-6438"
 "20","19: ACCESS/IRES atlas + QC maps produced","PASS","","20261027191905-6438"
 "20","no singular mixed-model fits anywhere in the pipeline","WARN","2 of 125 fits singular (1.6%) across 10 script(s)","20261027191905-6438"
+"33","rebuilt version-2 crosswalk assigns every cluster as in the run","PASS","58723 of 58723 rows identical","session-20261028184548-iw7lma"
