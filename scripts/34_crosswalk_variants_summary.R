@@ -104,7 +104,7 @@ has_alt <- !is.na(h$alt_type) & h$alt_type != ""
 # circular quoting the gazette),
 # a state or district government website, or anything else (press).
 src <- if ("verified_source_url" %in% names(h)) tolower(h$verified_source_url) else rep("", nrow(h))
-src_cat <- ifelse(grepl("rbi\\.org\\.in|megpns\\.gov\\.in|megpolice\\.gov\\.in/sites/default/files/new_dist|indiacode|prsindia", src), "source: gazette, Act or RBI circular",
+src_cat <- ifelse(grepl("rbi\\.org\\.in|megpns\\.gov\\.in|megpolice\\.gov\\.in/sites/default/files/new_dist|indiacode|prsindia|faolex\\.fao\\.org", src), "source: gazette, Act or RBI circular",
            ifelse(grepl("\\.gov\\.in|\\.nic\\.in|negd", src), "source: government website",
            ifelse(nzchar(src), "source: other (press)", "source: none recorded")))
 hs <- rbind(hs, data.frame(type = "all", confidence = "all", Freq = nrow(h)),
@@ -122,6 +122,11 @@ if ("basis" %in% names(h)) {
           ifelse(grepl("^no record", h$basis), "basis: no record of change (absence of evidence)", "basis: other"))))
   hs <- rbind(hs, as.data.frame(table(type = bcat, confidence = h$confidence), stringsAsFactors = FALSE))
 }
+# Residual districts: single-parent entries that kept the name of their 2011
+# district after territory was carved out of it (column `residual`).
+if ("residual" %in% names(h))
+  hs <- rbind(hs, data.frame(type = "residual: kept its 2011 name after losing territory", confidence = "all",
+                             Freq = sum(tolower(h$residual) %in% "yes")))
 hs <- hs[hs$Freq > 0, ]
 names(hs)[3] <- "districts"
 utils::write.csv(hs, file.path(dir_out, "crosswalk_history_table_summary.csv"), row.names = FALSE)
