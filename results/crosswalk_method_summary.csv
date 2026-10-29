@@ -1,5 +1,5 @@
 "method","low_confidence_history","clusters","districts","with_gps","overlay_differs","max_overlay_differs_one_district","uncertain"
-"location: 2011 boundary within documented parents",FALSE,1013,25,1013,0,0,343
+"location: 2011 boundary within documented parents",FALSE,1013,25,1013,0,0,345
 "location: fallback, nearest documented parent (point in a non-parent district)",FALSE,1,1,1,1,1,1
 "location: fallback, no GPS (district's majority documented parent)",FALSE,45,13,0,0,0,45
 "location: single documented parent",FALSE,2474,59,2462,35,9,0

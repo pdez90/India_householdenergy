@@ -27,10 +27,10 @@ v2 method: location: 2011 boundary within documented parents,1013
 v2 method: location: single documented parent,2474
 v2 method: name match (documented unchanged),675
 v2 method: name match (territory not documented as changed),25989
-v2: clusters flagged uncertain,389
+v2: clusters flagged uncertain,391
 v2: uncertainty flag: fallback,1
 v2: uncertainty flag: no GPS,45
-v2: uncertainty flag: near boundary,343
+v2: uncertainty flag: near boundary,345
 v2: clusters in districts whose history has low confidence,294
 v2: clusters excluded by the variant,0
 v2: clusters assigned differently from version 1,291

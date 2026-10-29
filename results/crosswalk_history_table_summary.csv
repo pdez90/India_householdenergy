@@ -8,15 +8,15 @@
 "unchanged","medium",2
 "all","all",100
 "with documented alternative","low",4
-"source: gazette, Act or RBI circular","high",52
-"source: government website","high",26
-"source: gazette, Act or RBI circular","low",1
+"source: gazette, Act or RBI circular","high",75
+"source: government website","high",3
+"source: gazette, Act or RBI circular","low",2
 "source: government website","low",5
-"source: other (press)","low",1
-"source: government website","medium",15
+"source: gazette, Act or RBI circular","medium",3
+"source: government website","medium",12
 "basis: parent inferred from named sub-units","high",1
 "basis: source states the relationship","high",77
 "basis: no record of change (absence of evidence)","low",7
-"basis: no record of change (absence of evidence)","medium",2
-"basis: parent inferred from named sub-units","medium",2
+"basis: no record of change (absence of evidence)","medium",1
 "basis: reorganisation documented, candidates widened","medium",11
+"basis: source states the relationship","medium",3
