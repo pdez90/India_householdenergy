@@ -68,7 +68,7 @@ path_pc11_districts  <- Sys.getenv("PC11_DISTRICT_SHP",
 # + 2011 boundaries; "V1": the original name-match / nearest-neighbour rule.
 CROSSWALK_VERSION    <- toupper(Sys.getenv("CROSSWALK_VERSION", "V2"))
 # Version-2 sensitivity variants (geo_crosswalk.R): primary | alternative_assignment |
-# exclude_uncertain | alternative_history. Run each into its own OUTPUT_DIR.
+# exclude_uncertain | alternative_history | overlay_history. Run each into its own OUTPUT_DIR.
 CROSSWALK_VARIANT    <- tolower(Sys.getenv("CROSSWALK_VARIANT", "primary"))
 path_district_history <- normalizePath(file.path(getwd(), "..", "data", "district_history_nfhs5.csv"),
                                        mustWork = FALSE)

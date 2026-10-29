@@ -236,7 +236,8 @@ build_nfhs_xwalk <- function(gps15, gps19, k = 7, VOTE_MIN = 0.6, OVERRIDE = 0.8
 build_nfhs_xwalk_v2 <- function(gps15, gps19, pc11, history, k = 7, VOTE_MIN = 0.6,
                                 OVERRIDE = 0.8, names4 = NULL, variant = "primary",
                                 near_km = c(U = 2, R = 5)) {
-  VARIANTS <- c("primary", "alternative_assignment", "exclude_uncertain", "alternative_history")
+  VARIANTS <- c("primary", "alternative_assignment", "exclude_uncertain", "alternative_history",
+                "overlay_history")
   if (!variant %in% VARIANTS) stop("crosswalk variant must be one of: ", paste(VARIANTS, collapse = ", "))
   v1  <- build_nfhs_xwalk(gps15, gps19, k = k, VOTE_MIN = VOTE_MIN, OVERRIDE = OVERRIDE,
                           names4 = names4)
@@ -372,6 +373,21 @@ build_nfhs_xwalk_v2 <- function(gps15, gps19, pc11, history, k = 7, VOTE_MIN = 0
     method[sw] <- paste0(method[sw], " [variant: alternative parent]")
   }
   excluded <- if (variant == "exclude_uncertain") uncertain else rep(FALSE, n5)
+  # Sensitivity to the correspondence file itself: every cluster in a district the
+  # file covers, whose published location lies inside exactly one 2011 polygon of
+  # the same 2011 state as its primary assignment, takes that polygon's district,
+  # whatever the file says (type, candidate parents, "unchanged"). This tests the
+  # file's single-parent, unchanged and candidate-parent claims against geography;
+  # it inherits the displacement noise the primary rules are designed to avoid.
+  if (variant == "overlay_history") {
+    sid <- stats::setNames(as.character(pc11$pc11_s_id), as.character(pid))
+    same_state <- !is.na(g5$overlay_district) &
+      sid[as.character(g5$overlay_district)] == sid[as.character(final)]
+    sw <- g5$history_type != "not listed" & g5$overlay_status == "one polygon" &
+      same_state %in% TRUE & g5$overlay_district != final
+    final[sw] <- g5$overlay_district[sw]
+    method[sw] <- paste0(method[sw], " [variant: 2011 boundary overlay]")
+  }
 
   audit <- data.frame(cluster = g5$cluster, nfhs5_district_code = g5$d5, nfhs5_district = g5$name5,
                       nfhs5_state = g5$state5, urban = g5$urban, has_gps = g5$has_gps,

@@ -30,6 +30,23 @@ chk(SCRIPT, "rebuilt version-2 crosswalk assigns every cluster as in the run",
     same, sprintf("%d of %d rows identical", if (nrow(a) == nrow(b)) sum(a$district == b$district) else NA, nrow(b)))
 if (!same) stop("the rebuilt crosswalk differs from the one the run used; rerun the pipeline instead")
 readr::write_csv(XW$audit, file.path(dir_out, "nfhs5_crosswalk_audit.csv"))
+# The assignments are identical, but the uncertainty flags and history counts
+# depend on the correspondence file too (e.g. a candidate parent added without
+# moving any cluster). Refresh those rows of the linkage diagnostics so the
+# manuscript's counts describe the current file; household-level rows written by
+# 01_prep_nfhs.R are untouched, and so are the rows that do not change.
+for (ld_path in file.path(dir_out, c("nfhs5_linkage_diagnostics.csv", "missingness_linkage.csv"))) if (file.exists(ld_path)) {
+  ld <- readr::read_csv(ld_path, show_col_types = FALSE)
+  m <- match(ld$metric, XW$diagnostics$metric)
+  if ("source" %in% names(ld)) m[ld$source != "NFHS5"] <- NA
+  chg <- !is.na(m) & ld$value != XW$diagnostics$value[m]
+  if (any(chg)) {
+    print(data.frame(metric = ld$metric[chg], was = ld$value[chg], now = XW$diagnostics$value[m][chg]), row.names = FALSE)
+    ld$value[!is.na(m)] <- XW$diagnostics$value[m[!is.na(m)]]
+    readr::write_csv(ld, ld_path)
+    message(basename(ld_path), ": ", sum(chg), " crosswalk rows refreshed")
+  } else message(basename(ld_path), ": crosswalk rows already current")
+}
 au <- XW$audit
 ds <- au |> dplyr::group_by(nfhs5_state, nfhs5_district, history_type, history_confidence) |>
   dplyr::summarise(clusters = dplyr::n(), with_gps = sum(has_gps),

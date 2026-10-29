@@ -25,7 +25,11 @@ root <- dirname(dir_out)
 runs <- c(version_1 = Sys.getenv("V1_DIR", file.path(root, "outputs_crosswalk_v1")),
           primary = dir_out)
 vd <- strsplit(Sys.getenv("VARIANT_DIRS", ""), ",")[[1]]
-if (!length(vd)) vd <- file.path(root, paste0("outputs_xw_", c("alternative_assignment", "exclude_uncertain", "alternative_history")))
+if (!length(vd)) {
+  vd <- file.path(root, paste0("outputs_xw_", c("alternative_assignment", "exclude_uncertain", "alternative_history")))
+  ov <- file.path(root, "outputs_xw_overlay_history")      # optional: included once it has been run
+  if (dir.exists(ov) && file.exists(file.path(ov, "health_effects_table.csv"))) vd <- c(vd, ov)
+}
 names(vd) <- sub("^outputs_xw_", "", basename(vd))
 runs <- c(runs, vd)
 miss <- runs[!dir.exists(runs)]
@@ -120,6 +124,31 @@ if ("basis" %in% names(h)) {
 hs <- hs[hs$Freq > 0, ]
 names(hs)[3] <- "districts"
 utils::write.csv(hs, file.path(dir_out, "crosswalk_history_table_summary.csv"), row.names = FALSE)
+# Input provenance: which correspondence file, crosswalk code and repository
+# commit the summary was made with, and for each run its pipeline run id and the
+# checksum of the crosswalk it used. Matching numbers in the manuscript to these
+# outputs checks transcription only; this records what produced the outputs.
+# (Whether a run's crosswalk equals the one the current file and code would build
+# is checked by 33_crosswalk_audit_refresh.R, which rebuilds and compares.)
+md5 <- function(p) if (file.exists(p)) unname(tools::md5sum(p)) else NA_character_
+assign_cols <- intersect(c("state5", "district5", "type", "parents_2011", "confidence", "alt_type", "alt_parents_2011"), names(h))
+tmp <- tempfile(fileext = ".csv"); utils::write.csv(h[, assign_cols], tmp, row.names = FALSE)
+git_head <- tryCatch(system2("git", c("-C", dirname(hist_path), "rev-parse", "--short", "HEAD"), stdout = TRUE, stderr = FALSE)[1],
+                     error = function(e) NA_character_)
+run_id <- function(d) {
+  f <- file.path(d, "diagnostics", "pipeline_checks.csv")
+  if (!file.exists(f)) return(NA_character_)
+  u <- unique(utils::read.csv(f, stringsAsFactors = FALSE)$run_id); paste(u[!is.na(u)], collapse = ";")
+}
+prov <- rbind(
+  data.frame(item = c("correspondence file (data/district_history_nfhs5.csv), md5", "correspondence file, assignment-relevant columns, md5",
+                      "scripts/geo_crosswalk.R, md5", "repository commit at summary time"),
+             run = "", value = c(md5(hist_path), md5(tmp), md5(file.path(dirname(hist_path), "..", "scripts", "geo_crosswalk.R")), git_head)),
+  do.call(rbind, lapply(names(runs), function(r) data.frame(
+    item = c("pipeline run id", "crosswalk used (nfhs_cluster_district_xwalk.csv), md5"), run = r,
+    value = c(run_id(runs[[r]]), md5(file.path(runs[[r]], "nfhs_cluster_district_xwalk.csv")))))))
+utils::write.csv(prov, file.path(dir_out, "crosswalk_inputs_provenance.csv"), row.names = FALSE)
+
 w <- reshape(out[out$quantity %in% unique(out$quantity), c("run", "quantity", "estimate")],
              idvar = "quantity", timevar = "run", direction = "wide")
 print(w, row.names = FALSE, digits = 4)
