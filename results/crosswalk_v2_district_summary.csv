@@ -60,7 +60,7 @@ ASSAM,Kokrajhar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,300
 ASSAM,Lakhimpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,307
 ASSAM,Majuli,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,312
 ASSAM,Morigaon,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,304
-ASSAM,Nagaon,unchanged,medium,42,32,0,0,0,0,0,0,0,0,4,305
+ASSAM,Nagaon,single_parent,medium,42,32,0,0,0,0,0,0,0,0,4,305
 ASSAM,Nalbari,not listed,NA,42,41,0,0,0,0,0,0,0,0,1,323
 ASSAM,Sivasagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,311
 ASSAM,Sonitpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,306
@@ -559,7 +559,7 @@ TAMIL NADU,Tiruvannamalai,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,606
 TAMIL NADU,Vellore,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,605
 TAMIL NADU,Viluppuram,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,607
 TAMIL NADU,Virudhunagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,625
-TELANGANA,Adilabad,unchanged,high,42,42,0,0,0,0,0,0,0,0,0,532
+TELANGANA,Adilabad,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,532
 TELANGANA,Bhadradri Kothagudem,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,541
 TELANGANA,Hyderabad,unchanged,high,42,42,0,0,0,0,0,0,0,0,7,536
 TELANGANA,Jagitial,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,534
@@ -567,18 +567,18 @@ TELANGANA,Jangoan,multi_parent,high,42,42,0,10,10,0,0,0,0,16,0,539;540
 TELANGANA,Jayashankar Bhupalapally,multi_parent,high,42,42,0,14,14,0,0,0,0,8,0,534;540;541
 TELANGANA,Jogulamba Gadwal,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,538
 TELANGANA,Kamareddy,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,533
-TELANGANA,Karimnagar,unchanged,high,42,42,0,0,0,0,0,0,0,0,0,534
-TELANGANA,Khammam,unchanged,high,42,42,0,0,0,0,0,0,0,0,2,541
+TELANGANA,Karimnagar,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,534
+TELANGANA,Khammam,single_parent,high,42,42,0,0,0,0,0,0,0,0,2,541
 TELANGANA,Komaram Bheem Asifabad,single_parent,high,42,42,0,0,0,0,0,0,0,0,1,532
 TELANGANA,Mahabubabad,multi_parent,high,42,42,0,8,8,0,0,0,0,4,0,540;541
 TELANGANA,Mahabubnagar,multi_parent,high,42,42,0,2,2,0,0,0,0,2,0,537;538
 TELANGANA,Mancherial,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,532
-TELANGANA,Medak,unchanged,high,42,42,0,0,0,0,0,0,0,0,0,535
+TELANGANA,Medak,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,535
 TELANGANA,Medchal-Malkajgiri,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,537
 TELANGANA,Nagarkurnool,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,538
-TELANGANA,Nalgonda,unchanged,high,42,42,0,0,0,0,0,0,0,0,0,539
+TELANGANA,Nalgonda,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,539
 TELANGANA,Nirmal,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,532
-TELANGANA,Nizamabad,unchanged,high,42,42,0,0,0,0,0,0,0,0,0,533
+TELANGANA,Nizamabad,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,533
 TELANGANA,Peddapalli,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,534
 TELANGANA,Rajanna Sircilla,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,534
 TELANGANA,Ranga Reddy,multi_parent,high,42,37,0,11,6,0,5,0,0,10,0,537;538

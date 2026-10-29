@@ -1,22 +1,23 @@
 "type","confidence","districts"
 "multi_parent","high",14
-"single_parent","high",57
-"unchanged","high",7
+"single_parent","high",63
+"unchanged","high",1
 "unchanged","low",7
 "multi_parent","medium",11
-"single_parent","medium",2
-"unchanged","medium",2
+"single_parent","medium",3
+"unchanged","medium",1
 "all","all",100
 "with documented alternative","low",4
-"source: gazette, Act or RBI circular","high",76
-"source: government website","high",2
-"source: gazette, Act or RBI circular","low",2
-"source: government website","low",5
+"source: gazette, Act or RBI circular","high",75
+"source: government website","high",3
+"source: gazette, Act or RBI circular","low",1
+"source: government website","low",6
 "source: gazette, Act or RBI circular","medium",3
 "source: government website","medium",12
-"basis: parent inferred from named sub-units","high",1
+"basis: no record of change (absence of evidence)","high",1
 "basis: source states the relationship","high",77
 "basis: no record of change (absence of evidence)","low",7
 "basis: no record of change (absence of evidence)","medium",1
 "basis: reorganisation documented, candidates widened","medium",11
 "basis: source states the relationship","medium",3
+"residual: kept its 2011 name after losing territory","all",10
