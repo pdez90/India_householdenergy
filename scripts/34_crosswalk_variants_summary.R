@@ -100,10 +100,11 @@ h <- utils::read.csv(hist_path, stringsAsFactors = FALSE)
 hs <- as.data.frame(table(type = h$type, confidence = h$confidence), stringsAsFactors = FALSE)
 has_alt <- !is.na(h$alt_type) & h$alt_type != ""
 # Verifying source of each entry (verified_source_url): a creating instrument
-# (gazette notification, Act, or an RBI lead-bank circular quoting the gazette),
+# (gazette notification or a published copy of it, Act, or an RBI lead-bank
+# circular quoting the gazette),
 # a state or district government website, or anything else (press).
 src <- if ("verified_source_url" %in% names(h)) tolower(h$verified_source_url) else rep("", nrow(h))
-src_cat <- ifelse(grepl("rbi\\.org\\.in|megpns\\.gov\\.in|indiacode|prsindia", src), "source: gazette, Act or RBI circular",
+src_cat <- ifelse(grepl("rbi\\.org\\.in|megpns\\.gov\\.in|megpolice\\.gov\\.in/sites/default/files/new_dist|indiacode|prsindia", src), "source: gazette, Act or RBI circular",
            ifelse(grepl("\\.gov\\.in|\\.nic\\.in|negd", src), "source: government website",
            ifelse(nzchar(src), "source: other (press)", "source: none recorded")))
 hs <- rbind(hs, data.frame(type = "all", confidence = "all", Freq = nrow(h)),
