@@ -136,7 +136,11 @@ providers:
 - **NFHS-5 district history** — `data/district_history_nfhs5.csv` (in this
   repository) records, for each NFHS-5 district created, renamed or reorganised
   after 2011, its 2011 parent district(s), the verifying source and a
-  confidence grade (SI Methods S13).
+  confidence grade (SI Methods S13). `data/district_history_verification_worksheet.csv`
+  records, for the same 100 districts, the source check behind each entry: the
+  passage relied on, two web source reviews, the Local Government
+  Directory records checked for the districts recorded as unchanged, and what
+  remains for an author to confirm.
 
 ## Verification philosophy
 
