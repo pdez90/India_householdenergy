@@ -60,7 +60,7 @@ ASSAM,Kokrajhar,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,300
 ASSAM,Lakhimpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,307
 ASSAM,Majuli,single_parent,high,42,42,0,0,0,0,0,0,0,0,0,312
 ASSAM,Morigaon,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,304
-ASSAM,Nagaon,single_parent,medium,42,32,0,0,0,0,0,0,0,0,4,305
+ASSAM,Nagaon,single_parent,low,42,32,0,0,0,0,0,42,0,0,4,305
 ASSAM,Nalbari,not listed,NA,42,41,0,0,0,0,0,0,0,0,1,323
 ASSAM,Sivasagar,not listed,NA,42,42,0,0,0,0,0,0,0,0,1,311
 ASSAM,Sonitpur,not listed,NA,42,42,0,0,0,0,0,0,0,0,0,306

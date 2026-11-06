@@ -2,8 +2,8 @@
 "location: 2011 boundary within documented parents",FALSE,1013,25,1013,0,0,345
 "location: fallback, nearest documented parent (point in a non-parent district)",FALSE,1,1,1,1,1,1
 "location: fallback, no GPS (district's majority documented parent)",FALSE,45,13,0,0,0,45
-"location: single documented parent",FALSE,2768,66,2746,41,9,0
-"location: single documented parent",TRUE,42,1,42,9,9,0
+"location: single documented parent",FALSE,2726,65,2714,37,9,0
+"location: single documented parent",TRUE,84,2,74,13,9,0
 "name match (documented unchanged)",FALSE,87,2,87,12,7,0
 "name match (documented unchanged)",TRUE,252,6,252,47,15,0
 "name match (territory not documented as changed)",FALSE,25989,607,25938,301,4,0

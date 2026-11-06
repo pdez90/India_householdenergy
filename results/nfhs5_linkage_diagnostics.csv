@@ -31,7 +31,7 @@ v2: clusters flagged uncertain,391
 v2: uncertainty flag: fallback,1
 v2: uncertainty flag: no GPS,45
 v2: uncertainty flag: near boundary,345
-v2: clusters in districts whose history has low confidence,294
+v2: clusters in districts whose history has low confidence,336
 v2: clusters excluded by the variant,0
 v2: clusters assigned differently from version 1,291
 v2: NFHS-5 districts with a documented history row,100

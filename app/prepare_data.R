@@ -120,7 +120,9 @@ if ("design_summary.csv" %in% list.files(out_dir)) {
   if (any(grepl("kappa|frontier|floor|direct|multiplier", ds$quantity)))
     stop("design_summary.csv carries precision-frontier quantities (a DESIGN_FRONTIER=1 run). Re-run 22_design_analysis.R and re-export.")
 }
-for (f in c("district_lpg_estimates.csv", "district_lpg_estimates_dictionary.csv")) {
+# district_history_nfhs5.csv: the NFHS-5 -> 2011 district correspondence file
+# (district-level, with sources), shown on the District correspondence page.
+for (f in c("district_lpg_estimates.csv", "district_lpg_estimates_dictionary.csv", "district_history_nfhs5.csv")) {
   src <- file.path(data_dir, f)
   if (file.exists(src)) { file.copy(src, file.path(out_dir, f), overwrite = TRUE); copied <- c(copied, f) }
 }

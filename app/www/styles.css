@@ -82,3 +82,6 @@ dd { color: var(--ink2); margin-bottom: 4px; }
 .explain-box { background: #f6f5f1; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; }
 .explain-box h5 { margin-top: 0; }
 mjx-container, .MathJax { font-size: 105% !important; }
+.corr-table td { vertical-align: top; font-size: 0.9rem; }
+.corr-table details summary { cursor: pointer; color: var(--ink2); }
+.corr-table details p { margin: 6px 0; max-width: 46em; }

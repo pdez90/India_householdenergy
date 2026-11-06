@@ -2397,7 +2397,7 @@
   },
   "files": {
     "app.R": {
-      "checksum": "5ad7cedf8c5421780269f58b98015570"
+      "checksum": "6c03f2e6afcc535f640f8d673c18a362"
     },
     "data/benchmark_district_wide.csv": {
       "checksum": "13360835c48afd17ebe54c63c6bead19"
@@ -2409,7 +2409,7 @@
       "checksum": "dfe2c113f6943a830cbaacb3bd7aac89"
     },
     "data/BUNDLE.csv": {
-      "checksum": "8fa1d9cbbdf4fe37931e5b854d82e652"
+      "checksum": "21673435dec4e7320c6b97b2c6994b19"
     },
     "data/calibration_loso_summary.csv": {
       "checksum": "057d9d9239712fc6f7735ef5bbd37320"
@@ -2448,7 +2448,7 @@
       "checksum": "2a6ba82798c8ab105f2a36623ea04c86"
     },
     "data/diag_pipeline_checks.csv": {
-      "checksum": "3fdb649b8ecb1ae7ec0f46cca331445d"
+      "checksum": "60b81cae1b904f8bc60cd2c1c36984b2"
     },
     "data/diag_transfer_coefficients.csv": {
       "checksum": "899ca4ecbb00fefe911e299e49ad72d0"
@@ -2461,6 +2461,9 @@
     },
     "data/district_exposure_proxy.csv": {
       "checksum": "5672331b88b88b2e78f8c921d6a8a7cf"
+    },
+    "data/district_history_nfhs5.csv": {
+      "checksum": "8bbf9f9e7c39f7457b64da468bc8f934"
     },
     "data/district_lpg_estimates_dictionary.csv": {
       "checksum": "ddbd3fc5ab30fc892380e7cdfb2d0b84"
@@ -2544,7 +2547,7 @@
       "checksum": "dc75d0f0df78e54957913586b950862e"
     },
     "data/PROVENANCE.csv": {
-      "checksum": "0a261adc43d5c249de6cc01454242c17"
+      "checksum": "1aa0601066a65b5d2e36cf8a172b7a6c"
     },
     "data/reference_stacking_district.csv": {
       "checksum": "f57778cd0318c092c27ac5830d3fbaff"
@@ -2567,6 +2570,9 @@
     "data/state_agreement_nfhs5_ires.csv": {
       "checksum": "b7749a8a1878272be771b8554885fe70"
     },
+    "R/correspondence.R": {
+      "checksum": "c51d955fd734533183d856ac466b37c2"
+    },
     "R/data.R": {
       "checksum": "5f7964d507129085af4495b0327c484b"
     },
@@ -2583,7 +2589,7 @@
       "checksum": "eed120329d393866d20d371c8769fd3b"
     },
     "www/styles.css": {
-      "checksum": "a46b291ec66fdce5fa7be00329625005"
+      "checksum": "342920f91a81f5e150d60cd4de8b4a51"
     }
   },
   "users": null

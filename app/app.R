@@ -12,6 +12,7 @@ for (f in list.files("R", full.names = TRUE)) source(f, local = TRUE, encoding =
 
 B <- load_bundle()
 K <- derive(B)
+CR <- load_corr()
 MP <- map_paths(B$geo)
 
 theme <- bs_theme(
@@ -197,6 +198,9 @@ ui <- page_navbar(
     nav_panel("Health sensitivity explorer", value = "h_health", ui_health(B)),
     nav_panel("Run checks", value = "h_checks", ui_checks(B))),
 
+  # ---- District correspondence -------------------------------------------------
+  nav_panel("District correspondence", value = "corresp", ui_corresp(CR)),
+
   # ---- Data & methods ------------------------------------------------------------
   nav_panel("Data & methods", value = "data",
     div(class = "page",
@@ -216,7 +220,7 @@ ui <- page_navbar(
                "and we did not identify an official correspondence to the 2011 districts, so each NFHS-5 survey cluster is assigned to a 2011 district ",
                "using a correspondence file compiled for this study (",
                tags$a(href = "https://github.com/pdez90/India_householdenergy/blob/main/data/district_history_nfhs5.csv", target = "_blank", "data/district_history_nfhs5.csv"),
-               "), which records for each changed district its candidate 2011 parents and the source; where a district has several candidates, the 2011 boundaries decide. ",
+               "), which records for each changed district its candidate 2011 parents and the source (browse it on the District correspondence page); where a district has several candidates, the 2011 boundaries decide. ",
                "Details and sensitivity analyses are in SI Methods S13 of the manuscript."),
              downloadButton("dl_district", "District estimates (CSV)"),
              downloadButton("dl_dict", "Data dictionary (CSV)")),
@@ -306,6 +310,7 @@ server <- function(input, output, session) {
   vpart_server(input, output, session, B)
   corrections_server(input, output, session, B)
   output$t_bundle <- renderTable(B$bundle)
+  corresp_server(input, output, session, CR)
   output$dl_district <- downloadHandler("district_lpg_estimates.csv",
     function(file) file.copy(file.path(DATA_DIR, "district_lpg_estimates.csv"), file))
   output$dl_dict <- downloadHandler("district_lpg_estimates_dictionary.csv",
