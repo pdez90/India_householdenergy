@@ -114,12 +114,14 @@ hs <- rbind(hs, data.frame(type = "all", confidence = "all", Freq = nrow(h)),
 # What the cited source establishes for each entry, as against what the linkage
 # assumes (column `basis`): states the relationship; names sub-units, parent
 # inferred; documents a reorganisation only, candidates widened (analytic
-# choice); no record of change found (absence of evidence).
+# choice); no record of change found (absence of evidence); the official register
+# of administrative units (Local Government Directory) records no change.
 if ("basis" %in% names(h)) {
   bcat <- ifelse(grepl("^source states", h$basis), "basis: source states the relationship",
           ifelse(grepl("^source names the sub-units", h$basis), "basis: parent inferred from named sub-units",
           ifelse(grepl("^source documents a reorganisation", h$basis), "basis: reorganisation documented, candidates widened",
-          ifelse(grepl("^no record", h$basis), "basis: no record of change (absence of evidence)", "basis: other"))))
+          ifelse(grepl("^no record", h$basis), "basis: no record of change (absence of evidence)",
+          ifelse(grepl("^official register", h$basis), "basis: official register (LGD) records no change", "basis: other")))))
   hs <- rbind(hs, as.data.frame(table(type = bcat, confidence = h$confidence), stringsAsFactors = FALSE))
 }
 # Residual districts: single-parent entries that kept the name of their 2011
